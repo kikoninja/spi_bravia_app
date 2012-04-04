@@ -61,6 +61,7 @@ GEM
       bcrypt-ruby (~> 3.0)
       orm_adapter (~> 0.0.3)
       warden (~> 1.0.3)
+    diff-lcs (1.1.3)
     erubis (2.7.0)
     execjs (1.3.0)
       multi_json (~> 1.0)
@@ -140,11 +141,25 @@ GEM
       json (~> 1.4)
     responders (0.9.1)
       railties (~> 3.1)
+    rspec (2.9.0)
+      rspec-core (~> 2.9.0)
+      rspec-expectations (~> 2.9.0)
+      rspec-mocks (~> 2.9.0)
+    rspec-core (2.9.0)
+    rspec-expectations (2.9.0)
+      diff-lcs (~> 1.1.3)
+    rspec-mocks (2.9.0)
+    rspec-rails (2.9.0)
+      actionpack (>= 3.0)
+      activesupport (>= 3.0)
+      railties (>= 3.0)
+      rspec (~> 2.9.0)
     sass (3.1.15)
     sass-rails (3.2.5)
       railties (~> 3.2.0)
       sass (>= 3.1.10)
       tilt (~> 1.3)
+    shoulda-matchers (1.0.0)
     sprockets (2.1.2)
       hike (~> 1.2)
       rack (~> 1.0)
@@ -176,7 +191,9 @@ DEPENDENCIES
   jquery-rails
   mysql2
   rails (= 3.2.3)
+  rspec-rails
   sass-rails (~> 3.2.3)
+  shoulda-matchers
   sqlite3
   therubyracer
   uglifier (>= 1.0.3)

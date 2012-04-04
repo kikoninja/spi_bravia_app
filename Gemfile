@@ -32,3 +32,10 @@ gem 'activeadmin'
 # Deploy with Capistrano
 gem 'capistrano'
 
+group :development, :test do
+  # RSpec
+  gem 'rspec-rails'
+
+  # Shoulda
+  gem 'shoulda-matchers'
+end
