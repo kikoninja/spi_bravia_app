@@ -1,3 +1,8 @@
 class Channel < ActiveRecord::Base
-  # attr_accessible :title, :body
+
+  # Associations
+  has_many :categories
+
+  # Accessibles
+  attr_accessible :title
 end

@@ -32,6 +32,10 @@ gem 'activeadmin'
 # Deploy with Capistrano
 gem 'capistrano'
 
+# File upload
+gem 'carrierwave'
+gem 'rmagick'
+
 group :development, :test do
   # RSpec
   gem 'rspec-rails'

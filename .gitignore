@@ -17,3 +17,7 @@
 
 # Ignore database config
 database.yml
+
+# Uploads
+public/uploads
+public/system/uploads
