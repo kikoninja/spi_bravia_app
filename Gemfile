@@ -23,6 +23,12 @@ gem 'jquery-rails'
 # Support for haml template generators
 gem 'haml-rails'
 
+# Authentication
+gem 'devise', '1.4.8'
+
+# Active admin
+
+
 # Deploy with Capistrano
 gem 'capistrano'
 
