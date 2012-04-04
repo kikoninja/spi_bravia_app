@@ -4,5 +4,5 @@ class Channel < ActiveRecord::Base
   has_many :categories
 
   # Accessibles
-  attr_accessible :title
+  attr_accessible :title, :description
 end
