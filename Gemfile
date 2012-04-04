@@ -27,7 +27,7 @@ gem 'haml-rails'
 gem 'devise', '1.4.8'
 
 # Active admin
-
+gem 'activeadmin'
 
 # Deploy with Capistrano
 gem 'capistrano'
