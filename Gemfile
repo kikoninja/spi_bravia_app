@@ -20,6 +20,9 @@ end
 
 gem 'jquery-rails'
 
+# Support for haml template generators
+gem 'haml-rails'
+
 # Deploy with Capistrano
 gem 'capistrano'
 
