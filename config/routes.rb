@@ -3,6 +3,12 @@ SPIBraviaApp::Application.routes.draw do
 
   devise_for :users
 
+  resources :feeds, :only => [:branch] do
+    collection do
+      get 'branch'
+    end
+  end
+
   # The priority is based upon order of creation:
   # first created -> highest priority.
 

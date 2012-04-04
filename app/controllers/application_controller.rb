@@ -2,7 +2,7 @@ class ApplicationController < ActionController::Base
   protect_from_forgery
 
   # Filters
-  before_filter :authenticate_user!
+  # before_filter :authenticate_user!
 
   private
 
