@@ -1,9 +1,8 @@
 module ApplicationHelper
-require 'open-uri'
-require 'digest'
+require 'digest/md5'
 
   def make_URL(baseurl, service_name, feed_id, secret_key)
-      url = baseurl + "?service_name=" + URI::encode(service_name) + "&method=fromFeed&feed_id=" + feed_id + "&timestamp=" + URI::encode(makeRFC3339(Time.now))
+      url = baseurl + "?service_name=" + url_encode(service_name) + "&method=fromFeed&feed_id=" + feed_id + "&timestamp=" + url_encode(makeRFC3339(Time.now))
       sig = Digest::MD5.hexdigest(url+secret_key)
       url += "&sig=" + sig
   end
