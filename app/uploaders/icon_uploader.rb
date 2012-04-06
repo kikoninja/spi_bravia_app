@@ -8,6 +8,9 @@ class IconUploader < CarrierWave::Uploader::Base
   storage :file
   # storage :fog
 
+  # Convert to PNG
+  process :convert => 'png'
+
   # Override the directory where uploaded files will be stored.
   # This is a sensible default for uploaders that are meant to be mounted:
   def store_dir
@@ -39,8 +42,8 @@ class IconUploader < CarrierWave::Uploader::Base
 
   # Override the filename of the uploaded files:
   # Avoid using model.id or version_name here, see uploader/store.rb for details.
-  # def filename
-  #   "something.jpg" if original_filename
-  # end
+  def filename
+    super.chomp(File.extname(super)) + '.png'
+  end
 
 end
