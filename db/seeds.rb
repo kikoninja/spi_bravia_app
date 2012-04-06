@@ -20,9 +20,9 @@ puts "- created default channel: #{channel.title}"
 # Categories
 category1 = Category.create!(:title => "Category #1", :description => "Description for category #1", :style => "tile", :order => 1, :channel => channel)
 puts "- created category: #{category1.title}"
-category2 = Category.create!(:title => "Category #2", :description => "Description for category #2", :style => "tile", :order => 1, :channel => channel)
+category2 = Category.create!(:title => "Category #2", :description => "Description for category #2", :style => "tile", :order => 2, :channel => channel)
 puts "- created category: #{category2.title}"
-category3 = Category.create!(:title => "Category #3", :description => "Description for category #3", :style => "tile", :order => 1, :channel => channel)
+category3 = Category.create!(:title => "Category #3", :description => "Description for category #3", :style => "tile", :order => 3, :channel => channel)
 puts "- created category: #{category3.title}"
 
 # Feeds
