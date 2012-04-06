@@ -25,7 +25,7 @@ xml.trebuchet(:version => "2.0") do
     @channel.categories.each do |category|
       xml.category(:id => category.id, :style => "tile", :order => category.order) do
         xml.default_icons do
-          xml.icon_std category.icon.url(:small)
+          xml.icon_std "http://bivlspidev.invideous.com" + category.icon.url(:small)
         end
         xml.languages do
           xml.language(:id => "en") do
