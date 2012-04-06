@@ -1,4 +1,4 @@
--#- feed_ids.each do |feed_name, feed_id|
-  -#- url = make_URL(baseurl, service_name, feed_id, secret_key)
-  -#%a{:href => "#{url}"}#{feed_name}
-  -#%br/
+- feed_ids.each do |feed_name, feed_id|
+  - url = make_URL(baseurl, service_name, feed_id, secret_key)
+  %a{:href => "#{url}"}#{feed_name}
+  %br/
