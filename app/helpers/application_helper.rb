@@ -11,4 +11,8 @@ require 'digest/md5'
     timestring = timestamp.xmlschema
   end
 
+  def thumbnail(video_id)
+    VideoCustomAttribute.select('attribute_value').where('video_id =? && attribute_name =?', video_id, 'thumbnail').first.attribute_value
+  end
+
 end

@@ -8,6 +8,7 @@ xml.assets do
           xml.description asset.description
         end
       end
+      xml.icon_std thumbnail(asset.video_id)
       xml.asset_url(:downloadable => "false") do
         xml.text! asset.video.source_url
       end
