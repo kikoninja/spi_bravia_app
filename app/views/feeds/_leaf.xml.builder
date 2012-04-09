@@ -1,6 +1,9 @@
 xml.assets do
   feed.assets.each do |asset|
     xml.asset(:id => asset.content_id, :pay_content => asset.pay_content ) do
+      asset.categories.each do |category|
+        xml.in_category(:id => category.id)
+      end
       xml.type asset.asset_type
       xml.languages do
         xml.language(:id => "en") do
