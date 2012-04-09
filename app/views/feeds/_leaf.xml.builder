@@ -8,6 +8,9 @@ xml.assets do
           xml.description asset.description
         end
       end
+      xml.asset_url(:downloadable => "false") do
+        xml.text! asset.video.source_url
+      end
       xml.duration asset.duration
     end
   end
