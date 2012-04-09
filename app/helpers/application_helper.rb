@@ -15,4 +15,7 @@ require 'digest/md5'
     VideoCustomAttribute.select('attribute_value').where('video_id =? && attribute_name =?', video_id, 'thumbnail').first.attribute_value
   end
 
+  def rating(video_id)
+    VideoCustomAttribute.select('attribute_value').where('video_id =? && attribute_name =?', video_id, 'rating_pl').first.attribute_value
+  end
 end
