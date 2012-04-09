@@ -3,6 +3,7 @@ class Video < ActiveRecord::Base
 
   # Associations
   has_one :asset
+  has_many :video_custom_attributes
 
   # Scopes
   default_scope where('user_id =?', 5842)
