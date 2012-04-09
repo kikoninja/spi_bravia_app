@@ -4,6 +4,7 @@ User.delete_all
 Channel.delete_all
 Category.delete_all
 Feed.delete_all
+Asset.delete_all
 puts "- deleted old data"
 
 # Users
@@ -35,11 +36,11 @@ puts "- created feed: #{feed_leaf2.title}"
 feed_leaf3 = Feed.create!(:title => "2m_leaf1_3")
 puts "- created feed: #{feed_leaf3.title}"
 
+# Assets
+asset1 = Asset.create!(:title => "Asset #1", :description => "Description for asset #1", :feed => feed_leaf1, :content_id => "something", :duration => 7200, :pay_content => false, :asset_type => "video" )
+puts "- created asset: #{asset1.title}"
+asset2 = Asset.create!(:title => "Asset #2", :description => "Description for asset #2", :feed => feed_leaf1, :content_id => "something", :duration => 7200, :pay_content => false, :asset_type => "video" )
+puts "- created asset: #{asset2.title}"
+asset3 = Asset.create!(:title => "Asset #3", :description => "Description for asset #3", :feed => feed_leaf1, :content_id => "something", :duration => 7200, :pay_content => false, :asset_type => "video" )
+puts "- created asset: #{asset3.title}"
 
-# This file should contain all the record creation needed to seed the database with its default values.
-# The data can then be loaded with the rake db:seed (or created alongside the db with db:setup).
-#
-# Examples:
-#
-#   cities = City.create([{ name: 'Chicago' }, { name: 'Copenhagen' }])
-#   Mayor.create(name: 'Emanuel', city: cities.first)
