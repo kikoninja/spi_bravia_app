@@ -36,6 +36,8 @@ gem 'capistrano'
 gem 'carrierwave'
 gem 'rmagick'
 
+gem 'connection_ninja'
+
 group :development, :test do
   # RSpec
   gem 'rspec-rails'

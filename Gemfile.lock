@@ -59,6 +59,7 @@ GEM
       coffee-script-source
       execjs
     coffee-script-source (1.2.0)
+    connection_ninja (0.4.1)
     devise (1.4.8)
       bcrypt-ruby (~> 3.0)
       orm_adapter (~> 0.0.3)
@@ -190,6 +191,7 @@ DEPENDENCIES
   capistrano
   carrierwave
   coffee-rails (~> 3.2.1)
+  connection_ninja
   devise (= 1.4.8)
   haml-rails
   jquery-rails
