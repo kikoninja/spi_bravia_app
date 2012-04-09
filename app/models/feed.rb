@@ -1,3 +1,7 @@
 class Feed < ActiveRecord::Base
-  attr_accessible :title
+
+  # Associations
+  has_many :assets
+
+  attr_accessible :title, :assets
 end
