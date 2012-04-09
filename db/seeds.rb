@@ -5,6 +5,7 @@ Channel.delete_all
 Category.delete_all
 Feed.delete_all
 Asset.delete_all
+AssetCategorization.delete_all
 puts "- deleted old data"
 
 # Users
@@ -43,4 +44,15 @@ asset2 = Asset.create!(:title => "Asset #2", :description => "Description for as
 puts "- created asset: #{asset2.title}"
 asset3 = Asset.create!(:title => "Asset #3", :description => "Description for asset #3", :feed => feed_leaf1, :content_id => "something", :duration => 7200, :pay_content => false, :asset_type => "video" )
 puts "- created asset: #{asset3.title}"
+
+# Attach assets to categories
+asset1.categories << [category1, category2, category3]
+puts "- attached asset #{asset1.title} to category #{category1.title}"
+puts "- attached asset #{asset1.title} to category #{category2.title}"
+puts "- attached asset #{asset1.title} to category #{category3.title}"
+asset2.categories << [category2, category3]
+puts "- attached asset #{asset2.title} to category #{category2.title}"
+puts "- attached asset #{asset2.title} to category #{category3.title}"
+asset3.categories << [category3]
+puts "- attached asset #{asset3.title} to category #{category3.title}"
 
