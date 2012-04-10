@@ -29,6 +29,9 @@ puts "- created category: #{category2.title}"
 category3 = Category.create!(:title => "Category #3", :description => "Description for category #3",
                              :style => "tile", :order => 3, :channel => channel, :icon => File.open("db/seeds/resources/fightbox_86x36.png"))
 puts "- created category: #{category3.title}"
+category4 = Category.create!(:title => "Category #4", :description => "Description for category #4",
+                             :style => "tile", :order => 4, :channel => channel, :icon => File.open("db/seeds/resources/filmboxlive_86x36.png"))
+puts "- created category: #{category4.title}"
 
 # Feeds
 feed_branch = Feed.create!(:title => "branch")
@@ -41,11 +44,11 @@ feed_leaf3 = Feed.create!(:title => "2m_leaf1_3")
 puts "- created feed: #{feed_leaf3.title}"
 
 # Assets
-asset1 = Asset.create!(:title => "Asset #1", :description => "Description for asset #1", :feed => feed_leaf1, :content_id => "something", :duration => 7200, :pay_content => false, :asset_type => "video", :video_id => '1606950')
+asset1 = Asset.create!(:title => "Asset #1", :description => "Description for asset #1", :feed => feed_leaf1, :content_id => "something-1", :duration => 7200, :pay_content => false, :asset_type => "video", :video_id => '1606950')
 puts "- created asset: #{asset1.title}"
-asset2 = Asset.create!(:title => "Asset #2", :description => "Description for asset #2", :feed => feed_leaf1, :content_id => "something", :duration => 7200, :pay_content => false, :asset_type => "video", :video_id => '1606951')
+asset2 = Asset.create!(:title => "Asset #2", :description => "Description for asset #2", :feed => feed_leaf1, :content_id => "something-2", :duration => 7200, :pay_content => false, :asset_type => "video", :video_id => '1606951')
 puts "- created asset: #{asset2.title}"
-asset3 = Asset.create!(:title => "Asset #3", :description => "Description for asset #3", :feed => feed_leaf1, :content_id => "something", :duration => 7200, :pay_content => false, :asset_type => "video", :video_id => '1606952')
+asset3 = Asset.create!(:title => "Asset #3", :description => "Description for asset #3", :feed => feed_leaf1, :content_id => "something-3", :duration => 7200, :pay_content => false, :asset_type => "video", :video_id => '1606952')
 puts "- created asset: #{asset3.title}"
 
 # Attach assets to categories
