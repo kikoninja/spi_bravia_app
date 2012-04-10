@@ -22,8 +22,7 @@ xml.root_category(:id => "ROOTCAT_ID", :style => "tile") do
   channel.categories.each do |category|
     xml.category(:id => category.id, :style => "tile", :order => category.order) do
       xml.default_icons do
-        # xml.icon_std "http://bivlspidev.invideous.com#{category.icon.url(:small)}"
-        xml.icon_std "http://w4.invideous.com/demo/Invideous_for_SPI_Sony_ServiceDefinition_11.03.2012/icons_sony/86x36/docubox_86x36.png"
+        xml.icon_std "http://bivlspidev.invideous.com#{category.icon.url(:small)}"
       end
       xml.languages do
         xml.language(:id => "en") do
