@@ -16,7 +16,8 @@ xml.assets do
         end
       end
       xml.asset_url("#{asset.video.source_url}", :downloadable => "false")
-      xml.rating("#{rating(asset.video_id)}", :scheme => "urn:v-chip")
+      #xml.rating("#{rating(asset.video_id)}", :scheme => "urn:v-chip")
+      xml.rating("NR", :scheme => "urn:v-chip")
       xml.duration asset.duration
     end
   end
