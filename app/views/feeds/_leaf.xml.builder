@@ -15,12 +15,8 @@ xml.assets do
           xml.icon_std thumbnail(asset.video_id)
         end
       end
-      xml.asset_url(:downloadable => "false") do
-        xml.text! asset.video.source_url
-      end
-      xml.rating(:scheme => "urn:v-chip") do
-        xml.text! rating(asset.video_id)
-      end
+      xml.asset_url("#{asset.video.source_url}", :downloadable => "false")
+      xml.rating("#{rating(asset.video_id)}", :scheme => "urn:v-chip")
       xml.duration asset.duration
     end
   end
