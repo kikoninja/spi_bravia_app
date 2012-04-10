@@ -5,6 +5,9 @@ xml.assets do
         xml.in_category(:id => category.id)
       end
       xml.type asset.asset_type
+      xml.default_icons do
+        xml.icon_std thumbnail(asset.video_id)
+      end
       xml.languages do
         xml.language(:id => "en") do
           xml.title asset.title
