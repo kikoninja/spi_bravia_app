@@ -10,8 +10,10 @@ xml.assets do
       end
       xml.languages do
         xml.language(:id => "en") do
-          xml.title asset.title
-          xml.description asset.description
+          #xml.title asset.title
+          #xml.description asset.description
+          xml.title asset.video.title
+          xml.description asset.video.description
           xml.icon_std thumbnail(asset.video_id)
         end
       end
