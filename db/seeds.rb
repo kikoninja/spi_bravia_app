@@ -29,6 +29,9 @@ puts "- created category: #{category2.title}"
 category3 = Category.create!(:title => "Category #3", :description => "Description for category #3",
                              :style => "tile", :order => 3, :channel => channel, :icon => File.open("db/seeds/resources/fightbox_86x36.png"))
 puts "- created category: #{category3.title}"
+category4 = Category.create!(:title => "Category #4", :description => "Description for category #4",
+                             :style => "tile", :order => 4, :channel => channel, :icon => File.open("db/seeds/resources/filmboxlive_86x36.png"))
+puts "- created category: #{category4.title}"
 
 # Feeds
 feed_branch = Feed.create!(:title => "branch")
