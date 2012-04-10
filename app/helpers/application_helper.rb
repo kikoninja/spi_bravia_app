@@ -12,10 +12,14 @@ require 'digest/md5'
   end
 
   def thumbnail(video_id)
-    VideoCustomAttribute.select('attribute_value').where('video_id =? && attribute_name =?', video_id, 'thumbnail').first.attribute_value
+    VideoCustomAttribute.where('video_id =? && attribute_name =?', video_id, 'thumbnail').first.attribute_value
   end
 
   def rating(video_id)
-    VideoCustomAttribute.select('attribute_value').where('video_id =? && attribute_name =?', video_id, 'rating_pl').first.attribute_value
+    VideoCustomAttribute.where('video_id =? && attribute_name =?', video_id, 'rating_pl').first.attribute_value
+  end
+
+  def source_url(video_id)
+    VideoCustomAttribute.where('video_id =? && attribute_name =?', video_id, 'sony_source_url').first.attribute_value
   end
 end
