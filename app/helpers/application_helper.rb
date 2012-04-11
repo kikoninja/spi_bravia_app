@@ -25,7 +25,7 @@ require 'digest/md5'
       "PG-13"
     elsif rating == 17
       "R"
-    elsif rating > 17 && rating <=21
+    elsif rating > 17 && rating <= 21
       "NC-17"
     else
       "NR"
