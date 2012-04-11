@@ -6,7 +6,7 @@ xml.assets do
       end
       xml.type asset.asset_type
       xml.default_icons do
-        xml.icon_std thumbnail(asset.video_id)
+        xml.icon_std thumbnail(asset.video)
       end
       xml.languages do
         xml.language(:id => "en") do
@@ -14,11 +14,11 @@ xml.assets do
           #xml.description asset.description
           xml.title asset.video.title
           xml.description asset.video.description
-          xml.icon_std thumbnail(asset.video_id)
+          xml.icon_std thumbnail(asset.video)
         end
       end
-      xml.asset_url("#{source_url(asset.video_id)}", :downloadable => "false")
-      xml.rating("#{rating(asset.video_id)}", :scheme => "urn:v-chip")
+      xml.asset_url("#{source_url(asset.video)}", :downloadable => "false")
+      xml.rating("#{rating(asset.video)}", :scheme => "urn:v-chip")
       xml.duration asset.duration
     end
   end
