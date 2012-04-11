@@ -16,20 +16,7 @@ require 'digest/md5'
   end
 
   def rating(video)
-    rating = video.video_custom_attributes.where('attribute_name =?', 'rating_pl').first.attribute_value.to_i
-    if rating <= 9
-      "G"
-    elsif rating >= 10 && rating <= 12
-      "PG"
-    elsif rating > 12 && rating <= 16
-      "PG-13"
-    elsif rating == 17
-      "R"
-    elsif rating > 17 && rating <= 21
-      "NC-17"
-    else
-      "NR"
-    end
+    video.video_custom_attributes.where('attribute_name =?', 'rating_pl').first.attribute_value
   end
 
   def source_url(video)
