@@ -37,6 +37,7 @@ gem 'carrierwave'
 gem 'rmagick'
 
 gem 'connection_ninja'
+gem 'ancestry'
 
 group :development, :test do
   # RSpec
