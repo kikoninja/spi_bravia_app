@@ -4,22 +4,24 @@ xml.assets do
       asset.categories.each do |category|
         xml.in_category(:id => category.id)
       end
-      xml.type asset.asset_type
-      xml.default_icons do
-        xml.icon_std thumbnail(asset.video)
-      end
-      xml.languages do
-        xml.language(:id => "en") do
-          #xml.title asset.title
-          #xml.description asset.description
-          xml.title asset.video.title
-          xml.description asset.video.description
+      if asset.asset_type == "video"
+        xml.type asset.asset_type
+        xml.default_icons do
           xml.icon_std thumbnail(asset.video)
         end
+        xml.languages do
+          xml.language(:id => "en") do
+            #xml.title asset.title
+            #xml.description asset.description
+            xml.title asset.video.title
+            xml.description asset.video.description
+            xml.icon_std thumbnail(asset.video)
+          end
+        end
+        xml.asset_url("#{source_url(asset.video)}", :downloadable => "false")
+        xml.rating("#{rating(asset.video)}", :scheme => "urn:age")
+        xml.duration asset.duration
       end
-      xml.asset_url("#{source_url(asset.video)}", :downloadable => "false")
-      xml.rating("#{rating(asset.video)}", :scheme => "urn:age")
-      xml.duration asset.duration
     end
   end
 end
