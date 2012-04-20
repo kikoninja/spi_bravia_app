@@ -20,16 +20,16 @@ channel = Channel.create!(:title => "FilmBox PL", :description => "Description f
 puts "- created default channel: #{channel.title}"
 
 # Categories
-category1 = Category.create!(:title => "Category #1", :description => "Description for category #1",
+category1 = Category.create!(:title => "DOCUBOX", :description => "Description for category #1",
                              :style => "tile", :order => 1, :channel => channel, :icon => File.open("db/seeds/resources/docubox_86x36.png"))
 puts "- created category: #{category1.title}"
-category2 = Category.create!(:title => "Category #2", :description => "Description for category #2",
+category2 = Category.create!(:title => "FASHIONBOX", :description => "Description for category #2",
                              :style => "tile", :order => 2, :channel => channel, :icon => File.open("db/seeds/resources/fashionbox_86x36.png"))
 puts "- created category: #{category2.title}"
-category3 = Category.create!(:title => "Category #3", :description => "Description for category #3",
+category3 = Category.create!(:title => "FIGHTBOX", :description => "Description for category #3",
                              :style => "tile", :order => 3, :channel => channel, :icon => File.open("db/seeds/resources/fightbox_86x36.png"))
 puts "- created category: #{category3.title}"
-category4 = Category.create!(:title => "Category #4", :description => "Description for category #4",
+category4 = Category.create!(:title => "FILMBOX", :description => "Description for category #4",
                              :style => "tile", :order => 4, :channel => channel, :icon => File.open("db/seeds/resources/filmboxlive_86x36.png"))
 puts "- created category: #{category4.title}"
 
@@ -52,13 +52,13 @@ asset3 = Asset.create!(:title => "Asset #3", :description => "Description for as
 puts "- created asset: #{asset3.title}"
 
 # Attach assets to categories
-asset1.categories << [category1, category2, category3]
-puts "- attached asset #{asset1.title} to category #{category1.title}"
-puts "- attached asset #{asset1.title} to category #{category2.title}"
-puts "- attached asset #{asset1.title} to category #{category3.title}"
-asset2.categories << [category2, category3]
-puts "- attached asset #{asset2.title} to category #{category2.title}"
-puts "- attached asset #{asset2.title} to category #{category3.title}"
-asset3.categories << [category3]
-puts "- attached asset #{asset3.title} to category #{category3.title}"
+#asset1.categories << [category1, category2, category3]
+#puts "- attached asset #{asset1.title} to category #{category1.title}"
+#puts "- attached asset #{asset1.title} to category #{category2.title}"
+#puts "- attached asset #{asset1.title} to category #{category3.title}"
+#asset2.categories << [category2, category3]
+#puts "- attached asset #{asset2.title} to category #{category2.title}"
+#puts "- attached asset #{asset2.title} to category #{category3.title}"
+#asset3.categories << [category3]
+#puts "- attached asset #{asset3.title} to category #{category3.title}"
 

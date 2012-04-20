@@ -4,8 +4,7 @@ class Category < ActiveRecord::Base
 
   # Associations
   belongs_to :channel
-  has_many :asset_categorizations
-  has_many :assets, :through => :asset_categorizations
+  has_and_belongs_to_many :assets, :join_table => :asset_categorizations
 
   # Uploaders
   mount_uploader :icon, IconUploader

@@ -8,6 +8,7 @@ ActiveAdmin.register Asset do
       f.input :description
       f.input :pay_content, :as => :boolean
       f.input :asset_type, :label => "Asset Type", :as => :select, :collection => Asset::TYPES
+      f.input :categories, :label => "Category", :as => :check_boxes, :collection => Category.roots
     end
     f.buttons
   end
