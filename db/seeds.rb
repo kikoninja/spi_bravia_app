@@ -20,18 +20,24 @@ channel = Channel.create!(:title => "FilmBox PL", :description => "Description f
 puts "- created default channel: #{channel.title}"
 
 # Categories
-category1 = Category.create!(:title => "DOCUBOX", :description => "Description for category #1",
-                             :style => "tile", :order => 1, :channel => channel, :icon => File.open("db/seeds/resources/docubox_86x36.png"))
+category1 = Category.create!(:title => "Ultimate Package", :description => "Description for Ultimate Package",
+                             :style => "title", :order => 1, :channel => channel, :icon => File.open("db/seeds/resources/ultimate_package.png"))
 puts "- created category: #{category1.title}"
-category2 = Category.create!(:title => "FASHIONBOX", :description => "Description for category #2",
-                             :style => "tile", :order => 2, :channel => channel, :icon => File.open("db/seeds/resources/fashionbox_86x36.png"))
+category2 = Category.create!(:title => "Film Package", :description => "Description for Film Package",
+                             :style => "title", :order => 2, :channel => channel, :icon => File.open("db/seeds/resources/film_package.png"))
 puts "- created category: #{category2.title}"
-category3 = Category.create!(:title => "FIGHTBOX", :description => "Description for category #3",
-                             :style => "tile", :order => 3, :channel => channel, :icon => File.open("db/seeds/resources/fightbox_86x36.png"))
+category3 = Category.create!(:title => "Polish Package", :description => "Description for category Polish Package",
+                             :style => "title", :order => 3, :channel => channel, :icon => File.open("db/seeds/resources/polish_package.png"))
 puts "- created category: #{category3.title}"
-category4 = Category.create!(:title => "FILMBOX", :description => "Description for category #4",
-                             :style => "tile", :order => 4, :channel => channel, :icon => File.open("db/seeds/resources/filmboxlive_86x36.png"))
+category4 = Category.create!(:title => "Fight Box", :description => "Description for category Fight Box",
+                             :style => "title", :order => 4, :channel => channel, :icon => File.open("db/seeds/resources/fight_box.png"))
 puts "- created category: #{category4.title}"
+category5 = Category.create!(:title => "Docu Box", :description => "Description for category Docu Box",
+                             :style => "title", :order => 5, :channel => channel, :icon => File.open("db/seeds/resources/docu_box.png"))
+puts "- created category: #{category5.title}"
+category6 = Category.create!(:title => "Fashion Box", :description => "Description for category Fashion Box",
+                             :style => "title", :order => 6, :channel => channel, :icon => File.open("db/seeds/resources/fashion_box.png"))
+puts "- created category: #{category6.title}"
 
 # Feeds
 feed_branch = Feed.create!(:title => "branch")

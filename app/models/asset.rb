@@ -20,12 +20,15 @@ class Asset < ActiveRecord::Base
       genres = video.video_custom_attributes.where('attribute_name =?', 'genres_pl').first.attribute_value
       genres = genres.split(",")
       genres.each do |genre|
-        categories.where("ancestry !=?", "").each do |category|
-          if Category.where("title =? AND ancestry =?", genre.capitalize, category.ancestry).empty?
+        category_ids.each do |category_id|
+          category = Category.find(category_id)
+          subcategories = category.descendants
+          subcategory = subcategories.find_by_title(genre.capitalize)
+          if subcategory == nil
             asset_category = Category.new(:title => genre.capitalize, :description => "All #{genre} movies", :style => "title", :order => Category.last.order + 1, :icon => File.open("app/assets/images/#{genre}_icon.png"), :parent_id => category.id)
             asset_category.save
           else
-            asset_category = Category.where("title =? AND ancestry =?", genre.capitalize, category.ancestry).first
+            asset_category = subcategory
           end
           asset_categorization = AssetCategorization.new(:asset_id => id, :category_id => asset_category.id)
           asset_categorization.save
