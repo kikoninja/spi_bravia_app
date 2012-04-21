@@ -9,6 +9,10 @@ class Asset < ActiveRecord::Base
 
   attr_accessible :feed, :feed_id, :asset_type, :content_id, :description, :duration, :pay_content, :title, :video_id, :categories, :category_ids
 
+  # Validations
+  validates_presence_of :feed_id, :video_id, :asset_type, :categories
+  validates_uniqueness_of :video_id
+
   # Callbacks
   after_save :add_asset_categories
   after_save :update_title
