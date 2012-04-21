@@ -3,8 +3,6 @@ class CreateAssetCategorizations < ActiveRecord::Migration
     create_table :asset_categorizations, :id => false do |t|
       t.integer :asset_id
       t.integer :category_id
-
-      t.timestamps
     end
   end
 end

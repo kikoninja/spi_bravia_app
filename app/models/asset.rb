@@ -5,7 +5,7 @@ class Asset < ActiveRecord::Base
   # Associations
   belongs_to :feed
   belongs_to :video
-  has_and_belongs_to_many :categories, :join_table => :asset_categorizations
+  has_and_belongs_to_many :categories, :join_table => :asset_categorizations, :uniq => true
 
   attr_accessible :feed, :feed_id, :asset_type, :content_id, :description, :duration, :pay_content, :title, :video_id, :categories, :category_ids
 
@@ -21,20 +21,25 @@ class Asset < ActiveRecord::Base
   private
 
     def add_asset_categories
-      genres = video.video_custom_attributes.where('attribute_name =?', 'genres_pl').first.attribute_value
-      genres = genres.split(",")
-      genres.each do |genre|
-        category_ids.each do |category_id|
-          category = Category.find(category_id)
-          subcategories = category.descendants
-          subcategory = subcategories.find_by_title(genre.capitalize)
-          if subcategory == nil
-            asset_category = Category.new(:channel_id => feed.channel_id, :title => genre.capitalize, :description => "All #{genre} movies", :style => "title", :order => Category.last.order + 1, :icon => File.open("app/assets/images/#{genre}_icon.png"), :parent_id => category.id)
-            asset_category.save
-          else
-            asset_category = subcategory
+      genres = video.video_custom_attributes.where('attribute_name =?', 'genres_pl').first
+      if genres != nil
+        genres = genres.attribute_value
+        genres = genres.split(",")
+        genres.each do |genre|
+          categories.roots.each do |category|
+            asset_categories = category.descendants
+            asset_category = asset_categories.find_by_title(genre.capitalize)
+            if asset_category.nil?
+              asset_category = Category.new(:channel_id => feed.channel_id, :title => genre.capitalize, :description => "All #{genre} movies", :style => "tile", :order => Category.last.order + 1, :icon => File.open("app/assets/images/#{genre.downcase}_icon.png"), :parent_id => category.id)
+              asset_category.save
+            end
+            asset_categorization = AssetCategorization.new(:asset_id => id, :category_id => asset_category.id)
+            asset_categorization.save
           end
-          asset_categorization = AssetCategorization.new(:asset_id => id, :category_id => asset_category.id)
+        end
+      else
+        categories.roots.each do |category|
+          asset_categorization = AssetCategorization.new(:asset_id => id, :category_id => category.id)
           asset_categorization.save
         end
       end
