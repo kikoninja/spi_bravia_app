@@ -70,6 +70,7 @@ ActiveRecord::Schema.define(:version => 20120412082133) do
   end
 
   create_table "feeds", :force => true do |t|
+    t.integer  "channel_id"
     t.string   "title"
     t.datetime "created_at", :null => false
     t.datetime "updated_at", :null => false

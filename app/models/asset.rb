@@ -10,7 +10,7 @@ class Asset < ActiveRecord::Base
   attr_accessible :feed, :feed_id, :asset_type, :content_id, :description, :duration, :pay_content, :title, :video_id, :categories, :category_ids
 
   # Validations
-  validates_presence_of :feed_id, :video_id, :asset_type, :categories
+  validates_presence_of :feed_id, :video_id, :asset_type
   validates_uniqueness_of :video_id
 
   # Callbacks
@@ -29,7 +29,7 @@ class Asset < ActiveRecord::Base
           subcategories = category.descendants
           subcategory = subcategories.find_by_title(genre.capitalize)
           if subcategory == nil
-            asset_category = Category.new(:title => genre.capitalize, :description => "All #{genre} movies", :style => "title", :order => Category.last.order + 1, :icon => File.open("app/assets/images/#{genre}_icon.png"), :parent_id => category.id)
+            asset_category = Category.new(:channel_id => feed.channel_id, :title => genre.capitalize, :description => "All #{genre} movies", :style => "title", :order => Category.last.order + 1, :icon => File.open("app/assets/images/#{genre}_icon.png"), :parent_id => category.id)
             asset_category.save
           else
             asset_category = subcategory

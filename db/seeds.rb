@@ -40,13 +40,13 @@ category6 = Category.create!(:title => "Fashion Box", :description => "Descripti
 puts "- created category: #{category6.title}"
 
 # Feeds
-feed_branch = Feed.create!(:title => "branch")
+feed_branch = Feed.create!(:channel_id => 1, :title => "branch")
 puts "- created feed: #{feed_branch.title}"
-feed_leaf1 = Feed.create!(:title => "2m_leaf1_1")
+feed_leaf1 = Feed.create!(:channel_id => 1, :title => "2m_leaf1_1")
 puts "- created feed: #{feed_leaf1.title}"
-feed_leaf2 = Feed.create!(:title => "2m_leaf1_2")
+feed_leaf2 = Feed.create!(:channel_id => 1, :title => "2m_leaf1_2")
 puts "- created feed: #{feed_leaf2.title}"
-feed_leaf3 = Feed.create!(:title => "2m_leaf1_3")
+feed_leaf3 = Feed.create!(:channel_id => 1, :title => "2m_leaf1_3")
 puts "- created feed: #{feed_leaf3.title}"
 
 # Assets

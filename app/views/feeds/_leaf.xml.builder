@@ -1,8 +1,10 @@
 xml.assets do
   feed.assets.each do |asset|
     xml.asset(:id => asset.content_id, :pay_content => asset.pay_content ) do
-      asset.categories.each do |category|
-        xml.in_category(:id => category.id)
+      asset.categories.roots.each do |category|
+        category.descendants.each do |asset_category|
+          xml.in_category(:id => asset_category.id)
+        end
       end
       if asset.asset_type == "video"
         xml.type asset.asset_type
