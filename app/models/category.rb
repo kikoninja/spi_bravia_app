@@ -1,13 +1,16 @@
 class Category < ActiveRecord::Base
 
+  has_ancestry
+
+  STYLES = [ "tile", "row"]
+
   # Associations
   belongs_to :channel
-  has_many :asset_categorizations
-  has_many :assets, :through => :asset_categorizations
+  has_and_belongs_to_many :assets, :join_table => :asset_categorizations, :uniq => true
 
   # Uploaders
   mount_uploader :icon, IconUploader
 
   # Acessibles
-  attr_accessible :title, :description, :style, :order, :channel, :channel_id, :icon, :assets
+  attr_accessible :title, :description, :style, :order, :channel, :channel_id, :icon, :assets, :ancestry, :parent_id
 end
