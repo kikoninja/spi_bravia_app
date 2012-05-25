@@ -31,6 +31,7 @@ gem 'activeadmin'
 
 # Deploy with Capistrano
 gem 'capistrano'
+gem 'rvm-capistrano'
 
 # File upload
 gem 'carrierwave'
