@@ -16,7 +16,12 @@ require 'digest/md5'
   end
 
   def rating(video)
-    video.video_custom_attributes.where('attribute_name =?', 'rating_pl').first.attribute_value
+    rating = video.video_custom_attributes.where('attribute_name =?', 'rating_pl').first
+    if rating
+      rating.attribute_value
+    else
+      ""
+    end
   end
 
   def source_url(video)

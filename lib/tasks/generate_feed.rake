@@ -33,6 +33,19 @@ namespace :feed do
       )
       puts "Created category #{category.title}"
 
+      # Generate assets from videos and attach them to the category
+      package.videos.each_with_index do |video, index|
+        asset = Asset.create!(
+          :title => video.title,
+          :feed => feed_leaf1,
+          :content_id => "asset-@{index}",
+          :pay_content => true,
+          :asset_type => "video",
+          :video_id => video.id
+        )
+
+        puts "- created asset for video #{video.title}"
+      end
 
     end
   end

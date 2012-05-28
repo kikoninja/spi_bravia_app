@@ -11,7 +11,7 @@ class Asset < ActiveRecord::Base
 
   # Validations
   validates_presence_of :feed_id, :video_id, :asset_type
-  validates_uniqueness_of :video_id
+  # validates_uniqueness_of :video_id
 
   # Callbacks
   after_save :add_asset_categories
