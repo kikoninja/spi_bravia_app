@@ -4,5 +4,5 @@ class Feed < ActiveRecord::Base
   has_many :assets
   belongs_to :channel
 
-  attr_accessible :title, :channel_id, :assets
+  attr_accessible :title, :channel, :channel_id, :assets
 end
