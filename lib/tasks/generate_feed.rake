@@ -41,10 +41,13 @@ namespace :feed do
           :content_id => "#{package.id}-asset-#{video.id}",
           :pay_content => true,
           :asset_type => "video",
-          :video_id => video.id
+          :video_id => video.id,
+          :duration => 0
         )
 
         puts "- created asset for video #{video.title} with asset ID: #{asset.content_id}"
+
+        AssetCategorization.create!(:asset_id => asset.id, :category_id => category.id)
       end
 
     end
