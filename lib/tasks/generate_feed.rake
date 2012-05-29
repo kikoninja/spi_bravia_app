@@ -38,13 +38,13 @@ namespace :feed do
         asset = Asset.create!(
           :title => video.title,
           :feed => feed_leaf1,
-          :content_id => "asset-@{index}",
+          :content_id => "#{package.id}-asset-#{video.id}",
           :pay_content => true,
           :asset_type => "video",
           :video_id => video.id
         )
 
-        puts "- created asset for video #{video.title}"
+        puts "- created asset for video #{video.title} with asset ID: #{asset.content_id}"
       end
 
     end
