@@ -42,7 +42,7 @@ namespace :feed do
           :pay_content => true,
           :asset_type => "video",
           :video_id => video.id,
-          :duration => 0
+          :duration => 1
         )
 
         puts "- created asset for video #{video.title} with asset ID: #{asset.content_id}"
