@@ -12,5 +12,5 @@ class Category < ActiveRecord::Base
   mount_uploader :icon, IconUploader
 
   # Acessibles
-  attr_accessible :title, :description, :style, :order, :channel, :channel_id, :icon, :assets, :ancestry, :parent_id
+  attr_accessible :title, :description, :style, :order, :channel, :channel_id, :icon, :remote_icon_url, :assets, :ancestry, :parent_id
 end

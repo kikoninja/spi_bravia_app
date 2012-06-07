@@ -29,6 +29,7 @@ namespace :feed do
         :title => package.name,
         :description => package.description,
         :style => "tile",
+        :remote_icon_url => package.image_url,
         :channel => channel
       )
       puts "Created category #{category.title}"
