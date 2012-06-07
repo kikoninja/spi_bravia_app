@@ -20,7 +20,7 @@ require 'digest/md5'
     if rating
       rating.attribute_value
     else
-      ""
+      "15"
     end
   end
 

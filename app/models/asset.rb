@@ -55,6 +55,9 @@ class Asset < ActiveRecord::Base
       if description.blank? && video.description.present?
         update_attribute(:description, video.description)
       end
+      if description.blank?
+        update_attribute(:description, "Description missing")
+      end
     end
 
 end
