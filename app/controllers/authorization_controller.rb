@@ -1,7 +1,11 @@
 class AuthorizationController < ApplicationController
 
+  respond_to :xml
+
   def sts_get_authorization
-    render text => "ok"
+    @asset_id = params[:id]
+
+    render content_type: 'application/xml'
   end
 
 end

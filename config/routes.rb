@@ -10,7 +10,7 @@ SPIBraviaApp::Application.routes.draw do
   end
 
   # Matches
-  match "/bivldev/sts_get_authorization/STSgetAuthorization", controller: "authorization", action: "sts_get_authorization"
+  match "/bivldev/sts_get_authorization/STSgetAuthorization", controller: "authorization", action: "sts_get_authorization", format: "xml"
 
   # Root
   root :to => 'admin/dashboard#index'
