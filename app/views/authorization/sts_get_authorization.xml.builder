@@ -7,13 +7,7 @@ xml.response do
 
   xml.sony do
     xml.product(id: "FilmBox") do
-      xml.authorization(result: "success") do
-        xml.asset(id: @asset_id) do
-          xml.speed_check do
-            xml.source(url: "http://")
-          end
-        end
-      end
+      xml << render( partial: "fail")
     end
   end
 end
