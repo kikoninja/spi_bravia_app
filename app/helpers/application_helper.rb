@@ -12,7 +12,7 @@ require 'digest/md5'
   end
 
   def thumbnail(video)
-    video.video_custom_attributes.where('attribute_name =?', 'thumbnail').first.attribute_value
+    video.video_custom_attributes.where('attribute_name =?', 'thumbnail').first.try(:attribute_value)
   end
 
   def rating(video)
