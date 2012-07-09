@@ -26,7 +26,7 @@ require 'digest/md5'
 
   def source_url(video)
     #VideoCustomAttribute.where('video_id =? && attribute_name =?', video_id, 'sony_source_url').first.attribute_value
-    guid = video.video_custom_attributes.where('attribute_name =?', 'guid').first.attribute_value
+    guid = video.video_custom_attributes.where('attribute_name =?', 'guid').first.try(:attribute_value)
     url = "http://once.unicornmedia.com/now/stitched/mp4/9a48dc3b-f49b-4d69-88e2-8bff2784d44b/ff3177e5-169a-495e-a8c6-47b145470cdd/3a41c6e4-93a3-4108-8995-64ffca7b9106/#{guid}/content.mp4"
   end
 
