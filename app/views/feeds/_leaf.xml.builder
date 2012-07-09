@@ -10,7 +10,7 @@ xml.assets do
           end
         end
       end
-      if asset.asset_type == "video"
+      if asset.asset_type == "video" && asset.video
         xml.type asset.asset_type
         xml.default_icons do
           xml.icon_std thumbnail(asset.video)
