@@ -8,4 +8,8 @@ class AuthorizationController < ApplicationController
     render content_type: 'application/xml'
   end
 
+  def ssm_get_userdata
+    render content_type: 'application/xml'
+  end
+
 end
