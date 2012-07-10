@@ -26,7 +26,7 @@ class IconUploader < CarrierWave::Uploader::Base
   # process :scale => [200, 300]
   #
   version :small do
-    process :resize_to_fill => [86, 36]
+    process :resize_to_fill => [128, 96]
   end
 
   # Create different versions of your uploaded files:
