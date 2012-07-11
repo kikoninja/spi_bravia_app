@@ -6,7 +6,7 @@ xml.response do
   end
 
   xml.sony do
-    xml.product(id: "FilmBox") do
+    xml.product(id: "CALLISTO") do
       xml.user_token "nil"
       xml.suit "nil"
     end
