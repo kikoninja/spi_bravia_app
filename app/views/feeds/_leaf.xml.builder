@@ -27,6 +27,13 @@ xml.assets do
         xml.asset_url("#{source_url(asset.video)}", :downloadable => "false")
         xml.rating("#{rating(asset.video)}", :scheme => "urn:age")
         xml.duration asset.duration
+        if asset.video.live == "1"
+          xml.stream_type "HTTPLS"
+          xml.metafile_type "m3u8"
+          xml.container_type "MPEG2TS"
+          xml.video_type "MPEG2"
+          xml.audio_type "AAC-LC"
+        end
       end
     end
   end
