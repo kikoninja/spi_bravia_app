@@ -26,7 +26,7 @@ xml.assets do
         end
         xml.asset_url("#{source_url(asset.video)}", :downloadable => "false")
         xml.rating("#{rating(asset.video)}", :scheme => "urn:age")
-        xml.duration
+        xml.duration asset.duration
       end
     end
   end
