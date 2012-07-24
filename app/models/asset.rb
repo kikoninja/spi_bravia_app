@@ -10,7 +10,7 @@ class Asset < ActiveRecord::Base
   attr_accessible :feed, :feed_id, :asset_type, :content_id, :description, :duration, :pay_content, :title, :video_id, :categories, :category_ids
 
   # Validations
-  validates_presence_of :feed_id, :video_id, :asset_type
+  validates_presence_of :feed_id, :asset_type # video_id
   # validates_uniqueness_of :video_id
 
   # Callbacks
@@ -21,7 +21,7 @@ class Asset < ActiveRecord::Base
   private
 
     def add_asset_categories
-      genres = video.video_custom_attributes.where('attribute_name =?', 'genres_pl').first
+      genres = video.video_custom_attributes.where('attribute_name =?', 'genres_pl').first if video.present?
       if genres != nil
         genres = genres.attribute_value
         genres = genres.split(",")
@@ -52,7 +52,7 @@ class Asset < ActiveRecord::Base
     end
 
     def update_description
-      if description.blank? && video.description.present?
+      if description.blank? && video.present? && video.description.present?
         update_attribute(:description, video.description)
       end
       if description.blank?

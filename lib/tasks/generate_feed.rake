@@ -43,7 +43,7 @@ namespace :feed do
           :pay_content => true,
           :asset_type => "video",
           :video_id => video.id,
-          :duration => 1
+          :duration => 200
         )
 
         puts "- created asset for video #{video.title} with asset ID: #{asset.content_id}"
@@ -52,5 +52,21 @@ namespace :feed do
       end
 
     end
+
+    puts "Generating manual feeds for HLS"
+    # Kinopolska PL
+    category = Package.find_by_name("KinoPolska Live Package")
+    asset = Asset.create!(
+      :title => "KinoPolska Live Package",
+      :feed => feed_leaf2,
+      :content_id => "hls-asset-01",
+      :pay_content => "true",
+      :asset_type => "video",
+      :duration => 200
+    )
+    puts "- created asset for HLS link for #{asset.title} with asset ID: #{asset.content_id}"
+
+    AssetCategorization.create!(:asset_id => asset.id, :category_id => category.id)
+
   end
 end
