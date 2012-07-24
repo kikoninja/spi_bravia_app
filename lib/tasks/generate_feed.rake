@@ -72,10 +72,27 @@ namespace :feed do
 
       puts "Generating manual feeds for HLS"
       hls_assets = []
+
+      base_uri = "http://bivlspidev.invideous.com/images/logos/"
       
       # Define all the hls assets
-      kinopolska_asset = HlsAsset.new("01", "KinoPolska Live Package", "KinoPolska Live Package", "http://bivlspidev.invideous.com/images/logos/kinopolska.png", "http://spiinternational-i.akamaihd.net/hls/live/204304/KINOPOLSKA_PL_HLS/once1200.m3u8")
+      kinopolska_asset = HlsAsset.new("01", "KinoPolska Live Package", "KinoPolska Live Package", "kinopolska.png", "http://spiinternational-i.akamaihd.net/hls/live/204304/KINOPOLSKA_PL_HLS/once1200.m3u8")
       hls_assets << kinopolska_asset
+
+      docubox_asset = HlsAsset.new("02", "DocuBox Live Package", "DocuBox Live Package", "#{base_uri}docubox.png", "http://spiinternational-i.akamaihd.net/hls/live/204306/DOCUBOXHD_MT_HLS/once1200.m3u8")
+      hls_assets << docubox_asset
+
+      fashionbox_asset = HlsAsset.new("03", "FashionBox Live Package", "FashionBox Live Package", "#{base_uri}fashionbox.png", "http://spiinternational-i.akamaihd.net/hls/live/204307/FASHIONBOXHD_MT_HLS/once1200.m3u8")
+      hls_assets << fashionbox_asset
+
+      filmbox_asset = HlsAsset.new("04", "FilmPackage", "FilmBox", "#{base_uri}filmbox.png", "http://spiinternational-i.akamaihd.net/hls/live/204302/FILMBOXBASIC_PL_HLS/once1200.m3u8")
+      hls_assets << filmbox_asset
+
+      filmbox_prem_asset = HlsAsset.new("05", "UltimatePackage", "FilmBox Premiere", "#{base_uri}filmbox_prem.png", "http://spiinternational-i.akamaihd.net/hls/live/204303/FILMBOXEXTRA_PL_HLS/once1200.m3u8")
+      hls_assets << filmbox_prem_asset
+
+      fightbox_asset = HlsAsset.new("06", "FightBox Live Package", "FightBox Live Package", "#{base_uri}fightbox.png", "http://spiinternational-i.akamaihd.net/hls/live/204308/FIGHTBOXHD_MT_HLS/once1200.m3u8")
+      hls_assets << fightbox_asset
 
       hls_assets.each do |hls_asset|
         category = Category.find_by_title(hls_asset.category_title)
