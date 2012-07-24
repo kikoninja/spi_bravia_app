@@ -1,72 +1,123 @@
 namespace :feed do
-  desc "Read the database and generate the feed"
-  task :generate => :environment do
-    # Delete the previous data
-    Category.delete_all
-    puts "Deleted old categories..."
-    Feed.delete_all
-    puts "Deleted old feeds..."
-    Asset.delete_all
-    puts "Deleted old assets..."
-    AssetCategorization.delete_all
-    puts "Deleted old categorizations..."
-
-    channel = Channel.first
-
-    # Generate the feeds
-    feed_branch = Feed.create!(:channel => channel, :title => "branch")
-    puts "- created feed: #{feed_branch.title}"
-    feed_leaf1 = Feed.create!(:channel => channel, :title => "2m_leaf1_1")
-    puts "- created feed: #{feed_leaf1.title}"
-    feed_leaf2 = Feed.create!(:channel => channel, :title => "2m_leaf1_2")
-    puts "- created feed: #{feed_leaf2.title}"
-    feed_leaf3 = Feed.create!(:channel => channel, :title => "2m_leaf1_3")
-    puts "- created feed: #{feed_leaf3.title}"
-
-    Package.all.each do |package|
-      # Generating the main category
-      category = Category.create!(
-        :title => package.name,
-        :description => package.description,
-        :style => "tile",
-        :remote_icon_url => package.image_url,
-        :channel => channel
-      )
-      puts "Created category #{category.title}"
-
-      # Generate assets from videos and attach them to the category
-      package.videos.each_with_index do |video, index|
-        asset = Asset.create!(
-          :title => video.title,
-          :feed => feed_leaf1,
-          :content_id => "#{package.id}-asset-#{video.id}",
-          :pay_content => true,
-          :asset_type => "video",
-          :video_id => video.id,
-          :duration => 200
-        )
-
-        puts "- created asset for video #{video.title} with asset ID: #{asset.content_id}"
-
-        AssetCategorization.create!(:asset_id => asset.id, :category_id => category.id)
-      end
-
+  namespace :generate do
+    
+    desc "Generate all feeds from the database"
+    task :all => :environment do
+      # TODO: Invoke other tasks here
     end
 
-    puts "Generating manual feeds for HLS"
-    # Kinopolska PL
-    category = Package.find_by_name("KinoPolska Live Package")
-    asset = Asset.create!(
-      :title => "KinoPolska Live Package",
-      :feed => feed_leaf2,
-      :content_id => "hls-asset-01",
-      :pay_content => "true",
-      :asset_type => "video",
-      :duration => 200
-    )
-    puts "- created asset for HLS link for #{asset.title} with asset ID: #{asset.content_id}"
+    desc "Generate feeds from the videos in the database"
+    task :video => :environment do
+      # Delete the previous data
+      Category.delete_all
+      puts "Deleted old categories..."
+      Feed.delete_all
+      puts "Deleted old feeds..."
+      Asset.delete_all
+      puts "Deleted old assets..."
+      AssetCategorization.delete_all
+      puts "Deleted old categorizations..."
 
-    AssetCategorization.create!(:asset_id => asset.id, :category_id => category.id)
+      channel = Channel.first
 
+      # Generate the feeds
+      feed_branch = Feed.create!(:channel => channel, :title => "branch")
+      puts "- created feed: #{feed_branch.title}"
+      feed_leaf1 = Feed.create!(:channel => channel, :title => "2m_leaf1_1")
+      puts "- created feed: #{feed_leaf1.title}"
+
+      feed_leaf3 = Feed.create!(:channel => channel, :title => "2m_leaf1_3")
+      puts "- created feed: #{feed_leaf3.title}"
+
+      Package.all.each do |package|
+        # Generating the main category
+        category = Category.create!(
+          :title => package.name,
+          :description => package.description,
+          :style => "tile",
+          :remote_icon_url => package.image_url,
+          :channel => channel
+        )
+        puts "Created category #{category.title}"
+
+        # Generate assets from videos and attach them to the category
+        package.videos.each_with_index do |video, index|
+          asset = Asset.create!(
+            :title => video.title,
+            :description => video.description,
+            :feed => feed_leaf1,
+            :content_id => "#{package.id}-asset-#{video.id}",
+            :pay_content => true,
+            :asset_type => "video",
+            :video_id => video.id,
+            :duration => 200,
+            :thumbnail_url => thumbnail(video),
+            :live => check_live(video),
+            :source_url => source_url(video),
+            :rating => rating(video)
+          )
+
+          puts "- created asset for video #{video.title} with asset ID: #{asset.content_id}"
+
+          AssetCategorization.create!(:asset_id => asset.id, :category_id => category.id)
+        end
+      end
+    end
+
+    desc "Generate feeds from the HLS sources"
+    task :hls => :environment do
+      channel = Channel.first
+      feed_leaf2 = Feed.create!(:channel => channel, :title => "2m_leaf1_2")
+      puts "- created feed: #{feed_leaf2.title}"
+
+      puts "Generating manual feeds for HLS"
+      # Kinopolska PL
+      category = Package.find_by_name("KinoPolska Live Package")
+      asset = Asset.create!(
+        :title => "KinoPolska Live Package",
+        :feed => feed_leaf2,
+        :content_id => "hls-asset-01",
+        :pay_content => "true",
+        :asset_type => "video",
+        :duration => 200,
+        :thumbnail_url => "http://bivlspidev.invideous.com/images/missing-icon.png",
+        :live => true,
+        :source_url => "http://spiinternational-i.akamaihd.net/hls/live/204304/KINOPOLSKA_PL_HLS/once1200.m3u8",
+        :rating => "15" 
+      )
+      puts "- created asset for HLS link for #{asset.title} with asset ID: #{asset.content_id}"
+
+      AssetCategorization.create!(:asset_id => asset.id, :category_id => category.id)
+    end
+  end
+
+end
+
+def check_live(video)
+  return true if video.live == "1"
+end
+
+def thumbnail(video)
+  image_url = video.video_custom_attributes.where('attribute_name =?', 'thumbnail').first.try(:attribute_value)
+  if image_url.blank?
+    return "http://bivlspidev.invideous.com/images/missing-icon.png"
+  else
+    return image_url
   end
 end
+
+def rating(video)
+  rating = video.video_custom_attributes.where('attribute_name =?', 'rating_pl').first
+  if rating
+    rating.attribute_value
+  else
+    "15"
+  end
+end
+
+def source_url(video)
+  #VideoCustomAttribute.where('video_id =? && attribute_name =?', video_id, 'sony_source_url').first.attribute_value
+  guid = video.video_custom_attributes.where('attribute_name =?', 'guid').first.try(:attribute_value)
+  url = "http://once.unicornmedia.com/now/stitched/mp4/9a48dc3b-f49b-4d69-88e2-8bff2784d44b/ff3177e5-169a-495e-a8c6-47b145470cdd/3a41c6e4-93a3-4108-8995-64ffca7b9106/#{guid}/content.mp4"
+end
+

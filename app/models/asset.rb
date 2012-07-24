@@ -7,7 +7,7 @@ class Asset < ActiveRecord::Base
   belongs_to :video
   has_and_belongs_to_many :categories, :join_table => :asset_categorizations, :uniq => true
 
-  attr_accessible :feed, :feed_id, :asset_type, :content_id, :description, :duration, :pay_content, :title, :video_id, :categories, :category_ids
+  attr_accessible :feed, :feed_id, :asset_type, :content_id, :description, :duration, :pay_content, :title, :video_id, :categories, :category_ids, :thumbnail_url, :live, :source_url, :rating
 
   # Validations
   validates_presence_of :feed_id, :asset_type # video_id
