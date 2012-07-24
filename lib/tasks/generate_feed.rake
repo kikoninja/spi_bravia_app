@@ -71,25 +71,49 @@ namespace :feed do
       puts "- created feed: #{feed_leaf2.title}"
 
       puts "Generating manual feeds for HLS"
-      # Kinopolska PL
-      category = Package.find_by_name("KinoPolska Live Package")
-      asset = Asset.create!(
-        :title => "KinoPolska Live Package",
-        :feed => feed_leaf2,
-        :content_id => "hls-asset-01",
-        :pay_content => "true",
-        :asset_type => "video",
-        :duration => 200,
-        :thumbnail_url => "http://bivlspidev.invideous.com/images/missing-icon.png",
-        :live => true,
-        :source_url => "http://spiinternational-i.akamaihd.net/hls/live/204304/KINOPOLSKA_PL_HLS/once1200.m3u8",
-        :rating => "15" 
-      )
-      puts "- created asset for HLS link for #{asset.title} with asset ID: #{asset.content_id}"
+      hls_assets = []
+      
+      # Define all the hls assets
+      kinopolska_asset = HlsAsset.new("01", "KinoPolska Live Package", "KinoPolska Live Package", "http://bivlspidev.invideous.com/images/logos/kinopolska.png", "http://spiinternational-i.akamaihd.net/hls/live/204304/KINOPOLSKA_PL_HLS/once1200.m3u8")
+      hls_assets << kinopolska_asset
 
-      AssetCategorization.create!(:asset_id => asset.id, :category_id => category.id)
-    end
+      hls_assets.each do |hls_asset|
+        category = Category.find_by_title(hls_asset.category_title)
+
+        asset = Asset.create!(
+          :title => hls_asset.asset_title,
+          :feed => feed_leaf2,
+          :content_id => "hls-asset-#{hls_asset.id}",
+          :pay_content => "true",
+          :asset_type => "video",
+          :duration => 200,
+          :thumbnail_url => hls_asset.thumbnail_url,
+          :live => true,
+          :source_url => hls_asset.source_url,
+          :rating => "15" 
+        )
+        puts "- created asset for HLS link for #{asset.title} with asset ID: #{asset.content_id}"
+
+        AssetCategorization.create!(:asset_id => asset.id, :category_id => category.id)
+      end
+
   end
+
+end
+
+class HlsAsset
+
+  attr_accessor :id, :category_title, :asset_title, :thumbnail_url, :source_url
+
+  def initialize(id, category_title, asset_title, thumbnail_url, source_url)
+    @id = id
+    @category_title = category_title
+    @asset_title = asset_title
+    @thumbnail_url = thumbnail_url
+    @source_url = source_url
+  end
+
+end
 
 end
 
