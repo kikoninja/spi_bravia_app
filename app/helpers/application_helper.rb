@@ -14,7 +14,7 @@ require 'digest/md5'
   def thumbnail(video)
     image_url = video.video_custom_attributes.where('attribute_name =?', 'thumbnail').first.try(:attribute_value)
     if image_url.blank?
-      return "http://bivlspidev.invideous.com/images/missing_icon.png"
+      return "http://bivlspidev.invideous.com/images/missing-icon.png"
     else
       return image_url
     end
