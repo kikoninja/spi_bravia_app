@@ -40,6 +40,19 @@ namespace :feed do
         )
         puts "Created category #{category.title}"
 
+        # Generate the genre subcategories
+        ["Drama", "Comedy", "Romance", "Action", "Horror", "Sci-Fi", "Family", "Animation", "Kids"].each do |genre|
+          subcategory = Category.create!(
+            title: genre,
+            description: "",
+            style: "tile",
+            remote_icon_url: "",
+            parent: category,
+            channel: channel
+          )
+        end
+        puts "- created subcategory #{subcategory.title}"
+
         # Generate assets from videos and attach them to the category
         package.videos.each_with_index do |video, index|
           asset = Asset.create!(
