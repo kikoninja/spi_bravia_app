@@ -50,8 +50,9 @@ namespace :feed do
             parent: category,
             channel: channel
           )
+
+          puts "- created subcategory #{subcategory.title}"
         end
-        puts "- created subcategory #{subcategory.title}"
 
         # Generate assets from videos and attach them to the category
         package.videos.each_with_index do |video, index|
