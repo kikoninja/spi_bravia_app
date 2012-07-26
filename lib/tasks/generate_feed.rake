@@ -44,7 +44,7 @@ namespace :feed do
         ["Drama", "Comedy", "Romance", "Action", "Horror", "Sci-Fi", "Family", "Animation", "Kids"].each do |genre|
           subcategory = Category.create!(
             title: genre,
-            description: "",
+            description: "Insert genre description here",
             style: "tile",
             remote_icon_url: "",
             parent: category,
