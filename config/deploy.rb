@@ -5,6 +5,11 @@ set :rvm_type, :user
 # Bundler support
 require 'bundler/capistrano'
 
+# Stages
+require 'capistrano/ext/multistage'
+set :stages, %w(staging production)
+set :default_stage, 'staging'
+
 set :application, "spi_bravia_app"
 set :repository,  "ssh://gituser@gateway.invideous.com/storage/disk1/gituser/repositories/spi_bravia_app.git"
 
@@ -13,11 +18,7 @@ set :scm, :git
 set :deploy_to, "/home/rails/apps/#{application}"
 
 set :user, "rails"
-set :domain, "vmruby.invideous.local"
 set :use_sudo, false
-
-server domain, :app, :web
-role :db, domain, :primary => true
 
 default_run_options[:pty] = true
 
