@@ -2,12 +2,12 @@ xml.instruct!
 xml.response do
   xml.header(version: '01') do
     xml.command "STSgetAuthorization"
-    xml.code 0
+    xml.code -2027
   end
 
   xml.sony do
     xml.product(id: "CALLISTO") do
-      xml << render( partial: "success")
+      xml << render( partial: "fail")
     end
   end
 end
