@@ -15,6 +15,14 @@ group :assets do
   # See https://github.com/sstephenson/execjs#readme for more supported runtimes
   gem 'therubyracer', :platform => :ruby
 
+  gem 'activeadmin'
+
+  gem 'compass-rails'
+  gem 'compass-h5bp'
+
+  gem 'sass'
+  gem "zurb-foundation", "~> 3.0.6"
+
   gem 'uglifier', '>= 1.0.3'
 end
 
@@ -22,6 +30,9 @@ gem 'jquery-rails'
 
 # Support for haml template generators
 gem 'haml-rails'
+
+# HTML5 generator
+gem 'html5-rails'
 
 # Authentication
 gem 'devise', '1.4.8'
