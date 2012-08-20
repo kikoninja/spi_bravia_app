@@ -49,7 +49,10 @@ gem 'capistrano-ext'
 gem 'carrierwave'
 gem 'rmagick'
 
+# Support for multiple databases
 gem 'connection_ninja'
+
+# Hirerachycal associations
 gem 'ancestry'
 
 group :development, :test do
