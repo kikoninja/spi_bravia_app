@@ -14,6 +14,10 @@
       = text_field_tag :username_or_email
       = label_tag "Password"
       = password_field_tag :password
+      = label(:remember, :me) do
+        = check_box_tag :remember_me
+        %span.custom.checkbox Remember me
+      %p= submit_tag "Login", :class => "small button"
 
   .four.columns
     %h3 Register new account
@@ -21,5 +25,10 @@
       = label_tag "Full Name:" 
       = text_field_tag :full_name
       = label_tag "Email:"
-      = pas_field_tag :email
+      = text_field_tag :email
+      = label_tag "Password:"
+      = password_field_tag :password
+      %span.notice Please note: Your password should contain a minimum of 6 characters
+      %p= submit_tag "Create account", class: "small button"
+
 
