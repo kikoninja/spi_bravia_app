@@ -3,3 +3,23 @@
     %h1 Welcome to Sony Bravia
     %p Login to manage your account
 
+.row.forms
+  .four.columns
+    = image_tag "bravia.png"
+
+  .four.columns
+    %h3 Login
+    = form_tag "/" do 
+      = label_tag "Username or email" 
+      = text_field_tag :username_or_email
+      = label_tag "Password"
+      = password_field_tag :password
+
+  .four.columns
+    %h3 Register new account
+    = form_tag "/" do 
+      = label_tag "Full Name:" 
+      = text_field_tag :full_name
+      = label_tag "Email:"
+      = pas_field_tag :email
+
