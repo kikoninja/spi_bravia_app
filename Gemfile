@@ -55,6 +55,9 @@ gem 'connection_ninja'
 # Hirerachycal associations
 gem 'ancestry'
 
+# Use thin instead of webrick
+gem 'thin'
+
 group :development, :test do
   # RSpec
   gem 'rspec-rails'
