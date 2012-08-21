@@ -3,7 +3,7 @@ SPIBraviaApp::Application.routes.draw do
 
   ActiveAdmin.routes(self)
 
-  # Authnetication
+  # Authentication
   devise_for :users
 
   # Resources
