@@ -25,6 +25,7 @@ default_run_options[:pty] = true
 namespace :deploy do
   task :symlink_shared do
     run "ln -nfs #{shared_path}/config/database.yml #{release_path}/config/database.yml"
+    run "ln -nfs #{shared_path}/config/settings.yml #{release_path}/config/settings.yml"
   end
 
   desc "precompile the assets"

@@ -57,3 +57,5 @@ module SPIBraviaApp
     config.assets.version = '1.0'
   end
 end
+
+APP_SETTINGS = YAML.load_file("#{Rails.root}/config/settings.yml")

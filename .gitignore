@@ -21,3 +21,6 @@ database.yml
 # Uploads
 public/uploads
 public/system/uploads
+
+# Settings
+settings.yml
