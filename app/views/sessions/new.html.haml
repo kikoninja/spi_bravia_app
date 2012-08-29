@@ -1,0 +1,22 @@
+.mainWrapper
+  %section.loginForm
+    %header
+      %h2 Log in as an existing user 
+    = form_for :session, :url => "/sessions", :html => { :class => :form } do |f|
+      #login_errors.error
+      .group
+        = f.label :username, "Username"
+        %br
+        = f.text_field :username, :class => "login_field"
+      .group
+        = f.label :password, "Password"
+        %br
+        = f.password_field :password, :class => "login_field"
+      .group
+        = f.check_box :remember_me
+        = f.label :remember_me, "Remember me"
+      //.group
+      //  %p
+      //    Forgot password? Retrieve it here!
+      .group
+        = f.submit "Sign in", :class => 'button', :id => 'login_button'

@@ -1,0 +1,22 @@
+.mainWrapper
+  %section.registrationForm
+    %header
+      %h2 Register as a new user
+    = form_for :users, :url => "/users", :html => { :class => :form } do |f|
+      #registration_errors.error
+      .group
+        = f.label :full_name, "Full name:"
+        = f.text_field :full_name, :class => "login_field"
+      .group
+        = f.label :email, "Email address:"
+        = f.text_field :email, :class => "login_field"
+      .group
+        = f.label :password, "Password:"
+        = f.password_field :password, :class => "login_field"
+      .group
+        = f.label :password_confirm, "Confirm password:"
+        = f.password_field :password_confirm, :class => "login_field"
+      .group
+      .group
+        = f.submit "Sign up", :class => "button", :id => 'registration_button'
+

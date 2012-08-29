@@ -1,8 +1,11 @@
 class ApplicationController < ActionController::Base
+  include InvideousAuth
   protect_from_forgery
 
   # Filters
   # before_filter :authenticate_user!
+  # Invideous Auth
+  before_filter :check_if_invideous_session_attached
 
   private
 

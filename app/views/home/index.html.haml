@@ -9,26 +9,26 @@
 
   .four.columns
     %h3 Login
-    = form_tag "/" do 
-      = label_tag "Username or email" 
-      = text_field_tag :username_or_email
-      = label_tag "Password"
-      = password_field_tag :password
+    = form_for :session, :url => "/sessions" do |f|
+      = f.label :username,  "Username or email" 
+      = f.text_field :username
+      = f.label :password, "Password"
+      = f.password_field :password
       = label(:remember, :me) do
-        = check_box_tag :remember_me
+        = f.check_box :remember_me
         %span.custom.checkbox Remember me
-      %p= submit_tag "Login", :class => "small button"
+      %p= f.submit "Login", :class => "small button"
 
   .four.columns
     %h3 Register new account
-    = form_tag "/" do 
-      = label_tag "Full Name:" 
-      = text_field_tag :full_name
-      = label_tag "Email:"
-      = text_field_tag :email
-      = label_tag "Password:"
-      = password_field_tag :password
+    = form_for :users, :url => "/users" do |f| 
+      = f.label :full_name, "Full Name:" 
+      = f.text_field :full_name
+      = f.label :email, "Email:"
+      = f.text_field :email
+      = f.label "Password:"
+      = f.password_field :password
       %span.notice Please note: Your password should contain a minimum of 6 characters
-      %p= submit_tag "Create account", class: "small button"
+      %p= f.submit "Create account", class: "small button"
 
 

@@ -55,6 +55,10 @@ gem 'connection_ninja'
 # Hirerachycal associations
 gem 'ancestry'
 
+# Invideous authentication
+gem 'uuid'
+gem 'invideous_auth', git: 'ssh://gituser@gateway.invideous.com/storage/disk1/gituser/repositories/invideous_auth.git' 
+
 # Use thin instead of webrick
 gem 'thin'
 
