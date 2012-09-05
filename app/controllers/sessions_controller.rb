@@ -28,6 +28,7 @@ class SessionsController < ApplicationController
 
     inv = Invideous.new(cookies)
     inv.logout
+    inv.cleanup_cookies
     flash[:notice] = "Succesfully logged out"
 
     redirect_to root_path

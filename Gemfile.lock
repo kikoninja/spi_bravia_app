@@ -241,6 +241,7 @@ PLATFORMS
 DEPENDENCIES
   activeadmin
   ancestry
+  bcrypt-ruby (~> 3.0.0)
   capistrano
   capistrano-ext
   carrierwave
@@ -248,7 +249,6 @@ DEPENDENCIES
   compass-h5bp
   compass-rails
   connection_ninja
-  devise (= 1.4.8)
   haml-rails
   html5-rails
   invideous_auth!

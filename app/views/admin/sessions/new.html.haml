@@ -1,0 +1,29 @@
+.row
+  .six.columns.centered
+    %h3 Login as administrator
+    = form_for :admin_session, :url => "/admin/sessions" do |f|
+      = f.label :email, "Email"
+      = f.text_field :email
+      = f.label :password, "Password"
+      = f.password_field :password
+      %p= f.submit "Login", :class => "round button right"
+
+-# .block#block-login
+-#   %h2= "Log in"
+-#   .content.login
+-#     .flash
+-#       - flash.each do |type, message|
+-#         %div{ :class => "message #{type}" }
+-#           %p= message
+-#     = form_tag admin_sessions_path, :class => "form login" do
+-#       .group.wat-cf
+-#         .left= label_tag "Email"
+-#         .right= text_field_tag :email
+-#       .group.wat-cf
+-#         .left= label_tag "Password"
+-#         .right= password_field_tag :password
+-#       .group.wat-cf
+-#         .right
+-#           %button.button{ :type => "submit" }
+-#             = "Log in"
+-#     = link_to "Back", root_path

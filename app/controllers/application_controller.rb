@@ -7,9 +7,14 @@ class ApplicationController < ActionController::Base
   # Invideous Auth
   before_filter :check_if_invideous_session_attached
 
+  def current_admin_user
+    @current_admin_user ||= User.find(session[:admin_user_id]) if session[:admin_user_id]
+  end
+
   private
 
+  # FIXME: PD: Horrible workaround! 
   def authenticate_admin_user!
-    redirect_to new_user_session_path unless current_user && current_user.is_admin?
+    redirect_to new_admin_session_path unless current_admin_user && current_admin_user.is_admin?
   end
 end
