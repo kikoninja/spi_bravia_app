@@ -25,7 +25,7 @@ xml.assets do
           end
         end
         xml.asset_url("#{asset.source_url}", :downloadable => "false")
-        xml.rating("#{asset.rating}", :scheme => "urn:age")
+        xml.rating("0", :scheme => "urn:age")
         xml.duration "200"
         if asset.live
           xml.stream_type "HTTPLS"

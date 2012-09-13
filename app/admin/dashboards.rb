@@ -1,6 +1,10 @@
 ActiveAdmin.register_page "Dashboard" do
 
-
+  content do
+    div do
+      render 'refresh_links', :service_name => "PL-FilmBoxLive", :feed_ids => { "Branch" => "6479", "Leaf1" => "6481", "Leaf2" => "6483", "Leaf3" => "6485"}, :secret_key => "iethohSei3chu", :baseurl => "http://dev.internet.sony.tv/trebuchet/remoteCommands/TREBpushImport/"
+    end
+  end
 
 end
 
