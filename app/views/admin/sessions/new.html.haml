@@ -1,7 +1,7 @@
 .row
   .six.columns.centered
     %h3 Login as administrator
-    = form_for :admin_session, :url => "/admin/sessions" do |f|
+    = form_for :admin_session, :url => "/admin/sessions", :method => :post do |f|
       = f.label :email, "Email"
       = f.text_field :email
       = f.label :password, "Password"
