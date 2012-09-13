@@ -28,9 +28,11 @@ ActiveRecord::Schema.define(:version => 20120904093307) do
   add_index "active_admin_comments", ["namespace"], :name => "index_active_admin_comments_on_namespace"
   add_index "active_admin_comments", ["resource_type", "resource_id"], :name => "index_admin_notes_on_resource_type_and_resource_id"
 
-  create_table "asset_categorizations", :id => false, :force => true do |t|
-    t.integer "asset_id"
-    t.integer "category_id"
+  create_table "asset_categorizations", :force => true do |t|
+    t.integer  "asset_id"
+    t.integer  "category_id"
+    t.datetime "created_at",  :null => false
+    t.datetime "updated_at",  :null => false
   end
 
   create_table "assets", :force => true do |t|
@@ -40,12 +42,12 @@ ActiveRecord::Schema.define(:version => 20120904093307) do
     t.boolean  "pay_content"
     t.string   "asset_type"
     t.integer  "duration"
-    t.datetime "created_at",                       :null => false
-    t.datetime "updated_at",                       :null => false
+    t.datetime "created_at",    :null => false
+    t.datetime "updated_at",    :null => false
     t.integer  "feed_id"
     t.integer  "video_id"
     t.string   "thumbnail_url"
-    t.boolean  "live",          :default => false
+    t.boolean  "live"
     t.string   "source_url"
     t.string   "rating"
   end
