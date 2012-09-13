@@ -14,7 +14,7 @@ SPIBraviaApp::Application.routes.draw do
   resources :users, :only => [:new, :create]
 
   namespace :admin do
-    resources :sessions
+    resources :sessions, :only => [:new, :create, :destroy]
   end
 
   # Matches
@@ -23,6 +23,7 @@ SPIBraviaApp::Application.routes.draw do
   match "/bivldev/ssm_get_userdata", controller: "authorization", action: "ssm_get_userdata", format: "xml"
   match "/admin", controller: "admin/dashboard", action: "index"
   match "/connect/success", controller: "home", action: "connect"
+  match "/admin/logout", controller: "admin/sessions", action: "destroy"
 
   # Root
   root :to => 'home#index'

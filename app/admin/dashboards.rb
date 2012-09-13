@@ -1,3 +1,7 @@
+ActiveAdmin.register_page "Dashboard" do
+
+end
+
 # ActiveAdmin::Dashboards.build do
 # 
 #   section "Refresh recent feeds" do
