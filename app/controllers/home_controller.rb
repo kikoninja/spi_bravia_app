@@ -6,7 +6,6 @@ class HomeController < ApplicationController
   end
 
   def connect
-    
   end
 
 end
