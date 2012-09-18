@@ -15,16 +15,16 @@ class Package < ActiveRecord::Base
 
   # Ugly fix for the missing images
   def image_url
-    case name
-    when "DocuBox Live Package"
+    case external_id
+    when "DocuBox"
       return "http://w4.invideous.com/demo/Invideous_for_SPI_Sony_ServiceDefinition_11.03.2012/icons_sony/86x36/docubox_86x36.png"
-    when "KinoPolska Live Package"
+    when "PolishPackage"
       return "http://w4.invideous.com/demo/Invideous_for_SPI_Sony_ServiceDefinition_11.03.2012/icons_sony/86x36/kinopolska_86x36.png"
     when "FilmPackage"
       return "http://w4.invideous.com/demo/Invideous_for_SPI_Sony_ServiceDefinition_11.03.2012/icons_sony/86x36/filmboxlive_86x36.png"
-    when "FashionBox Live Package"
+    when "FashionBox"
       return "http://w4.invideous.com/demo/Invideous_for_SPI_Sony_ServiceDefinition_11.03.2012/icons_sony/86x36/fashionbox_86x36.png"
-    when "FightBox Live Package"
+    when "FightBox"
       return "http://w4.invideous.com/demo/Invideous_for_SPI_Sony_ServiceDefinition_11.03.2012/icons_sony/86x36/fightbox_86x36.png"
     when "UltimatePackage"
       return "http://w4.invideous.com/demo/Invideous_for_SPI_Sony_ServiceDefinition_11.03.2012/icons_sony/86x36/filmboxpremiere_86x36.png"

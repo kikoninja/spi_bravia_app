@@ -1,8 +1,8 @@
-GIT
-  remote: ssh://gituser@gateway.invideous.com/storage/disk1/gituser/repositories/invideous_auth.git
-  revision: 21910cf9fb17bb0b5198657aad40d256e198ae18
+PATH
+  remote: /home/peco/dev/invideous_auth
   specs:
-    invideous_auth (0.2.9)
+    invideous_auth (0.2.11)
+      mechanize
       uuid
 
 GEM
@@ -90,6 +90,8 @@ GEM
       orm_adapter (~> 0.0.3)
       warden (~> 1.0.3)
     diff-lcs (1.1.3)
+    domain_name (0.5.3)
+      unf (~> 0.0.3)
     erubis (2.7.0)
     eventmachine (0.12.10)
     execjs (1.3.0)
@@ -130,6 +132,14 @@ GEM
       i18n (>= 0.4.0)
       mime-types (~> 1.16)
       treetop (~> 1.4.8)
+    mechanize (2.5.1)
+      domain_name (~> 0.5, >= 0.5.1)
+      mime-types (~> 1.17, >= 1.17.2)
+      net-http-digest_auth (~> 1.1, >= 1.1.1)
+      net-http-persistent (~> 2.5, >= 2.5.2)
+      nokogiri (~> 1.4)
+      ntlm-http (~> 0.1, >= 0.1.1)
+      webrobots (~> 0.0, >= 0.0.9)
     meta_search (1.1.3)
       actionpack (~> 3.1)
       activerecord (~> 3.1)
@@ -141,6 +151,8 @@ GEM
       sassy-math (>= 1.2)
     multi_json (1.3.6)
     mysql2 (0.3.11)
+    net-http-digest_auth (1.2.1)
+    net-http-persistent (2.7)
     net-scp (1.0.4)
       net-ssh (>= 1.99.1)
     net-sftp (2.0.5)
@@ -148,6 +160,8 @@ GEM
     net-ssh (2.5.2)
     net-ssh-gateway (1.1.0)
       net-ssh (>= 1.99.1)
+    nokogiri (1.5.5)
+    ntlm-http (0.1.1)
     orm_adapter (0.0.7)
     polyamorous (0.5.0)
       activerecord (~> 3.0)
@@ -225,10 +239,14 @@ GEM
     uglifier (1.2.4)
       execjs (>= 0.3.0)
       multi_json (>= 1.0.2)
+    unf (0.0.5)
+      unf_ext
+    unf_ext (0.0.5)
     uuid (2.3.5)
       macaddr (~> 1.0)
     warden (1.0.6)
       rack (>= 1.0)
+    webrobots (0.0.13)
     zurb-foundation (3.0.9)
       compass (>= 0.12.2)
       modular-scale (>= 1.0.2)
