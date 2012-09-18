@@ -46,7 +46,7 @@ namespace :feed do
             title: genre,
             description: "Insert genre description here",
             style: "tile",
-            remote_icon_url: "",
+            remote_icon_url: "http://w4.invideous.com/demo/Invideous_for_SPI_Sony_ServiceDefinition_11.03.2012/icons_sony/86x36/filmboxlive_86x36.png",
             parent: category,
             channel: channel
           )

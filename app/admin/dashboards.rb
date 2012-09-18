@@ -2,7 +2,7 @@ ActiveAdmin.register_page "Dashboard" do
 
   content do
     div do
-      render 'refresh_links', :service_name => "PL-FilmBoxLive_Dev", :feed_ids => { "Branch" => "6479", "Leaf1" => "6481", "Leaf2" => "6483", "Leaf3" => "6485"}, :secret_key => "aiPh3ve3oohee", :baseurl => "http://dev.internet.sony.tv/trebuchet/remoteCommands/TREBpushImport/"
+      render 'refresh_links', :service_name => "#{APP_SETTINGS[Rails.env]['service_name']}", :feed_ids => { "Branch" => "#{APP_SETTINGS[Rails.env]['branch_feed_id']}", "Leaf1" => "#{APP_SETTINGS[Rails.env]['leaf1_feed_id']}", "Leaf2" => "#{APP_SETTINGS[Rails.env]['leaf2_feed_id']}", "Leaf3" => "#{APP_SETTINGS[Rails.env]['leaf3_feed_id']}"}, :secret_key => "#{APP_SETTINGS[Rails.env]['secret_key']}", :baseurl => "http://dev.internet.sony.tv/trebuchet/remoteCommands/TREBpushImport/"
     end
   end
 
