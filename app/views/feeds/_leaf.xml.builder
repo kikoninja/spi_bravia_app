@@ -20,7 +20,7 @@ xml.assets do
             #xml.title asset.title
             #xml.description asset.description
             xml.title asset.title
-            xml.description asset.description
+            xml.description "- #{asset.description}"
             xml.icon_std asset.thumbnail_url
           end
         end
