@@ -87,7 +87,7 @@ namespace :feed do
       puts "Generating manual feeds for HLS"
       hls_assets = []
 
-      base_uri = "http://bivlspidev.invideous.com/images/logos/"
+      base_uri = APP_SETTINGS[Rails.env]['base_logo_uri']
       
       # Define all the hls assets
       kinopolska_asset = HlsAsset.new("01", "Pakiet Kino Polska", "KinoPolska Live Package", "kinopolska.png", "http://spiinternational-i.akamaihd.net/hls/live/204304/KINOPOLSKA_PL_HLS/once1200.m3u8")
