@@ -86,7 +86,7 @@ namespace :feed do
 
       puts "Generating manual feeds for HLS"
       hls_assets = []
-
+!y!0
       base_uri = APP_SETTINGS[Rails.env]['base_logo_uri']
       
       # Define all the hls assets
