@@ -10,7 +10,7 @@ class AuthorizationController < ApplicationController
 
   def ssm_get_userdata
     # render content_type: 'application/xml'
-    redirect_to APP_SETTINGS['affiliation_url']
+    redirect_to APP_SETTINGS[Rails.env]['affiliation_url']
   end
 
 end
