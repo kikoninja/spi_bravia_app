@@ -1,3 +1,12 @@
+GENRE_LIST = {
+  "comedy", "romance", "movie", "horror", "movies", "thriller", "musical",
+  "action", "sci-fi", "fantasy", "family", "document", "drama", "history",
+  "animation", "crime", "military", "adventure", "war",
+  "social", "kids and family", "romantic comedy", "documentary", "fashion",
+  "classic", "recommended", "human stories", "fight", "show", "nature", "biography",
+  "travel", "mystery", "western", "current affairs", "music"
+}
+
 namespace :feed do
   namespace :generate do
     
@@ -41,12 +50,12 @@ namespace :feed do
         puts "Created category #{category.title}"
 
         # Generate the genre subcategories
-        ["Drama", "Comedy", "Romance", "Action", "Horror", "Sci-Fi", "Family", "Animation", "Kids"].each do |genre|
+        GENRE_LIST.each do |genre|
           subcategory = Category.create!(
             title: genre,
             description: "Insert genre description here",
             style: "tile",
-            remote_icon_url: "http://w4.invideous.com/demo/Invideous_for_SPI_Sony_ServiceDefinition_11.03.2012/icons_sony/86x36/filmboxlive_86x36.png",
+            remote_icon_url: "public/icons/#{genre}.png",
             parent: category,
             channel: channel
           )
@@ -72,6 +81,7 @@ namespace :feed do
           )
 
           puts "- created asset for video #{video.title} with asset ID: #{asset.content_id}"
+          puts "- vide has genres: #{video.video_custom_attributes.where(attribute_name: 'genres_en').first}"
 
           AssetCategorization.create!(:asset_id => asset.id, :category_id => category.id)
         end
