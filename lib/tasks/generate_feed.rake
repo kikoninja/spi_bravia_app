@@ -1,11 +1,11 @@
-GENRE_LIST = {
+GENRE_LIST = [
   "comedy", "romance", "movie", "horror", "movies", "thriller", "musical",
   "action", "sci-fi", "fantasy", "family", "document", "drama", "history",
   "animation", "crime", "military", "adventure", "war",
   "social", "kids and family", "romantic comedy", "documentary", "fashion",
   "classic", "recommended", "human stories", "fight", "show", "nature", "biography",
   "travel", "mystery", "western", "current affairs", "music"
-}
+]
 
 namespace :feed do
   namespace :generate do
@@ -55,35 +55,39 @@ namespace :feed do
             title: genre,
             description: "Insert genre description here",
             style: "tile",
-            remote_icon_url: "public/icons/#{genre}.png",
+            icon: generate_icon_path(genre),
             parent: category,
             channel: channel
           )
 
+          # Generate assets from videos and attach them to the category
+          package.videos.each_with_index do |video, index|
+            asset = Asset.create!(
+              :title => video.title,
+              :description => video.description,
+              :feed => feed_leaf1,
+              :content_id => "#{package.id}-asset-#{video.id}",
+              :pay_content => true,
+              :asset_type => "video",
+              :video_id => video.id,
+              :duration => 200,
+              :thumbnail_url => thumbnail(video),
+              :live => check_live(video),
+              :source_url => source_url(video),
+              :rating => rating(video)
+            )
+
+            puts "- created asset for video #{video.title} with asset ID: #{asset.content_id}"
+            # puts "- video has genres: #{video.video_custom_attributes.where(attribute_name: 'genres_en').first}"
+            genres = video.video_custom_attributes.where(attribute_name: 'genres_en').first
+  
+            if genres.attribute_value && (genres.attribute_value.include? genre)
+              AssetCategorization.create!(:asset_id => asset.id, :category_id => subcategory.id)
+              puts " - adding video #{video.title} to subcategory #{subcategory.title}"
+            end
+          end
+
           puts "- created subcategory #{subcategory.title}"
-        end
-
-        # Generate assets from videos and attach them to the category
-        package.videos.each_with_index do |video, index|
-          asset = Asset.create!(
-            :title => video.title,
-            :description => video.description,
-            :feed => feed_leaf1,
-            :content_id => "#{package.id}-asset-#{video.id}",
-            :pay_content => true,
-            :asset_type => "video",
-            :video_id => video.id,
-            :duration => 200,
-            :thumbnail_url => thumbnail(video),
-            :live => check_live(video),
-            :source_url => source_url(video),
-            :rating => rating(video)
-          )
-
-          puts "- created asset for video #{video.title} with asset ID: #{asset.content_id}"
-          puts "- vide has genres: #{video.video_custom_attributes.where(attribute_name: 'genres_en').first}"
-
-          AssetCategorization.create!(:asset_id => asset.id, :category_id => category.id)
         end
       end
     end
@@ -184,5 +188,15 @@ def source_url(video)
   #VideoCustomAttribute.where('video_id =? && attribute_name =?', video_id, 'sony_source_url').first.attribute_value
   guid = video.video_custom_attributes.where('attribute_name =?', 'guid').first.try(:attribute_value)
   url = "http://once.unicornmedia.com/now/stitched/mp4/9a48dc3b-f49b-4d69-88e2-8bff2784d44b/ff3177e5-169a-495e-a8c6-47b145470cdd/3a41c6e4-93a3-4108-8995-64ffca7b9106/#{guid}/content.mp4"
+end
+
+def generate_icon_path(genre)
+  File.open("#{Rails.root}/public/images/icons/#{genre}.png")
+rescue
+  puts "Icon not found for genre: #{genre}"
+  File.open("#{Rails.root}/log/feed.log", 'a') do |f|
+    f.write("Icon not found for genre: #{genre}\n")
+  end
+  return ""
 end
 
