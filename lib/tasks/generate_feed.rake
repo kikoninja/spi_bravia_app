@@ -1,6 +1,12 @@
 namespace :feed do
   namespace :generate do
 
+    desc "Generate all feeds (both video and hls)"
+    task :all => :environment do
+      Rake::Task["feed:generate:videos"].execute 
+      Rake::Task["feed:generate:hls"].execute 
+    end
+
     desc "Generate feeds from the videos in the database"
     task :videos => :environment do
       # Cleanup the old data
@@ -70,7 +76,79 @@ namespace :feed do
       end
     end
 
+    desc "Generate feeds for HLS"
+    task :hls => :environment do
+      # Delete the hls feed
+      old_leaf = Feed.find_by_title("2m_leaf1_2")
+      if old_leaf
+        old_leaf.destroy 
+        puts "Deleted the feed leaf: 2m_leaf1_2"
+      end
+
+      channel = Channel.first
+      feed_leaf2 = Feed.create!(:channel => channel, :title => "2m_leaf1_2")
+      puts "- created feed: #{feed_leaf2.title}"
+
+      puts "Generating manual feeds for HLS"
+      hls_assets = []
+      base_uri = APP_SETTINGS[Rails.env]['base_logo_uri']
+      
+      # Define all the hls assets
+      kinopolska_asset = HlsAsset.new("01", "Pakiet Kino Polska", "KinoPolska Live Package", "kinopolska.png", "http://spiinternational-i.akamaihd.net/hls/live/204304/KINOPOLSKA_PL_HLS/once1200.m3u8")
+      hls_assets << kinopolska_asset
+
+      docubox_asset = HlsAsset.new("02", "Pakiet DocuBox", "DocuBox Live Package", "#{base_uri}docubox.png", "http://spiinternational-i.akamaihd.net/hls/live/204306/DOCUBOXHD_MT_HLS/once1200.m3u8")
+      hls_assets << docubox_asset
+
+      fashionbox_asset = HlsAsset.new("03", "Pakiet FashionBox", "FashionBox Live Package", "#{base_uri}fashionbox.png", "http://spiinternational-i.akamaihd.net/hls/live/204307/FASHIONBOXHD_MT_HLS/once1200.m3u8")
+      hls_assets << fashionbox_asset
+
+      filmbox_asset = HlsAsset.new("04", "Pakiet Film", "FilmBox", "#{base_uri}filmbox.png", "http://spiinternational-i.akamaihd.net/hls/live/204302/FILMBOXBASIC_PL_HLS/once1200.m3u8")
+      hls_assets << filmbox_asset
+
+      filmbox_prem_asset = HlsAsset.new("05", "Pakiet Full", "FilmBox Premiere", "#{base_uri}filmbox_prem.png", "http://spiinternational-i.akamaihd.net/hls/live/204303/FILMBOXEXTRA_PL_HLS/once1200.m3u8")
+      hls_assets << filmbox_prem_asset
+
+      fightbox_asset = HlsAsset.new("06", "Pakiet FightBox", "FightBox Live Package", "#{base_uri}fightbox.png", "http://spiinternational-i.akamaihd.net/hls/live/204308/FIGHTBOXHD_MT_HLS/once1200.m3u8")
+      hls_assets << fightbox_asset
+
+      hls_assets.each do |hls_asset|
+        category = Category.find_by_title(hls_asset.category_title)
+
+        asset = Asset.create!(
+          :title => hls_asset.asset_title,
+          :feed => feed_leaf2,
+          :content_id => "hls-asset-#{hls_asset.id}",
+          :pay_content => "true",
+          :asset_type => "video",
+          :duration => 200,
+          :thumbnail_url => hls_asset.thumbnail_url,
+          :live => true,
+          :source_url => hls_asset.source_url,
+          :rating => "15" 
+        )
+        puts "- created asset for HLS link for #{asset.title} with asset ID: #{asset.content_id}"
+
+        AssetCategorization.create!(:asset_id => asset.id, :category_id => category.id)
+      end
+
+    end
+
   end
+end
+
+class HlsAsset
+
+  attr_accessor :id, :category_title, :asset_title, :thumbnail_url, :source_url
+
+  def initialize(id, category_title, asset_title, thumbnail_url, source_url)
+    @id = id
+    @category_title = category_title
+    @asset_title = asset_title
+    @thumbnail_url = thumbnail_url
+    @source_url = source_url
+  end
+
 end
 
 def cleanup_old_data
