@@ -98,7 +98,7 @@ def create_category(package, channel)
     :title => package.name,
     :description => package.description,
     :style => "tile",
-    :remote_icon_url => package.image_url,
+    :icon => package.image_url,
     :channel => channel
   ) 
 end

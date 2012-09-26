@@ -15,20 +15,10 @@ class Package < ActiveRecord::Base
 
   # Ugly fix for the missing images
   def image_url
-    case external_id
-    when "DocuBox"
-      return "http://w4.invideous.com/demo/Invideous_for_SPI_Sony_ServiceDefinition_11.03.2012/icons_sony/86x36/docubox_86x36.png"
-    when "PolishPackage"
-      return "http://w4.invideous.com/demo/Invideous_for_SPI_Sony_ServiceDefinition_11.03.2012/icons_sony/86x36/kinopolska_86x36.png"
-    when "FilmPackage"
-      return "http://w4.invideous.com/demo/Invideous_for_SPI_Sony_ServiceDefinition_11.03.2012/icons_sony/86x36/filmboxlive_86x36.png"
-    when "FashionBox"
-      return "http://w4.invideous.com/demo/Invideous_for_SPI_Sony_ServiceDefinition_11.03.2012/icons_sony/86x36/fashionbox_86x36.png"
-    when "FightBox"
-      return "http://w4.invideous.com/demo/Invideous_for_SPI_Sony_ServiceDefinition_11.03.2012/icons_sony/86x36/fightbox_86x36.png"
-    when "UltimatePackage"
-      return "http://w4.invideous.com/demo/Invideous_for_SPI_Sony_ServiceDefinition_11.03.2012/icons_sony/86x36/filmboxpremiere_86x36.png"
-    end
+    File.open("#{Rails.root}/public/images/icons/#{external_id}.png")
+  rescue
+    puts "Warning: Icon not found for package: #{name}"
+    return ""
   end
 
 end

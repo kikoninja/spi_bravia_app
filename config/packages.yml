@@ -1,47 +1,47 @@
 FightBox:
   kickbox:
     identifiers: kickbox
-    icon_name: kickbox.png
+    icon_name: fightbox_kickbox.png
   sumo:
     identifiers: sumo
-    icon_name: sumo.png
+    icon_name: fightbox_sumo.png
   wrestling:
     identifiers: wrestling
-    icon_name: wrestling.png
+    icon_name: fightbox_wrestling.png
   karate:
     identifiers: karate
-    icon_name: karate.png
+    icon_name: fightbox_karate.png
 
 FashionBox:
   lookbook:
     identifiers: lookbook
-    icon_name: lookbook.png
+    icon_name: fashionbox_lookbook.png
   fashion_cities:
     identifiers: "fashion cities"
-    icon_name: fashion_cities.png
+    icon_name: fashionbox_cities.png
   vintage:
     identifiers: vintage
-    icon_name: vintage.png
+    icon_name: fashionbox_vintage.png
   homme:
     identifiers: homme
-    icon_name: homme.png
+    icon_name: fashionbox_homme.png
   femme:
     identifiers: femme
-    icon_name: femme.png
+    icon_name: fashionbox_femme.png
   fashion_candies:
     identifiers: "fashion candies"
-    icon_name: fashion_candies.png
+    icon_name: fashionbox_candies.png
 
 DocuBox:
   historical: 
     identifiers: historical
-    icon_name: historical.png
+    icon_name: docubox_historical.png
   roads:
     identifiers: roads
-    icon_name: roads.png
+    icon_name: docubox_roads.png
   documentary:
     identifiers: documentary
-    icon_name: documentary.png
+    icon_name: docubox_documentary.png
 
 FilmPackage:
   scifi:
