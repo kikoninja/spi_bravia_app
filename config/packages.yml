@@ -1,0 +1,162 @@
+FightBox:
+  kickbox:
+    identifiers: kickbox
+    icon_name: kickbox.png
+  sumo:
+    identifiers: sumo
+    icon_name: sumo.png
+  wrestling:
+    identifiers: wrestling
+    icon_name: wrestling.png
+  karate:
+    identifiers: karate
+    icon_name: karate.png
+
+FashionBox:
+  lookbook:
+    identifiers: lookbook
+    icon_name: lookbook.png
+  fashion_cities:
+    identifiers: "fashion cities"
+    icon_name: fashion_cities.png
+  vintage:
+    identifiers: vintage
+    icon_name: vintage.png
+  homme:
+    identifiers: homme
+    icon_name: homme.png
+  femme:
+    identifiers: femme
+    icon_name: femme.png
+  fashion_candies:
+    identifiers: "fashion candies"
+    icon_name: fashion_candies.png
+
+DocuBox:
+  historical: 
+    identifiers: historical
+    icon_name: historical.png
+  roads:
+    identifiers: roads
+    icon_name: roads.png
+  documentary:
+    identifiers: documentary
+    icon_name: documentary.png
+
+FilmPackage:
+  scifi:
+    identifiers: scifi
+    icon_name: scifi.png
+  comedy:
+    identifiers: comedy, komedi
+    icon_name: comedy.png
+  romance:
+    identifiers: romance, romans
+    icon_name: romance.png
+  action:
+    identifiers: action, akcja
+    icon_name: action.png
+  drama:
+    identifiers: drama, dramat
+    icon_name: drama.png
+  thriller:
+    identifiers: thriller
+    icon_name: thriller.png
+  horror: 
+    identifiers: horror
+    icon_name: horror.png
+  family:
+    identifiers: family, familijny
+    icon_name: family.png
+  documentary:
+    identifiers: documentary, dokument
+    icon_name: documentary.png
+  animated:
+    identifiers: animated, animation, animowany
+    icon_name: animated.png
+  recommended:
+    identifiers: recommended, poleca
+    icon_name: poleca.png
+    
+UltimatePackage:
+  scifi:
+    identifiers: scifi
+    icon_name: scifi.png
+  comedy:
+    identifiers: comedy, komedi
+    icon_name: comedy.png
+  romance:
+    identifiers: romance, romans
+    icon_name: romance.png
+  action:
+    identifiers: action, akcja
+    icon_name: action.png
+  drama:
+    identifiers: drama, dramat
+    icon_name: drama.png
+  thriller:
+    identifiers: thriller
+    icon_name: thriller.png
+  horror: 
+    identifiers: horror
+    icon_name: horror.png
+  family:
+    identifiers: family, familijny
+    icon_name: family.png
+  documentary:
+    identifiers: documentary, dokument
+    icon_name: documentary.png
+  animated:
+    identifiers: animated, animation, animowany
+    icon_name: animated.png
+  recommended:
+    identifiers: recommended, poleca
+    icon_name: poleca.png
+  kickbox:
+    identifiers: kickbox
+    icon_name: kickbox.png
+  sumo:
+    identifiers: sumo
+    icon_name: sumo.png
+  wrestling:
+    identifiers: wrestling
+    icon_name: wrestling.png
+  karate:
+    identifiers: karate
+    icon_name: karate.png
+  lookbook:
+    identifiers: lookbook
+    icon_name: lookbook.png
+  fashion_cities:
+    identifiers: "fashion cities"
+    icon_name: fashion_cities.png
+  vintage:
+    identifiers: vintage
+    icon_name: vintage.png
+  homme:
+    identifiers: homme
+    icon_name: homme.png
+  femme:
+    identifiers: femme
+    icon_name: femme.png
+  fashion_candies:
+    identifiers: "fashion candies"
+    icon_name: fashion_candies.png
+  historical: 
+    identifiers: historical
+    icon_name: historical.png
+  roads:
+    identifiers: roads
+    icon_name: roads.png
+  documentary:
+    identifiers: documentary
+    icon_name: documentary.png
+
+PolishPackage:
+  recommended: 
+    identifiers: recommended, poleca
+    icon_name: recommended.png
+  top_movies:
+    identifiers: movie, movies
+    icon_name: top_movies.png
+
