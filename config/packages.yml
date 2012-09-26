@@ -2,161 +2,211 @@ FightBox:
   kickbox:
     identifiers: kickbox
     icon_name: fightbox_kickbox.png
+    description: ""
   sumo:
     identifiers: sumo
     icon_name: fightbox_sumo.png
+    description: ""
   wrestling:
     identifiers: wrestling
     icon_name: fightbox_wrestling.png
+    description: ""
   karate:
     identifiers: karate
     icon_name: fightbox_karate.png
+    description: ""
 
 FashionBox:
   lookbook:
     identifiers: lookbook
     icon_name: fashionbox_lookbook.png
+    description: ""
   fashion_cities:
     identifiers: "fashion cities"
     icon_name: fashionbox_cities.png
+    description: ""
   vintage:
     identifiers: vintage
     icon_name: fashionbox_vintage.png
+    description: ""
   homme:
     identifiers: homme
     icon_name: fashionbox_homme.png
+    description: ""
   femme:
     identifiers: femme
     icon_name: fashionbox_femme.png
+    description: ""
   fashion_candies:
     identifiers: "fashion candies"
     icon_name: fashionbox_candies.png
+    description: ""
 
 DocuBox:
   historical: 
     identifiers: historical
     icon_name: docubox_historical.png
+    description: ""
   roads:
     identifiers: roads
     icon_name: docubox_roads.png
+    description: ""
   documentary:
     identifiers: documentary
     icon_name: docubox_documentary.png
+    description: ""
 
 FilmPackage:
   scifi:
     identifiers: scifi
-    icon_name: scifi.png
+    icon_name: sci-fi.png
+    description: ""
   comedy:
     identifiers: comedy, komedi
     icon_name: comedy.png
+    description: ""
   romance:
     identifiers: romance, romans
     icon_name: romance.png
+    description: ""
   action:
     identifiers: action, akcja
     icon_name: action.png
+    description: ""
   drama:
     identifiers: drama, dramat
     icon_name: drama.png
+    description: ""
   thriller:
     identifiers: thriller
     icon_name: thriller.png
+    description: ""
   horror: 
     identifiers: horror
     icon_name: horror.png
+    description: ""
   family:
     identifiers: family, familijny
     icon_name: family.png
+    description: ""
   documentary:
     identifiers: documentary, dokument
     icon_name: documentary.png
+    description: ""
   animated:
     identifiers: animated, animation, animowany
-    icon_name: animated.png
+    icon_name: animation.png
+    description: ""
   recommended:
     identifiers: recommended, poleca
-    icon_name: poleca.png
+    icon_name: recommended.png
+    description: ""
     
 UltimatePackage:
   scifi:
     identifiers: scifi
     icon_name: scifi.png
+    description: ""
   comedy:
     identifiers: comedy, komedi
     icon_name: comedy.png
+    description: ""
   romance:
     identifiers: romance, romans
     icon_name: romance.png
+    description: ""
   action:
     identifiers: action, akcja
     icon_name: action.png
+    description: ""
   drama:
     identifiers: drama, dramat
     icon_name: drama.png
+    description: ""
   thriller:
     identifiers: thriller
     icon_name: thriller.png
+    description: ""
   horror: 
     identifiers: horror
     icon_name: horror.png
+    description: ""
   family:
     identifiers: family, familijny
     icon_name: family.png
+    description: ""
   documentary:
     identifiers: documentary, dokument
     icon_name: documentary.png
+    description: ""
   animated:
     identifiers: animated, animation, animowany
     icon_name: animated.png
+    description: ""
   recommended:
     identifiers: recommended, poleca
     icon_name: poleca.png
+    description: ""
   kickbox:
     identifiers: kickbox
     icon_name: kickbox.png
+    description: ""
   sumo:
     identifiers: sumo
     icon_name: sumo.png
+    description: ""
   wrestling:
     identifiers: wrestling
     icon_name: wrestling.png
+    description: ""
   karate:
     identifiers: karate
     icon_name: karate.png
+    description: ""
   lookbook:
     identifiers: lookbook
     icon_name: lookbook.png
+    description: ""
   fashion_cities:
     identifiers: "fashion cities"
     icon_name: fashion_cities.png
+    description: ""
   vintage:
     identifiers: vintage
     icon_name: vintage.png
+    description: ""
   homme:
     identifiers: homme
     icon_name: homme.png
+    description: ""
   femme:
     identifiers: femme
     icon_name: femme.png
+    description: ""
   fashion_candies:
     identifiers: "fashion candies"
     icon_name: fashion_candies.png
+    description: ""
   historical: 
     identifiers: historical
     icon_name: historical.png
+    description: ""
   roads:
     identifiers: roads
     icon_name: roads.png
+    description: ""
   documentary:
     identifiers: documentary
     icon_name: documentary.png
+    description: ""
 
 PolishPackage:
   recommended: 
     identifiers: recommended, poleca
     icon_name: recommended.png
+    description: ""
   top_movies:
     identifiers: movie, movies
     icon_name: top_movies.png
+    description: ""
 
