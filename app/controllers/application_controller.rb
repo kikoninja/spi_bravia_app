@@ -5,6 +5,7 @@ class ApplicationController < ActionController::Base
   # Filters
   # before_filter :authenticate_user!
   # Invideous Auth
+  helper_method :current_user
 
   def current_admin_user
     @current_admin_user ||= User.find(session[:admin_user_id]) if session[:admin_user_id]
