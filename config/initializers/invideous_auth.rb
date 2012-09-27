@@ -1,7 +1,7 @@
 InvideousAuth.configure do |config|
 
   # For development mode only, if you are behind router you should set your external address
-  config.development_server = "46.217.70.50"
+  config.development_server = "88.85.115.45"
 
   # Invideous publisher name
   config.client_name = "UNITEDGLORY"

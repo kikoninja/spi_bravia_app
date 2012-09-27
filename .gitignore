@@ -24,3 +24,6 @@ public/system/uploads
 
 # Settings
 settings.yml
+
+# Ignore invideous authentication config
+config/initializers/invideous_auth.rb

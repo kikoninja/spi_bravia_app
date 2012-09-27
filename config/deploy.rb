@@ -26,6 +26,7 @@ namespace :deploy do
   task :symlink_shared do
     run "ln -nfs #{shared_path}/config/database.yml #{release_path}/config/database.yml"
     run "ln -nfs #{shared_path}/config/settings.yml #{release_path}/config/settings.yml"
+    run "ln -nfs #{shared_path}/config/initializers/invideous_auth.rb #{release_path}/config/initializers/invideous_auth.rb"
   end
 
   desc "precompile the assets"
