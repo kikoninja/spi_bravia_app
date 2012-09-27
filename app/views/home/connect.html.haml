@@ -1,6 +1,23 @@
 .row
   .twelve.columns.header
     %h1 Welcome to FilmBOX service for Sony Bravia TV
-    %p= "logged in as #{current_user}" 
-  .message  
-    Your Sony account and your SPI account have been linked together successfully.
+    %p
+      Logged in as 
+      %strong= current_user
+
+.row.content
+  .four.columns  
+    = image_tag "bravia.png"
+
+  .eight.columns
+    .message
+      = image_tag "icon-ok.png"
+      %p Your Sony account and your FilmBOX account has been linked together succesfully. If you already have purchased some of the packages you can start watching the videos via your Sony device immediately. 
+
+    .message
+      = image_tag "icon-forward.png"
+      %p 
+        Please go to 
+        = link_to "www.filmboxlive.com", "http://www.filmboxlive.com", target: :blank
+        to purchase a package. 
+
