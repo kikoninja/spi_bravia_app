@@ -36,7 +36,7 @@ class SessionsController < ApplicationController
         # Call the sony authnentication server to send the info that user has been affiliated
         url = "#{session[:done]}/SSMputToken?version=#{session[:version]}&provider=FilmBoxLive_Prod&sid=#{session[:sid]}&suit=#{suit}"
         # sig=#{session[:sig]}"
-        sig = Digest::MD5.hexdigest(url) + "pai8iS2miowei6iedeib"
+        sig = Digest::MD5.hexdigest(url + "pai8iS2miowei6iedeib")
         uri = URI.parse(url + "&sig=#{sig}")
         result = Net::HTTP.get_response(uri)
         logger.info("Result: #{result.body}")
