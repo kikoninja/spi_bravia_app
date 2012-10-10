@@ -28,6 +28,8 @@
       = f.text_field :email
       = f.label "Password:"
       = f.password_field :password
+      = f.label "Confirm password:"
+      = f.password_field :password_confirm
       %span.notice Please note: Your password should contain a minimum of 6 characters
       %p= f.submit "Create account", class: "small button"
 
