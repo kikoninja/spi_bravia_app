@@ -22,6 +22,7 @@ SPIBraviaApp::Application.routes.draw do
   match "/bivldev/sts_get_authorization", controller: "authorization", action: "sts_get_authorization", format: "xml"
   match "/bivldev/ssm_get_userdata/SSMgetUserData", controller: "authorization", action: "ssm_get_userdata", format: "xml"
   match "/bivldev/ssm_get_userdata", controller: "authorization", action: "ssm_get_userdata", format: "xml"
+  match "/bivldev/disconnect", controller: "authorization", action: "disconnect"
   match "/admin", controller: "admin/dashboard", action: "index"
   match "/connect/success", controller: "home", action: "connect"
   match "/admin/logout", controller: "admin/sessions", action: "destroy"

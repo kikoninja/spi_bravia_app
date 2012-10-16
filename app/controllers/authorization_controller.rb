@@ -22,4 +22,8 @@ class AuthorizationController < ApplicationController
     redirect_to APP_SETTINGS[Rails.env]['affiliation_url']
   end
 
+  def disconnect
+
+  end
+
 end
