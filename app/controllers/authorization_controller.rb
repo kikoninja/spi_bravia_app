@@ -5,6 +5,10 @@ class AuthorizationController < ApplicationController
   def sts_get_authorization
     @asset_id = params[:id]
 
+    user = AffiliatedUser.find_by_suit(params[:suit])
+
+    @result = user.nil? ? "fail" : "success"
+
     render content_type: 'application/xml'
   end
 
@@ -23,7 +27,13 @@ class AuthorizationController < ApplicationController
   end
 
   def disconnect
+    user = AffiliatedUser.find_by_suit(params[:suit])
 
+    if user
+      user.delete
+    end
+
+    render :text => "ok"
   end
 
 end

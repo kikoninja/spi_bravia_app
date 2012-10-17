@@ -7,7 +7,7 @@ xml.response do
 
   xml.sony do
     xml.product(id: "CALLISTO") do
-      xml << render( partial: "success")
+      xml << render( partial: @result) 
     end
   end
 end
