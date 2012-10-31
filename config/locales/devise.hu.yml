@@ -1,0 +1,58 @@
+# Additional translations at http://github.com/plataformatec/devise/wiki/I18n
+
+hu:
+  errors:
+    messages:
+      expired: "lejárt, kérj egy újat"
+      not_found: "nem található"
+      already_confirmed: "már megerősítették, kérjük, próbáljon meg bejelentkezni"
+      not_locked: "nem volt bezárva"
+      not_saved:
+        one: "1 hiba tiltani ezt a %{resource} hiba tiltani ezt a"
+        other: "%{count} hibákat megtiltotta ez %{resource} forrás nem került mentésre:"
+
+  devise:
+    failure:
+      already_authenticated: 'Már bejelentkezve'
+      unauthenticated: 'Be kell jelentkeznie, vagy regisztrálj a folytatás előtt.'
+      unconfirmed: 'Be kell jelentkeznie, vagy regisztrálj a folytatás előtt.'
+      locked: 'A fiók le van zárva.'
+      invalid: 'Rossz email cím vagy jelszó'
+      invalid_token: 'Érvénytelen hitelesítési token'
+      timeout: 'A munkamenet lejárt, kérjük jelentkezzen be ismét a folytatáshoz.'
+      inactive: 'A fiók nem aktiválták még. '
+    sessions:
+      signed_in: 'Aláírták sikeresen'
+      signed_out: 'Aláírt ki sikeresen'
+    passwords:
+      send_instructions: 'Kapni fog egy e-mailt arról, hogy miként visszaállítani a jelszót egy pár perc múlva'
+      updated: 'A jelszó sikeresen megváltozott. Most már bejelentkezve'
+      updated_not_active: 'A jelszó sikeresen módosítva.'
+      send_paranoid_instructions: "Ha az e-mail létezik adatbázisunkban, akkor kap egy jelszó-visszaállító linket az e-mail"
+    confirmations:
+      send_instructions: 'Kapni fog egy e-mailt arról, hogy miként erősítse meg venni néhány perc alatt.'
+      send_paranoid_instructions: 'Ha az e-mail létezik adatbázisunkban, kapni fog egy e-mailt arról, hogy miként erősítse meg a fiók néhány perc alatt.'
+      confirmed: 'A fiók sikeresen megerősítették. Most már bejelentkezve '
+    registrations:
+      signed_up: 'Üdvözöljük! Ön sikeresen regisztrált.'
+      inactive_signed_up: 'Ön iratkozott fel sikeresen. Azonban nem lehetett aláírni téged, mert fiókjában %{reason}.'
+      updated: 'Te frissítette fiókját sikeresen.'
+      destroyed: 'Szia! A fiók sikeresen törölték. Reméljük, hogy hamarosan ismét találkozunk.'
+      reasons:
+        inactive: 'Inaktív'
+        unconfirmed: 'Meg nem erősített'
+        locked: 'Zárva'
+    unlocks:
+      send_instructions: 'Kapni fog egy e-mailt arról, hogy miként oldja fiókjába néhány perc alatt'
+      unlocked: 'A fiók sikeresen nyitva. Most már bejelentkezve'
+      send_paranoid_instructions: 'Ha fiókja van, kapni fog egy e-mailt arról, hogy miként oldja meg néhány perc alatt.' 
+    omniauth_callbacks:
+      success: 'Sikeresen engedélyezett a %{kind} természetbeni venni. '
+      failure: 'Nem sikerült engedélyezik Ön %{kind} fajta, mert "%{reason}".'
+    mailer:
+      confirmation_instructions:
+        subject: 'fajta, mert'
+      reset_password_instructions:
+        subject: 'Új jelszó útmutatások'
+      unlock_instructions:
+        subject: 'Unlock Utasítás'

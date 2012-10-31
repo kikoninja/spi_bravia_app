@@ -1,0 +1,58 @@
+# Additional translations at http://github.com/plataformatec/devise/wiki/I18n
+
+tr:
+  errors:
+    messages:
+      expired: "süresi bitmiş, lütfen yeni bir tane isteyiniz."
+      not_found: "bulunamadı"
+      already_confirmed: "daha önce onaylandı, lütfen giriş yapınız"
+      not_locked: "Kilitlenmedi"
+      not_saved:
+        one: "1 error prohibited this %{resource} from being saved:"
+        other: "%{count} errors prohibited this %{resource} from being saved:"
+
+  devise:
+    failure:
+      already_authenticated: 'Zaten giriş yaptınız.'
+      unauthenticated: 'Devat etmeden önce kayıt olmanız ya da giriş yapmanız gerekmektedir.'
+      unconfirmed: 'Giriş yapmadan önce hesabınızı onaylamanız gerekmektedir.'
+      locked: 'Hesabınız kilitlendi'
+      invalid: 'Geçersiz E-Posta ya da Şifre.'
+      invalid_token: 'Geçersiz doğrulama kodu.'
+      timeout: 'Oturumunuzun süresi bitmiş, lütfen devam etmek için tekrar giriş yapın'
+      inactive: 'Hesabınız henüz aktive olmadı.'
+    sessions:
+      signed_in: 'Başarılı bir şekilde giriş yaptınız.'
+      signed_out: 'Başarılı bir şekilde çıkış yaptınız.'
+    passwords:
+      send_instructions: 'Şifrenizi yenilemek için e-posta adresinize gelen talimatları takip ediniz.'
+      updated: 'Şifreniz başarılı bir şekilde değiştirildi. Şu an başarılı bir şeklide giriş yaptınız.'
+      updated_not_active: 'Şifreniz başarılı bir şekilde değiştirildi.'
+      send_paranoid_instructions: "E-posta adresiniz sistemde kayıtlı ise şifre yenileme linkiniz e-posta adresinize yollandı."
+    confirmations:
+      send_instructions: 'Hesabınızı onaylamak için e-posta adresinize onay maili yollanmıştır.'
+      send_paranoid_instructions: 'E-posta adresiniz sistemde kayıtlı ise hesap onay mailiniz belirttiğiniz e-posta adresine yollanmıştır.'
+      confirmed: 'Hesabınız başarılı bir şekilde onaylandı. Şu an başarılı bir şekilde giriş yaptınız.'
+    registrations:
+      signed_up: 'Hoşgeldiniz! Başarılı bir şekilde kayıt oldunuz.'
+      inactive_signed_up: 'Başarılı bir şekilde kayıt oldunuz. Ancak %{reason} edeniyle giriş yapamadınız.'
+      updated: 'Hesabınızı başarılı bir şekilde güncellediniz.'
+      destroyed: 'Hoşçakalın! Hesabınız başaralı bir şekilde iptal edildi.'
+      reasons:
+        inactive: 'aktif değil'
+        unconfirmed: 'doğrulanmamış'
+        locked: 'kilitli'
+    unlocks:
+      send_instructions: 'Hesabınızı açmak için lütfen e-posta adresinize yollanan adımları takip ediniz.'
+      unlocked: 'Hesabınız başarılı bir şekilde açıldı. Şu an başarılı bir şekilde giriş yaptınız.'
+      send_paranoid_instructions: 'Hesabınız halen kayıtlı ise e-posta adresinize hesabınızı nasıl açacağınız ile ilgili e-posta gelecektir.'
+    omniauth_callbacks:
+      success: '%{kind} Hesabınız başarılı bir şekilde onayland.'
+      failure: '%{reason} nedeniyle %{kind} hesabınız onaylanmadı.'
+    mailer:
+      confirmation_instructions:
+        subject: 'Onayl talimatları'
+      reset_password_instructions:
+        subject: 'Şifre Yenileme Talimatları'
+      unlock_instructions:
+        subject: 'Hesap Açma Talimatları'
