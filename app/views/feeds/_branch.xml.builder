@@ -7,7 +7,7 @@ end
 xml.supported_features do
   xml.icon_formats "std"
 end
-xml.root_category(:id => "ROOTCAT_ID", :style => "tile") do
+xml.root_category(:id => "ROOTCAT_ID") do
   xml.default_icons do
     # TODO: PD: get this from the channel
     xml.icon_std "http://w4.invideous.com/demo/root_category.png"
