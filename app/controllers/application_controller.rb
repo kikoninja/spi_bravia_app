@@ -3,6 +3,7 @@ class ApplicationController < ActionController::Base
   protect_from_forgery
 
   # Filters
+  before_filter :set_locale
   # before_filter :authenticate_user!
   # Invideous Auth
   helper_method :current_user
@@ -16,5 +17,15 @@ class ApplicationController < ActionController::Base
   # FIXME: PD: Horrible workaround! 
   def authenticate_admin_user!
     redirect_to new_admin_session_path unless current_admin_user && current_admin_user.is_admin?
+  end
+
+  private
+
+  def set_locale
+    I18n.locale = params[:locale] if params[:locale].present?
+  end
+
+  def default_url_options(option = {})
+    {locale: I18n.locale}
   end
 end

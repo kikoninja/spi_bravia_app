@@ -29,3 +29,72 @@ h1
   img
     float: left
     margin-right: 15px
+
+// Languages    
+
+li.selectLanguage
+  overflow: hidden
+
+  #chooseLanguage
+    overflow: hidden
+    display: inline-block
+    cursor: pointer
+    font-size: 14px
+    padding: 3px
+    background: rgba(0, 0, 0, 0.6)
+    margin: 10px 0 0 2px
+
+
+  span.languageArrow
+    float: right
+    +opacity(0.7)
+
+  img.flag
+    float: left
+    margin-right: 4px
+
+  &:hover
+    span.languageArrow
+      +opacity(1)
+
+.languages
+  display: none
+  width: 128px
+  padding: 6px 2px 4px 2px
+  background: rgba(0, 0, 0, 0.6)
+  z-index: 99999
+  top: 36px
+  right: 0px
+  font-size: 13px
+  font-family: "Arial", sans-serif
+  text-align: center
+
+  .language
+    overflow: hidden
+    margin: 0 0 2px 2px
+
+  img
+    float: left
+    display: inline-block
+    +opacity(0.5)
+    padding-right: 20px
+
+  span.name
+    float: left
+    +opacity(0.5)
+
+  a
+    text-decoration: none
+    color: #FFF
+
+    img
+      +opacity(1)
+
+    &:hover
+      +opacity(0.5)
+
+    &:focus
+      outline: none
+
+    span.name
+      +opacity(1)    
