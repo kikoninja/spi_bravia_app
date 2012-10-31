@@ -1,36 +1,36 @@
 .row
   .twelve.columns.header
-    %h1 Welcome to FilmBOX service for Sony Bravia TV
-    %p Login to manage your account
+    %h1= t('welcome')
+    %p= t('login_to_manage')
 
 .row.forms
   .four.columns
     = image_tag "bravia.png"
 
   .four.columns
-    %h3 Login
+    %h3= t('login')
     = form_for :session, :url => "/sessions" do |f|
-      = f.label :username,  "Username or email" 
+      = f.label :username, t('username_or_email')
       = f.text_field :username
-      = f.label :password, "Password"
+      = f.label :password, t('password')
       = f.password_field :password
       = label(:remember, :me) do
         = f.check_box :remember_me
-        %span.custom.checkbox Remember me
-      %p= f.submit "Login", :class => "small button"
+        %span.custom.checkbox= t('remember_me')
+      %p= f.submit t('login'), :class => "small button"
 
   .four.columns
-    %h3 Register new account
+    %h3= t('register_new_account')
     = form_for :users, :url => "/users" do |f| 
-      = f.label :full_name, "Full Name:" 
+      = f.label :full_name, t('full_name')
       = f.text_field :full_name
-      = f.label :email, "Email:"
+      = f.label :email, t('email')
       = f.text_field :email
-      = f.label "Password:"
+      = f.label t('password')
       = f.password_field :password
-      = f.label "Confirm password:"
+      = f.label t('confirm_password')
       = f.password_field :password_confirm
-      %span.notice Please note: Your password should contain a minimum of 6 characters
-      %p= f.submit "Create account", class: "small button"
+      %span.notice= t('password_note')
+      %p= f.submit t('create_account'), class: "small button"
 
 
