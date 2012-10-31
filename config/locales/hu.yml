@@ -1,0 +1,19 @@
+# Sample localization file for English. Add more files in this directory for other locales.
+# See https://github.com/svenfuchs/rails-i18n/tree/master/rails%2Flocale for starting points.
+
+hu:
+  welcome: "Üdvözöljük a Filmbox szolgáltatás Sony Bravia TV"
+  login_to_manage: "Bejelentkezés a fiók kezelését"
+  register_new_account: "Regisztráljon új fiók"
+  full_name: "Teljes név"
+  email: "E-Mail"
+  password: "Jelszó"
+  confirm_password: "Még a jelszót"
+  password_note: "Kérjük, vegye figyelembe: Az Ön jelszavát tartalmaznia kell legalább 6 karakter"
+  create_account: "Create Account"
+  logged_in_as: "Bejelentkezve mint"
+  linked_message: "A Sony és a fiók Filmbox fiók már kapcsolódik egymáshoz sikeresen. Ha már vásárolt néhány csomag nézheti a videókat keresztül a Sony készülék azonnal."
+  purchase_package: "Kérjük, látogasson el www.filmboxlive.com vásárolni a csomagot, ha szükséges."
+  username_or_email: "Felhasználónév vagy e-mail"
+  login: "Bejelentkezés"
+  remember_me: "Emlékezzen rám"

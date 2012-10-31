@@ -1,0 +1,19 @@
+# Sample localization file for English. Add more files in this directory for other locales.
+# See https://github.com/svenfuchs/rails-i18n/tree/master/rails%2Flocale for starting points.
+
+pl:
+  welcome: "Witamy Filmbox usługi dla Sony Bravia TV"
+  login_to_manage: "Zaloguj się, aby zarządzać swoim kontem"
+  register_new_account: "Zarejestruj nowe konto"
+  full_name: "Imię i nazwisko"
+  email: "E-Mail"
+  password: "Hasło"
+  confirm_password: "Potwierdź hasło"
+  password_note: "Uwaga: Hasło musi zawierać co najmniej 6 znaków"
+  create_account: "Załóż konto"
+  logged_in_as: "Zalogowany jako"
+  linked_message: "Twoje konto Sony a konto Filmbox zostały połączone razem z powodzeniem. Jeżeli zakupiłeś kilka pakietów można rozpocząć oglądanie filmów za pomocą urządzenia Sony natychmiast."
+  purchase_package: "Proszę przejść do www.filmboxlive.com kupić pakiet, jeśli wymagane."
+  username_or_email: "Nazwa użytkownika lub e-mail"
+  login: "Login"
+  remember_me: "Zapamiętaj mnie"

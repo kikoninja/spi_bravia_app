@@ -1,0 +1,19 @@
+# Sample localization file for English. Add more files in this directory for other locales.
+# See https://github.com/svenfuchs/rails-i18n/tree/master/rails%2Flocale for starting points.
+
+sl:
+  welcome: "Vitajte na Filmbox služby pre Sony Bravia TV"
+  login_to_manage: "Prihlásiť sa pre správu účtu"
+  register_new_account: "Registrácia nového účtu"
+  full_name: "Celé meno"
+  email: "E-Mail"
+  password: "Heslo"
+  confirm_password: "Heslo ešte raz"
+  password_note: "Vezmite prosím na vedomie: Vaše heslo by malo obsahovať minimálne 6 znakov"
+  create_account: "Vytvoriť účet"
+  logged_in_as: "Prihlásený ako"
+  linked_message: "Váš Sony účet a váš účet Filmbox, ktoré boli spojené dohromady úspešne. Ak ste už zakúpili niektoré z balíčkov, môžete začať sledovať videá prostredníctvom zariadenia Sony okamžite."
+  purchase_package: "Prosím, choďte na www.filmboxlive.com kúpiť balíček v prípade potreby."
+  username_or_email: "Užívateľské meno alebo email"
+  login: "Prihlásenie"
+  remember_me: "Pamätaj si ma"

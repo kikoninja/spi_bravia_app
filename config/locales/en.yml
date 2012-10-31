@@ -2,4 +2,24 @@
 # See https://github.com/svenfuchs/rails-i18n/tree/master/rails%2Flocale for starting points.
 
 en:
-  hello: "Hello world"
+  welcome: "Welcome to FilmBOX service for Sony Bravia TV"
+  login_to_manage: "Login to manage your account"
+  register_new_account: "Register new account"
+  full_name: "Full Name"
+  email: "E-Mail"
+  password: "Password"
+  confirm_password: "Confirm password"
+  password_note: "Please note: Your password should contain a minimum of 6 characters"
+  create_account: "Create Account"
+  logged_in_as: "Logged in as"
+  linked_message: "Your Sony account and your FilmBOX account have been linked together successfully. If you have already purchased some of the packages you can start watching the videos via your Sony device immediately."
+  purchase_package: "Please go to www.filmboxlive.com to purchase a package if required."
+  username_or_email: "Username or e-mail"
+  login: "Login"
+  remember_me: "Remember me"
+
+
+
+
+
+

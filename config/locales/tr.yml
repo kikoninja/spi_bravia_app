@@ -1,0 +1,19 @@
+# Sample localization file for English. Add more files in this directory for other locales.
+# See https://github.com/svenfuchs/rails-i18n/tree/master/rails%2Flocale for starting points.
+
+tr:
+  welcome: "Sony Bravia FilmBox Live Servisine Hoşgeldiniz"
+  login_to_manage: "Hesabınızı yönetmek için giriş yapınız"
+  register_new_account: "Kayıt Ol"
+  full_name: "Ad-Soyad"
+  email: "E-Posta"
+  password: "Şifre"
+  confirm_password: "Şifre Tekrar"
+  password_note: "Not: Şifreniz en az 6 karakterden oluşmalıdır"
+  create_account: "Hesap yarat"
+  logged_in_as: "olarak giriş yaptınız"
+  linked_message: "Sony ve FilmBox Live hesabınız başarılı bir şekilde birbirine bağlandı. Eğer FilmBox Live'dan daha önce paket satın aldıysanız Sony cihazınızda hemen filmleri izleyebilirsiniz."
+  purchase_package: "Paket satın almak için lütfen www.filmboxlive.com adresini ziyaret ediniz"
+  username_or_email: "Kullanıcı Adı ya da E-Posta"
+  login: "Giriş"
+  remember_me: "Beni Hatırla"
