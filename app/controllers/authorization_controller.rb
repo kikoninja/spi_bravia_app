@@ -7,7 +7,13 @@ class AuthorizationController < ApplicationController
 
     user = AffiliatedUser.find_by_suit(params[:suit])
 
-    @result = user.nil? ? "fail" : "success"
+    if user.nil?
+      @result = "fail"
+      @result_code = -2027
+    else
+      @result = "success"
+      @result_code = 0
+    end
 
     render content_type: 'application/xml'
   end
