@@ -11,6 +11,9 @@ h1
     padding-top: 15px
     width: 178px
 
+  .row
+    position: relative
+
 #main
   margin: 40px 0 
 
@@ -33,7 +36,9 @@ h1
 // Languages
 
 #languageBar
-  position: relative
+  position: absolute
+  right: 0
+  top: 0
 
 li.selectLanguage
   overflow: hidden
@@ -84,6 +89,7 @@ li.selectLanguage
     padding-right: 20px
 
   span.name
+    color: #fff
     float: left
     +opacity(0.5)
 
