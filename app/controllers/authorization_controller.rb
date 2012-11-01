@@ -5,14 +5,21 @@ class AuthorizationController < ApplicationController
   def sts_get_authorization
     @asset_id = params[:id]
 
-    user = AffiliatedUser.find_by_suit(params[:suit])
+    if params[:id] && params[:service_name] && params[:provider] && params[:suit] && params[:sig] && params[:reg_status] && params[:type] && params[:request_timestamp]
 
-    if user.nil?
-      @result = "fail"
-      @result_code = -2027
+      user = AffiliatedUser.find_by_suit(params[:suit])
+
+      if user.nil?
+        @result = "fail"
+        @result_code = -2027
+      else
+        @result = "success"
+        @result_code = 0
+      end
+
     else
-      @result = "success"
-      @result_code = 0
+      @result = "fail"
+      @result_code = 40
     end
 
     render content_type: 'application/xml'
@@ -24,7 +31,8 @@ class AuthorizationController < ApplicationController
     session[:version] = params[:version]
     session[:sid] = params[:sid]
     session[:grant_timestamp] = params[:grant_timestamp]
-    session[:expiration_timestamp] = params[:lang]
+    session[:expiration_timestamp] = params[:expiration_timestamp]
+    session[:lang] = params[:lang]
     session[:country] = params[:country]
     session[:done] = params[:done]
     session[:sig] = params[:sig]
@@ -40,6 +48,12 @@ class AuthorizationController < ApplicationController
     end
 
     render :text => "ok"
+  end
+
+  private
+
+  def check_all_parameters_present
+
   end
 
 end
