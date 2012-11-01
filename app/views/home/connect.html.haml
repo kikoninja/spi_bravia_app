@@ -1,8 +1,8 @@
 .row
   .twelve.columns.header
-    %h1 Welcome to FilmBOX service for Sony Bravia TV
+    %h1= t('welcome')
     %p
-      Logged in as 
+      = t('logged_in_as')
       %strong= current_user
 
 .row.content
@@ -12,7 +12,7 @@
   .eight.columns
     .message
       = image_tag "icon-ok.png"
-      %p Your Sony account and your FilmBOX account has been linked together succesfully. If you already have purchased some of the packages you can start watching the videos via your Sony device immediately. 
+      %p= t('linked_message')
 
     .message
       = image_tag "icon-forward.png"

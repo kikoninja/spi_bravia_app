@@ -1,0 +1,58 @@
+# Additional translations at http://github.com/plataformatec/devise/wiki/I18n
+
+cz:
+  errors:
+    messages:
+      expired: "již vypršela, prosím požádat o nové"
+      not_found: "nebyl nalezen"
+      already_confirmed: "byl již potvrdila, prosím, zkuste se přihlásit"
+      not_locked: "nebyly zamčené"
+      not_saved:
+        one: "1 chyba zakázáno tento %{resource} z ukládání:"
+        other: "%{count} zakázána tento %{resource} z ukládání::"
+
+  devise:
+    failure:
+      already_authenticated: 'Již jste přihlášeni dovnitř.'
+      unauthenticated: 'Musíte se přihlásit nebo registrovat, než budete pokračovat..'
+      unconfirmed: 'Musíte potvrdit svůj účet před pokračováním.'
+      locked: 'Váš účet je uzamčen.'
+      invalid: 'Neplatný e-mail nebo heslo.'
+      invalid_token: 'Neplatný ověřovací token.'
+      timeout: 'Vaše relace vypršela, prosím přihlaste se znovu pokračovat.'
+      inactive: 'Váš účet nebyl aktivován.'
+    sessions:
+      signed_in: 'Podepsáno v úspěšně.'
+      signed_out: 'Odhlášen úspěšně.'
+    passwords:
+      send_instructions: 'Obdržíte e-mail s pokyny o tom, jak obnovit své heslo během několika minut.'
+      updated: 'Vaše heslo bylo úspěšně změněno.'
+      updated_not_active: 'Vaše heslo bylo úspěšně změněno.'
+      send_paranoid_instructions: "Pokud váš e-mail existuje v naší databázi, obdržíte obnovení hesla odkaz na e-mail"
+    confirmations:
+      send_instructions: 'Obdržíte e-mail s pokyny o tom, jak potvrdit svůj účet během několika minut.'
+      send_paranoid_instructions: 'Pokud váš e-mail existuje v naší databázi, obdržíte e-mail s pokyny o tom, jak potvrdit svůj účet během několika minut.'
+      confirmed: 'Váš účet byl úspěšně potvrzen. Nyní přihlášen'
+    registrations:
+      signed_up: 'Vítejte! Jste se zaregistrovali úspěšně.'
+      inactive_signed_up: 'Jste se zaregistrovali úspěšně. Nicméně, jsme nemohli přihlásit vám, protože váš účet je %{reason}.'
+      updated: 'Ty aktualizováno svůj účet úspěšně'
+      destroyed: 'Ahoj! Váš účet byl úspěšně zrušena.Doufáme, že vás zase vidím brzy'
+      reasons:
+        inactive: 'neaktivní'
+        unconfirmed: 'nepotvrzený'
+        locked: 'zamčené'
+    unlocks:
+      send_instructions: 'Obdržíte e-mail s pokyny o tom, jak odemknout svůj účet během několika minut'
+      unlocked: 'Váš účet byl úspěšně odemknul. Nyní přihlášen.'
+      send_paranoid_instructions: 'Pokud váš účet existuje, obdržíte e-mail s pokyny o tom, jak odemknout během několika minut. '
+    omniauth_callbacks:
+      success: 'Úspěšně autorizována z %{kind}  účtu.'
+      failure: 'Nelze povolit vás %{kind} protože "%{reason}".'
+    mailer:
+      confirmation_instructions:
+        subject: 'Potvrzení pokyny'
+      reset_password_instructions:
+        subject: 'Obnovit heslo pokyny'
+      unlock_instructions:
+        subject: 'Odemknout Pokyny'

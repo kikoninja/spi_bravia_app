@@ -1,15 +1,21 @@
 SPIBraviaApp::Application.routes.draw do
-  get "home/index"
 
   ActiveAdmin.routes(self)
 
-  # Authentication
-  # devise_for :users
+  scope ':locale', locale: /#{I18n.available_locales.join("|")}/ do
+
+    get "home/index"
+
+    # Root
+    root :to => 'home#index'
+    
+  end
 
   # Resources
   scope "/bivldev" do
     resources :feeds, :only => [:show]
   end
+
   resource :sessions, :only => [:new, :create, :destroy]
   resources :users, :only => [:new, :create]
 
@@ -27,7 +33,7 @@ SPIBraviaApp::Application.routes.draw do
   match "/connect/success", controller: "home", action: "connect"
   match "/admin/logout", controller: "admin/sessions", action: "destroy"
 
-  # Root
-  root :to => 'home#index'
+  match '*path', to: redirect("/#{I18n.default_locale}/%{path}")
+  match '', to: redirect("/#{I18n.default_locale}")
 
 end

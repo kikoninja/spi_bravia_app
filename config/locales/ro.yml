@@ -1,0 +1,19 @@
+# Sample localization file for English. Add more files in this directory for other locales.
+# See https://github.com/svenfuchs/rails-i18n/tree/master/rails%2Flocale for starting points.
+
+ro:
+  welcome: "Bine ati venit la Filmbox serviciu pentru Sony Bravia TV"
+  login_to_manage: "Logati pentru a gestiona contul dvs"
+  register_new_account: "Inregistrare cont nou"
+  full_name: "Intreg Nume"
+  email: "E-Mail"
+  password: "Parola"
+  confirm_password: "Confirmați parola"
+  password_note: "Vă rugăm să rețineți: parola dvs. trebuie să conțină un minim de 6 caractere"
+  create_account: "Creați un cont"
+  logged_in_as: "Conectat ca"
+  linked_message: "Sony cont și contul dvs. Filmbox au fost legate împreună cu succes. Dacă ați achiziționat deja o parte din pachetele pe care le puteți începe vizionarea video prin intermediul dispozitivului dvs. Sony imediat."
+  purchase_package: "Vă rugăm să mergeți la www.filmboxlive.com a cumpăra un pachet, dacă este necesar."
+  username_or_email: "Nume de utilizator sau e-mail"
+  login: "Login"
+  remember_me: "Tine-ma minte"

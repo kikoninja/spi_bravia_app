@@ -1,0 +1,58 @@
+# Additional translations at http://github.com/plataformatec/devise/wiki/I18n
+
+pl:
+  errors:
+    messages:
+      expired: "wygasła, proszę poprosić o nowe"
+      not_found: "nie znaleziono"
+      already_confirmed: "zostało już potwierdzone, spróbuj zalogować się"
+      not_locked: "nie została zablokowana"
+      not_saved:
+        one: "1 błąd zabronione tego %{resource} od zbawienia:"
+        other: "%{count} błąd zabronione tego %{resource} od zbawienia:"
+
+  devise:
+    failure:
+      already_authenticated: 'Jesteś już zalogowany'
+      unauthenticated: 'Musisz zaloguj się lub zarejestruj się, aby kontynuować.'
+      unconfirmed: 'Musisz potwierdzić swoje konto, aby kontynuować. '
+      locked: 'Twoje konto jest zablokowane.'
+      invalid: 'Nieprawidłowy e-mail lub hasło.'
+      invalid_token: 'Nieprawidłowy token uwierzytelniania'
+      timeout: 'Twoja sesja wygasła, zaloguj się ponownie, aby kontynuować.'
+      inactive: 'Twoje konto nie zostało jeszcze aktywowane.'
+    sessions:
+      signed_in: 'Podpisano w pomyślnie.'
+      signed_out: 'Podpisano z powodzeniem.'
+    passwords:
+      send_instructions: 'Otrzymasz e-mail z instrukcją jak zresetować hasło w ciągu kilku minut.'
+      updated: 'Twoje hasło zostało zmienione. Jesteś teraz zalogowany'
+      updated_not_active: 'Twoje hasło zostało zmienione.'
+      send_paranoid_instructions: "Jeśli e-mail nie istnieje w naszej bazie danych, otrzymasz link do odzyskiwania hasła na e-mail"
+    confirmations:
+      send_instructions: 'Otrzymasz e-mail z instrukcją jak potwierdzić swoje konto w ciągu kilku minut.'
+      send_paranoid_instructions: 'Jeśli Twój e-mail nie istnieje w naszej bazie danych, otrzymasz e-mail z instrukcją jak potwierdzić swoje konto w ciągu kilku minut.'
+      confirmed: 'Twoje konto zostało pomyślnie potwierdzone. Jesteś teraz zalogowany'
+    registrations:
+      signed_up: 'Witamy! Zarejestrowaniu się pomyślnie. '
+      inactive_signed_up: 'Zarejestrowaniu się pomyślnie. Jednakże, nie może podpisać cię, ponieważ konto jest %{reason}.'
+      updated: 'Ty aktualizowane konta pomyślnie.'
+      destroyed: 'Bye! Twoje konto zostało pomyślnie anulowane. Mamy nadzieję, że zobaczymy się wkrótce.'
+      reasons:
+        inactive: 'Nieaktywne'
+        unconfirmed: 'Niepotwierdzone'
+        locked: 'Zablokowane'
+    unlocks:
+      send_instructions: 'Otrzymasz e-mail z instrukcją jak odblokować konto w ciągu kilku minut.'
+      unlocked: 'Twoje konto zostało pomyślnie odblokowane. Jesteś teraz zalogowany'
+      send_paranoid_instructions: 'Jeżeli konto nie istnieje, zostanie wysłany e-mail z instrukcją jak go odblokować w kilka minut.'
+    omniauth_callbacks:
+      success: 'Pomyślnie dozwolony od %{kind} konto'
+      failure: 'Nie można zezwolić przed %{kind} ponieważ "%{reason}".'
+    mailer:
+      confirmation_instructions:
+        subject: 'Instrukcje" Potwierdzenie'
+      reset_password_instructions:
+        subject: 'Reset instrukcjami hasło'
+      unlock_instructions:
+        subject: 'Odblokuj Instrukcje'

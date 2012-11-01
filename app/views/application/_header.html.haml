@@ -1,3 +1,28 @@
 %header#header
   .row
     .logo= image_tag('logo.png')
+  
+    #languageBar
+      %li.selectLanguage
+        -#%span#chooseLanguage= t('secondary_nav.select_language')
+        %span#chooseLanguage
+          = image_tag("flag_#{I18n.locale}.png", :class => "flag")
+          %span.languageArrow= "▼"
+
+        .languages#languagesBox
+          .language
+            =link_to_unless(I18n.locale == :en, (raw "#{image_tag("flag_en.png")}<span class='name'>English</span>"), { :locale => "en" })
+          .language
+            =link_to_unless(I18n.locale == :cz, (raw "#{image_tag("flag_cz.png")}<span class='name'>Czech</span>"), { :locale => "cz" })
+          .language
+            =link_to_unless(I18n.locale == :hu, (raw "#{image_tag("flag_hu.png")}<span class='name'>Hungarian</span>"), { :locale => "hu" })
+          .language
+            =link_to_unless(I18n.locale == :pl, (raw "#{image_tag("flag_pl.png")}<span class='name'>Polish</span>"), { :locale => "pl" })
+          .language
+            =link_to_unless(I18n.locale == :ro, (raw "#{image_tag("flag_ro.png")}<span class='name'>Romanian</span>"), { :locale => "ro" })
+          .language
+            =link_to_unless(I18n.locale == :sk, (raw "#{image_tag("flag_sk.png")}<span class='name'>Slovak</span>"), { :locale => "sk" })
+          .language
+            =link_to_unless(I18n.locale == :tr, (raw "#{image_tag("flag_tr.png")}<span class='name'>Turkish</span>"), { :locale => "tr" })
+
+
