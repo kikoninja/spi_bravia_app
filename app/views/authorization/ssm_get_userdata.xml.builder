@@ -2,7 +2,7 @@ xml.instruct!
 xml.response do
   xml.header(version: '01') do
     xml.command "SSMgetUserData"
-    xml.code @result_code
+    xml.code 0
   end
 
   xml.sony do
