@@ -19,4 +19,20 @@ class Video < ActiveRecord::Base
     end
   end
 
+  def duration
+    duration_attribute = video_custom_attributes.where(attribute_name: "duration").first
+    if duration_attribute
+      convert_time_to_seconds(duration_attribute.attribute_value) * 60
+    else
+      0
+    end
+  end
+
+  private
+
+  def convert_time_to_seconds(time)
+    a = [1, 60] * 2
+    time.split(/[:\.]/).map{|time| time.to_i*a.pop}.inject(&:+)
+  end
+
 end
