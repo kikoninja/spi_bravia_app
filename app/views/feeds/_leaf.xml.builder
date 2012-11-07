@@ -26,7 +26,7 @@ xml.assets do
         end
         xml.asset_url("#{asset.source_url}", :downloadable => "false")
         xml.rating("0", :scheme => "urn:age")
-        xml.duration "200"
+        xml.duration asset.duration
         if asset.live
           xml.stream_type "HTTPLS"
           xml.metafile_type "m3u8"
