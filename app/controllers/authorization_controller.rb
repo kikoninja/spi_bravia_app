@@ -2,6 +2,12 @@ class AuthorizationController < ApplicationController
 
   respond_to :xml
 
+  # Error codes
+  SUCCESS = 0
+  ERROR_UNKNOWN_REQUEST = 40
+  ERROR_AUTH_UNKNOWN = -2027
+  ERROR_REQUEST_TS_INVALID = -2030
+
   def sts_get_authorization
     @asset_id = params[:id]
 
@@ -9,17 +15,22 @@ class AuthorizationController < ApplicationController
 
       user = AffiliatedUser.find_by_suit(params[:suit])
 
-      if user.nil?
-        @result = "fail"
-        @result_code = -2027
+      if user
+        if check_date_if_valid(params[:request_timestamp])
+          @result = "fail"
+          @result_code = ERROR_REQUEST_TS_INVALID 
+        else
+          @result = "success"
+          @result_code = SUCCESS
+        end
       else
-        @result = "success"
-        @result_code = 0
+        @result = "fail"
+        @result_code = ERROR_AUTH_UNKNOWN
       end
 
     else
       @result = "fail"
-      @result_code = 40
+      @result_code = ERROR_UNKNOWN_REQUEST
     end
 
     render content_type: 'application/xml'
@@ -52,8 +63,12 @@ class AuthorizationController < ApplicationController
 
   private
 
-  def check_all_parameters_present
-
+  def check_date_if_valid(date)
+    begin
+      Date.parse(date)
+    rescue
+      false
+    end
   end
 
 end
