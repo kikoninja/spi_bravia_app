@@ -13,7 +13,7 @@ describe "Service performs asset authorization" do
 
   it "authorizers user for all conditions completed" do
     # When
-    authorizer = Authorizer.new(affiliated_user.suit, signature, parameters)
+    authorizer = Authorizer.new(signature, parameters)
     authorizer.authorize
 
     # Then
@@ -24,31 +24,31 @@ describe "Service performs asset authorization" do
     parameters.delete(:service_name)
 
     # When
-    authorizer = Authorizer.new(affiliated_user.suit, signature, parameters)
+    authorizer = Authorizer.new(signature, parameters)
     authorizer.authorize
 
     # Then
     authorizer.error_code.should == 40
   end
 
-  it "denies the asset access to user for unknown user suit" do
-    # Given
-    parameters[:suit] = "INVALID"
+  # it "denies the asset access to user for unknown user suit" do
+  #   # Given
+  #   parameters[:suit] = "INVALID"
 
-    # When
-    authorizer = Authorizer.new(affiliated_user.suit, signature, parameters)
-    authorizer.authorize
+  #   # When
+  #   authorizer = Authorizer.new(signature, parameters)
+  #   authorizer.authorize
 
-    # Then
-    authorizer.error_code == -2027
-  end
+  #   # Then
+  #   authorizer.error_code == -2027
+  # end
 
   it "denies the asset access to user for invalid signature" do
     # Given
     parameters[:sig] = "INVALID"
     
     # When
-    authorizer = Authorizer.new(affiliated_user.suit, signature, parameters)
+    authorizer = Authorizer.new(signature, parameters)
     authorizer.authorize
 
     # Then
@@ -60,7 +60,7 @@ describe "Service performs asset authorization" do
     parameters[:request_timestamp] = "INVALID"
 
     # When
-    authorizer = Authorizer.new(affiliated_user.suit, signature, parameters)
+    authorizer = Authorizer.new(signature, parameters)
     authorizer.authorize
 
     # Then

@@ -2,42 +2,24 @@ class AuthorizationController < ApplicationController
 
   respond_to :xml
 
-  # Error codes
-  SUCCESS = 0
-  ERROR_UNKNOWN_REQUEST = 40
-  ERROR_SIG_INVALID = -2002
-  ERROR_AUTH_UNKNOWN = -2027
-  ERROR_REQUEST_TS_INVALID = -2030
-
   def sts_get_authorization
     @asset_id = params[:id]
 
-    if params[:id] && params[:service_name] && params[:provider] && params[:suit] && params[:sig] && params[:reg_status] && params[:type] && params[:request_timestamp]
-
-      if check_if_signature_valid(params[:sig])
-        @result = "fail"
-        @result_code = ERROR_SIG_INVALID 
+    authorizer = Authorizer.new(session[:sig], params) 
+    authorizer.authorize
+    
+    if authorizer.error_code == Authorizer::SUCCESS
+      user = AffiliatedUser.find_by_suit(params[:suit])
+      if user
+        @result = "success"
+        @result_code = Authorizer::SUCCESS
       else
-        user = AffiliatedUser.find_by_suit(params[:suit])
-
-        if user
-          if check_date_if_valid(params[:request_timestamp])
-            @result = "fail"
-            @result_code = ERROR_REQUEST_TS_INVALID 
-          else
-            @result = "success"
-            @result_code = SUCCESS
-          end
-        else
-          @result = "fail"
-          @result_code = ERROR_AUTH_UNKNOWN
-        end
-
+        @result = "fail"
+        @result_code = Authorizer::ERROR_AUTH_UNKNOWN
       end
-
     else
       @result = "fail"
-      @result_code = ERROR_UNKNOWN_REQUEST
+      @result_code = authorizer.error_code
     end
 
     render content_type: 'application/xml'
