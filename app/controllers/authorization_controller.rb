@@ -2,6 +2,13 @@ class AuthorizationController < ApplicationController
 
   respond_to :xml
 
+  # Error codes
+  SUCCESS = 0
+  ERROR_UNKNOWN_REQUEST = 40
+  ERROR_SIG_INVALID = -2002
+  ERROR_AUTH_UNKNOWN = -2027
+  ERROR_REQUEST_TS_INVALID = -2030
+
   def sts_get_authorization
     @asset_id = params[:id]
 
