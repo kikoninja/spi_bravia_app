@@ -19,11 +19,15 @@ class Authorizer
   end
 
   def authorize
-    parameter_names = [:id, :language, :service_name, :suit, :provider, :esn, :type, :reg_status, :ui_type, :request_timestamp, :sig]
-    validate_parameters_present(parameter_names)
-    # validate_suit(@parameters[:suit])
-    validate_sig(@parameters[:sig])
-    validate_request_timestamp(@parameters[:request_timestamp])
+    begin
+      parameter_names = [:id, :language, :service_name, :suit, :provider, :esn, :type, :reg_status, :ui_type, :request_timestamp, :sig]
+      validate_parameters_present(parameter_names)
+      # validate_suit(@parameters[:suit])
+      validate_sig(@parameters[:sig])
+      validate_request_timestamp(@parameters[:request_timestamp])
+    rescue Exception
+      # Do nothing
+    end
   end
 
   private
@@ -47,8 +51,12 @@ class Authorizer
     parameter_names.each do |name|
       unless @parameters[name]
         @error_code = ERROR_UNKNOWN_REQUEST
+        raise UnknownRequestException
       end
     end
   end
 
+end
+
+class UnknownRequestException < Exception
 end

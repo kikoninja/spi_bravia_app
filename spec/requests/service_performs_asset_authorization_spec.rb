@@ -22,6 +22,7 @@ describe "Service performs asset authorization" do
 
   it "denies the asset access to user for missing service name parameter" do
     parameters.delete(:service_name)
+    parameters[:sig] = "INVALID"
 
     # When
     authorizer = Authorizer.new(signature, parameters)
