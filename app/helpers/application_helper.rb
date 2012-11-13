@@ -37,7 +37,7 @@ require 'digest/md5'
 
   def calculate_signature(parameters)
     base_url = "https://spibivl.invideous.com/bivldev/sts_get_authorization/STSgetAuthorization/?"
-    parameter_list = "id=#{parameters[:id]}&language=#{parameters[:language]}&service_name=#{parameters[:service_name]}&provider=#{parameters[:provider]}&ip_address=#{parameters[:ip_address]}&suit=#{parameters[:suit]}&esn=#{parameters[:esn]}&type=#{parameters[:type]}&reg_status=#{parameters[:reg_status]}&ui_type=#{parameters[:ui_type]}&request_timestamp=#{parameters[:request_timestamp]}"
+    parameter_list = "id=#{parameters[:id]}&language=#{parameters[:language]}&service_name=#{parameters[:service_name]}&provider=#{parameters[:provider]}&ip_address=#{parameters[:ip_address]}&suit=#{parameters[:suit]}&esn=#{parameters[:esn]}&type=#{parameters[:type]}&reg_status=#{parameters[:reg_status]}&ui_type=#{parameters[:ui_type]}&request_timestamp=#{Rack::Utils.escape(parameters[:request_timestamp])}"
     url = base_url + parameter_list
     puts url
     sig = Digest::MD5.hexdigest(url + "wa1Kev6guokaiduu4iec")
