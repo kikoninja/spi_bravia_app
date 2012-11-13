@@ -12,7 +12,10 @@ class AuthorizationController < ApplicationController
   def sts_get_authorization
     @asset_id = params[:id]
 
-    authorizer = Authorizer.new(session[:sig], params) 
+    signature = calculate_signature(params)
+
+    # TODO: PD: The signature can be calculated inside the authorizer, make this first thing next time when you refactor this code
+    authorizer = Authorizer.new(signature, params) 
     authorizer.authorize
     
     if authorizer.error_code == Authorizer::SUCCESS
