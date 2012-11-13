@@ -14,6 +14,8 @@ class AuthorizationController < ApplicationController
     @asset_id = params[:id]
 
     signature = calculate_signature(params)
+    logger.info("Calculated signature: #{signature}")
+    logger.info("Received signature: #{params[:sig]}")
 
     # TODO: PD: The signature can be calculated inside the authorizer, make this first thing next time when you refactor this code
     authorizer = Authorizer.new(signature, params) 
