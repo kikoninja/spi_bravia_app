@@ -1,4 +1,5 @@
 class AuthorizationController < ApplicationController
+  include ApplicationHelper
 
   respond_to :xml
 
