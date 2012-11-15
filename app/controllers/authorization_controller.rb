@@ -11,9 +11,10 @@ class AuthorizationController < ApplicationController
   ERROR_REQUEST_TS_INVALID = -2030
 
   def sts_get_authorization
+    logger.info("Request params: #{request.fullpath}")
     @asset_id = params[:id]
 
-    signature = calculate_signature(params)
+    signature = calculate_signature("https://#{request.host}:#{request.port}#{request.fullpath}")
     logger.info("Calculated signature: #{signature}")
     logger.info("Received signature: #{params[:sig]}")
 

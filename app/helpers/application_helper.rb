@@ -35,12 +35,31 @@ require 'digest/md5'
     url = "http://once.unicornmedia.com/now/stitched/mp4/9a48dc3b-f49b-4d69-88e2-8bff2784d44b/ff3177e5-169a-495e-a8c6-47b145470cdd/3a41c6e4-93a3-4108-8995-64ffca7b9106/#{guid}/content.mp4"
   end
 
-  def calculate_signature(parameters)
-    base_url = "https://spibivl.invideous.com/bivldev/sts_get_authorization/STSgetAuthorization/?"
-    parameter_list = "id=#{parameters[:id]}&language=#{parameters[:language]}&service_name=#{parameters[:service_name]}&provider=#{parameters[:provider]}&ip_address=#{parameters[:ip_address]}&suit=#{parameters[:suit]}&esn=#{parameters[:esn]}&type=#{parameters[:type]}&reg_status=#{parameters[:reg_status]}&ui_type=#{parameters[:ui_type]}&request_timestamp=#{Rack::Utils.escape(parameters[:request_timestamp])}"
-    url = base_url + parameter_list
+  def calculate_signature(url)
+    # base_url = "https://spibivl.invideous.com/bivldev/sts_get_authorization/STSgetAuthorization/?"
+    # parameter_list = "id=#{parameters[:id]}&language=#{parameters[:language]}&service_name=#{parameters[:service_name]}&provider=#{parameters[:provider]}&ip_address=#{parameters[:ip_address]}&suit=#{parameters[:suit]}&esn=#{parameters[:esn]}&type=#{parameters[:type]}&reg_status=#{parameters[:reg_status]}&ui_type=#{parameters[:ui_type]}&request_timestamp=#{Rack::Utils.escape(parameters[:request_timestamp])}"
+    # url = base_url + parameter_list
+    url = reject_param(url, 'sig')
     puts url
     sig = Digest::MD5.hexdigest(url + "wa1Kev6guokaiduu4iec")
   end
+
+  private
+
+  def reject_param(url, param_to_reject)
+    # Regex from RFC3986
+    url_regex = %r"^(([^:/?#]+):)?(//([^/?#]*))?([^?#]*)(\?([^#]*))?(#(.*))?$"
+    raise "Not a url: #{url}" unless url =~ url_regex
+    scheme_plus_punctuation = $1
+    authority_with_punctuation = $3
+    path = $5
+    query = $7
+    fragment = $9
+    query = query.split('&').reject do |param|
+      param_name = param.split(/[=;]/).first
+      param_name == param_to_reject
+    end.join('&')
+    [scheme_plus_punctuation, authority_with_punctuation, path, '?', query, fragment].join
+  end  
 
 end

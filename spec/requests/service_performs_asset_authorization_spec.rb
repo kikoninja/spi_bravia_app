@@ -5,7 +5,7 @@ describe "Service performs asset authorization" do
   let(:signature) { "44a38b627055c60d798bff1ec6b47e1c" }
   let(:user) { stub(uername: "User name") }
   let(:affiliated_user) { stub(user: user) }
-  let(:parameters) { { id: "hls-asset-04", language: "en", service_name: "Service Name", suit: "7ffabe402b3aa0c27354b80c1ebb698d", provider: "Provider", ip_address: "174.46.232.12", esn: "SONY ESN", type: "asset", reg_status: "true", ui_type: "0", request_timestamp: "2012-11-09T23:33:26+00:00", sig: "44a38b627055c60d798bff1ec6b47e1c" } }
+  let(:parameters) { { id: "hls-asset-04", language: "en", service_name: "Service Name", suit: "7ffabe402b3aa0c27354b80c1ebb698d", provider: "Provider", ip_address: "174.46.232.12", esn: "SONY ESN", type: "asset", reg_status: "true", ui_type: "0", request_timestamp: DateTime.now.to_s, sig: "44a38b627055c60d798bff1ec6b47e1c" } }
 
   before(:each) do
     affiliated_user.stub(:suit).and_return("7ffabe402b3aa0c27354b80c1ebb698d")
@@ -58,7 +58,7 @@ describe "Service performs asset authorization" do
 
   it "denies the asset access to user for invalid request timestamp" do
     # Given
-    parameters[:request_timestamp] = "INVALID"
+    parameters[:request_timestamp] = (DateTime.now - 10.minutes).to_s
 
     # When
     authorizer = Authorizer.new(signature, parameters)
