@@ -37,10 +37,14 @@ class Authorizer
   end
 
   def validate_request_timestamp(request_timestamp)
-    Date.parse(request_timestamp)
-    true
+    date = DateTime.parse(request_timestamp)
+    if (date < DateTime.now + 5.minutes) && (date > DateTime.now - 5.minutes)
+      true
+    else
+      @error_code = ERROR_REQUEST_TS_INVALID
+    end
   rescue
-    @error_code = ERROR_REQUEST_TS_INVALID
+    @error_code = ERROR_UNKNOWN_REQUEST
   end
 
   def validate_suit(suit)
