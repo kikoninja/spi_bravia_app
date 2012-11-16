@@ -13,8 +13,10 @@ class AuthorizationController < ApplicationController
   def sts_get_authorization
     logger.info("Request params: #{request.fullpath}")
     @asset_id = params[:id]
-
-    signature = calculate_signature("https://#{request.host}#{request.fullpath}")
+    request_path = "https://#{request.host}#{request.fullpath}"
+    signature = calculate_signature(request_path)
+    
+    logger.info("URL: #{request_path}")
     logger.info("Calculated signature: #{signature}")
     logger.info("Received signature: #{params[:sig]}")
 
