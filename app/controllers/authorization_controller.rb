@@ -17,6 +17,8 @@ class AuthorizationController < ApplicationController
     signature = calculate_signature(request_path)
     
     logger.info("URL: #{request_path}")
+    logger.info("Server timestamp: #{DateTime.now.to_s}")
+    logger.info("Request timestamp: #{params[:request_timestamp]})
     logger.info("Calculated signature: #{signature}")
     logger.info("Received signature: #{params[:sig]}")
 
