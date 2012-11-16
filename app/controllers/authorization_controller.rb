@@ -14,7 +14,7 @@ class AuthorizationController < ApplicationController
     logger.info("Request params: #{request.fullpath}")
     @asset_id = params[:id]
 
-    signature = calculate_signature("https://#{request.host}:#{request.port}#{request.fullpath}")
+    signature = calculate_signature("https://#{request.host}#{request.fullpath}")
     logger.info("Calculated signature: #{signature}")
     logger.info("Received signature: #{params[:sig]}")
 
