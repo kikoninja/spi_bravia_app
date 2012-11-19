@@ -1,6 +1,6 @@
 GIT
   remote: ssh://gituser@gateway.invideous.com/storage/disk1/gituser/repositories/invideous_auth.git
-  revision: 0f4a08390fefca10b7b71c8d84d39e2ff2035e9a
+  revision: f638c03180003cb18985c9b4f773c18a2faa20da
   specs:
     invideous_auth (0.2.11)
       uuid
