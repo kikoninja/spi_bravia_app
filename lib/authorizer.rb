@@ -30,7 +30,29 @@ class Authorizer
     end
   end
 
+  def calculate_signature(url)
+    url = reject_param(url, 'sig')
+    puts url
+    sig = Digest::MD5.hexdigest(url + "wa1Kev6guokaiduu4iec")
+  end
+
   private
+
+  def reject_param(url, param_to_reject)
+    # Regex from RFC3986
+    url_regex = %r"^(([^:/?#]+):)?(//([^/?#]*))?([^?#]*)(\?([^#]*))?(#(.*))?$"
+    raise "Not a url: #{url}" unless url =~ url_regex
+    scheme_plus_punctuation = $1
+    authority_with_punctuation = $3
+    path = $5
+    query = $7
+    fragment = $9
+    query = query.split('&').reject do |param|
+      param_name = param.split(/[=;]/).first
+      param_name == param_to_reject
+    end.join('&')
+    [scheme_plus_punctuation, authority_with_punctuation, path, '?', query, fragment].join
+  end  
 
   def validate_sig(sig)
     @error_code = ERROR_SIG_INVALID unless @signature == sig
