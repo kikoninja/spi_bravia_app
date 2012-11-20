@@ -1,9 +1,10 @@
 require 'authorizer'
+require 'date'
 
 describe "Service performs asset authorization" do
 
   let(:signature) { "44a38b627055c60d798bff1ec6b47e1c" }
-  let(:user) { stub(uername: "User name") }
+  let(:user) { stub(username: "User name") }
   let(:affiliated_user) { stub(user: user) }
   let(:parameters) { { id: "hls-asset-04", language: "en", service_name: "Service Name", suit: "7ffabe402b3aa0c27354b80c1ebb698d", provider: "Provider", ip_address: "174.46.232.12", esn: "SONY ESN", type: "asset", reg_status: "true", ui_type: "0", request_timestamp: DateTime.now.to_s, sig: "44a38b627055c60d798bff1ec6b47e1c" } }
 
@@ -19,7 +20,7 @@ describe "Service performs asset authorization" do
     # Then
     authorizer.error_code.should == 0
   end
-
+# 
   it "denies the asset access to user for missing service name parameter" do
     parameters.delete(:service_name)
     parameters[:sig] = "INVALID"
@@ -58,7 +59,7 @@ describe "Service performs asset authorization" do
 
   it "denies the asset access to user for invalid request timestamp" do
     # Given
-    parameters[:request_timestamp] = (DateTime.now - 10.minutes).to_s
+    parameters[:request_timestamp] = (DateTime.now - 5).to_s
 
     # When
     authorizer = Authorizer.new(signature, parameters)
