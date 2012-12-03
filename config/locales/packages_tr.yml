@@ -1,0 +1,212 @@
+﻿FightBox:
+  kickbox:
+    identifiers: kickbox
+    icon_name: hdfightbox_icon_tu.png
+    description: "kickbox"
+  sumo:
+    identifiers: sumo
+    icon_name: hdfightbox_icon_tu.png
+    description: "sumo"
+  wrestling:
+    identifiers: wrestling
+    icon_name: hdfightbox_icon_tu.png
+    description: "wrestling"
+  karate:
+    identifiers: karate
+    icon_name: hdfightbox_icon_tu.png
+    description: "karate"
+
+FashionBox:
+  lookbook:
+    identifiers: lookbook
+    icon_name: hdfashion_icon_tu.png
+    description: "lookbook"
+  fashion_cities:
+    identifiers: "fashion cities"
+    icon_name: hdfashion_icon_tu.png
+    description: "fashion cities"
+  vintage:
+    identifiers: vintage
+    icon_name: hdfashion_icon_tu.png
+    description: "vintage"
+  homme:
+    identifiers: homme
+    icon_name: hdfashion_icon_tu.png
+    description: "homme"
+  femme:
+    identifiers: femme
+    icon_name: hdfashion_icon_tu.png
+    description: "femme"
+  fashion_candies:
+    identifiers: "fashion candies"
+    icon_name: hdfashion_icon_tu.png
+    description: "fashion candies"
+
+DocuBox:
+  historical: 
+    identifiers: historical
+    icon_name: hddocubox_icon_tu.png
+    description: "historical"
+  roads:
+    identifiers: roads
+    icon_name: hddocubox_icon_tu.png
+    description: "roads"
+  documentary:
+    identifiers: documentary
+    icon_name: hddocubox_icon_tu.png
+    description: "Belgesel"
+
+FilmPackage:
+  scifi:
+    identifiers: scifi
+    icon_name: sci-fi_tu.png
+    description: "Bilim-Kurgu"
+  comedy:
+    identifiers: comedy, komedi
+    icon_name: comedy_tu.png
+    description: "Komedi"
+  romance:
+    identifiers: romance, romans
+    icon_name: romance_tu.png
+    description: "Romantik"
+  action:
+    identifiers: action, akcja
+    icon_name: action_tu.png
+    description: "Aksiyon"
+  drama:
+    identifiers: drama, dramat
+    icon_name: drama_tu.png
+    description: "Dram"
+  thriller:
+    identifiers: thriller
+    icon_name: thriller_tu.png
+    description: "Gerilim"
+  horror: 
+    identifiers: horror
+    icon_name: horror_tu.png
+    description: "Korku"
+  family:
+    identifiers: family, familijny
+    icon_name: family_tu.png
+    description: "Aile"
+  documentary:
+    identifiers: documentary, dokument
+    icon_name: documentary_tu.png
+    description: "Belgesel"
+  animated:
+    identifiers: animated, animation, animowany
+    icon_name: animation_tu.png
+    description: "Animasyon"
+  recommended:
+    identifiers: recommended, poleca
+    icon_name: recommended_tu.png
+    description: "Önerilen"
+    
+UltimatePackage:
+  scifi:
+    identifiers: scifi
+    icon_name: sci-fi_tu.png
+    description: "Bilim-Kurgu"
+  comedy:
+    identifiers: comedy, komedi
+    icon_name: comedy_tu.png
+    description: "Komedi"
+  romance:
+    identifiers: romance, romans
+    icon_name: romance_tu.png
+    description: "Romantik"
+  action:
+    identifiers: action, akcja
+    icon_name: action_tu.png
+    description: "Aksiyon"
+  drama:
+    identifiers: drama, dramat
+    icon_name: drama_tu.png
+    description: "Dram"
+  thriller:
+    identifiers: thriller
+    icon_name: thriller_tu.png
+    description: "Gerilim"
+  horror: 
+    identifiers: horror
+    icon_name: horror_tu.png
+    description: "Korku"
+  family:
+    identifiers: family, familijny
+    icon_name: family_tu.png
+    description: "Aile"
+  documentary:
+    identifiers: documentary, dokument
+    icon_name: documentary_tu.png
+    description: "Belgesel"
+  animated:
+    identifiers: animated, animation, animowany
+    icon_name: animation_tu.png
+    description: "Animasyon"
+  recommended:
+    identifiers: recommended, poleca
+    icon_name: recommended_tu.png
+    description: "Önerilen"
+  kickbox:
+    identifiers: kickbox
+    icon_name: hdfightbox_icon_tu.png
+    description: "kickbox"
+  sumo:
+    identifiers: sumo
+    icon_name: hdfightbox_icon_tu.png
+    description: "sumo"
+  wrestling:
+    identifiers: wrestling
+    icon_name: hdfightbox_icon_tu.png
+    description: "wrestling"
+  karate:
+    identifiers: karate
+    icon_name: hdfightbox_icon_tu.png
+    description: "karate"
+  lookbook:
+    identifiers: lookbook
+    icon_name: hdfashion_icon_tu.png
+    description: "lookbook"
+  fashion_cities:
+    identifiers: "fashion cities"
+    icon_name: hdfashion_icon_tu.png
+    description: "fashion cities"
+  vintage:
+    identifiers: vintage
+    icon_name: hdfashion_icon_tu.png
+    description: "vintage"
+  homme:
+    identifiers: homme
+    icon_name: hdfashion_icon_tu.png
+    description: "homme"
+  femme:
+    identifiers: femme
+    icon_name: hdfashion_icon_tu.png
+    description: "femme"
+  fashion_candies:
+    identifiers: "fashion candies"
+    icon_name: hdfashion_icon_tu.png
+    description: "fashion candies"
+  historical: 
+    identifiers: historical
+    icon_name: hdfashion_icon_tu.png
+    description: "historical"
+  roads:
+    identifiers: roads
+    icon_name: hddocubox_icon_tu.png
+    description: "roads"
+  documentary:
+    identifiers: documentary
+    icon_name: dhddocubox_icon_tu.png
+    description: "Belgesel"
+
+PolishPackage:
+  recommended: 
+    identifiers: recommended, poleca
+    icon_name: recommended_tu.png
+    description: "Önerilen"
+  top_movies:
+    identifiers: movie, movies
+    icon_name: top_movies_tu.png
+    description: "Film, Filmler"
+
