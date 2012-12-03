@@ -35,4 +35,15 @@ require 'digest/md5'
     url = "http://once.unicornmedia.com/now/stitched/mp4/9a48dc3b-f49b-4d69-88e2-8bff2784d44b/ff3177e5-169a-495e-a8c6-47b145470cdd/3a41c6e4-93a3-4108-8995-64ffca7b9106/#{guid}/content.mp4"
   end
 
+  def translation_for_description(lang, package_name, description)
+    package_config = YAML.load_file("config/packages_#{lang}.yml")
+    description = package_config[package]["description"]
+  end
+
+    #Ako ne e vaka da vidam so Peco za ova
+    
+  def translation_for_subcategory(lang, package_name, subcategory)
+    package_config = YAML.load_file("config/packages_#{lang}.yml")
+    subcategory = package_config[package]["identifiers"]
+  end
 end

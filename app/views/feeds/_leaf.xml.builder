@@ -23,6 +23,48 @@ xml.assets do
             xml.description "- #{asset.description}"
             xml.icon_std asset.thumbnail_url
           end
+          xml.language(:id => "cz") do
+            #xml.title asset.title
+            #xml.description asset.description
+            xml.title asset.title
+            xml.description "- #{asset.description}"
+            xml.icon_std asset.thumbnail_url
+          end
+          xml.language(:id => "hu") do
+            #xml.title asset.title
+            #xml.description asset.description
+            xml.title asset.title
+            xml.description "- #{asset.description}"
+            xml.icon_std asset.thumbnail_url
+          end
+          xml.language(:id => "pl") do
+            #xml.title asset.title
+            #xml.description asset.description
+            xml.title asset.title
+            xml.description "- #{asset.description}"
+            xml.icon_std asset.thumbnail_url
+          end
+          xml.language(:id => "sk") do
+            #xml.title asset.title
+            #xml.description asset.description
+            xml.title asset.title
+            xml.description "- #{asset.description}"
+            xml.icon_std asset.thumbnail_url
+          end
+          xml.language(:id => "ro") do
+            #xml.title asset.title
+            #xml.description asset.description
+            xml.title asset.title
+            xml.description "- #{asset.description}"
+            xml.icon_std asset.thumbnail_url
+          end
+          xml.language(:id => "tr") do
+            #xml.title asset.title
+            #xml.description asset.description
+            xml.title asset.title
+            xml.description "- #{asset.description}"
+            xml.icon_std asset.thumbnail_url
+          end
         end
         xml.asset_url("#{asset.source_url}", :downloadable => "false")
         xml.rating("0", :scheme => "urn:age")
