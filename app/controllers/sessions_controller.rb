@@ -40,9 +40,10 @@ class SessionsController < ApplicationController
 
         uri = URI.parse(url + "&sig=#{sig}")
         # result = Net::HTTP.get_response(uri)
+        http_request = Net::HTTP::Get.new(uri.path)
         http = Net::HTTP.new(uri.host, uri.port)
         http.use_ssl = true
-        result = http.get_response
+        result = http.start { |http| http.request(http_request) }
         logger.info("Result: #{result.body}")
       end
 
