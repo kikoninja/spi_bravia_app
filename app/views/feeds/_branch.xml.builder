@@ -17,6 +17,30 @@ xml.root_category(:id => "ROOTCAT_ID") do
       xml.title channel.title
       xml.description channel.description
     end
+    xml.language(:id => "cz") do
+      xml.title channel.title
+      xml.description translation_for_subcategory("identifiers")
+    end
+    xml.language(:id => "hu") do
+      xml.title channel.title
+      xml.description translation_for_subcategory("identifiers")
+    end
+    xml.language(:id => "pl") do
+      xml.title channel.title
+      xml.description translation_for_subcategory("identifiers")
+    end
+    xml.language(:id => "sk") do
+      xml.title channel.title
+      xml.description translation_for_subcategory("identifiers")
+    end
+    xml.language(:id => "ro") do
+      xml.title channel.title
+      xml.description translation_for_subcategory("identifiers")
+    end
+    xml.language(:id => "tr") do
+      xml.title channel.title
+      xml.description translation_for_subcategory("identifiers")
+    end
   end
 
   xml << render( :partial => 'category_navigation', :locals => { :categories => channel.categories.arrange(:order => :title)})
