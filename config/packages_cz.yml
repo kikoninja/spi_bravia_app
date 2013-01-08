@@ -1,0 +1,212 @@
+﻿FightBox:
+  kickbox:
+    identifiers: kickbox
+    icon_name: hdfightbox_icon_cz.png
+    description: "kickbox"
+  sumo:
+    identifiers: sumo
+    icon_name: hdfightbox_icon_cz.png
+    description: "sumo"
+  wrestling:
+    identifiers: wrestling
+    icon_name: hdfightbox_icon_cz.png
+    description: "wrestling"
+  karate:
+    identifiers: karate
+    icon_name: hdfightbox_icon_cz.png
+    description: "karate"
+
+FashionBox:
+  lookbook:
+    identifiers: lookbook
+    icon_name: hdfashion_icon_cz.png
+    description: "lookbook"
+  fashion_cities:
+    identifiers: "fashion cities"
+    icon_name: hdfashion_icon_cz.png
+    description: "fashion cities"
+  vintage:
+    identifiers: vintage
+    icon_name: hdfashion_icon_cz.png
+    description: "vintage"
+  homme:
+    identifiers: homme
+    icon_name: hdfashion_icon_cz.png
+    description: "homme"
+  femme:
+    identifiers: femme
+    icon_name: hdfashion_icon_cz.png
+    description: "femme"
+  fashion_candies:
+    identifiers: "fashion candies"
+    icon_name: hdfashion_icon_cz.png
+    description: "fashion candies"
+
+DocuBox:
+  historical: 
+    identifiers: historical
+    icon_name: hddocubox_icon_cz.png
+    description: "historical"
+  roads:
+    identifiers: roads
+    icon_name: hddocubox_icon_cz.png
+    description: "roads"
+  documentary:
+    identifiers: documentary
+    icon_name: hddocubox_icon_cz.png
+    description: "Dokumentární"
+
+FilmPackage:
+  scifi:
+    identifiers: scifi
+    icon_name: sci-fi_cz.png
+    description: "Sci-Fi"
+  comedy:
+    identifiers: comedy, komedi
+    icon_name: comedy_cz.png
+    description: "Komedie"
+  romance:
+    identifiers: romance, romans
+    icon_name: romance_cz.png
+    description: "Romance"
+  action:
+    identifiers: action, akcja
+    icon_name: action_cz.png
+    description: "Akce"
+  drama:
+    identifiers: drama, dramat
+    icon_name: drama_cz.png
+    description: "Drama"
+  thriller:
+    identifiers: thriller
+    icon_name: thriller_cz.png
+    description: "Detektivka"
+  horror: 
+    identifiers: horror
+    icon_name: horror_cz.png
+    description: "Hrůza"
+  family:
+    identifiers: family, familijny
+    icon_name: family_cz.png
+    description: "Rodina"
+  documentary:
+    identifiers: documentary, dokument
+    icon_name: documentary_cz.png
+    description: "Dokumentární"
+  animated:
+    identifiers: animated, animation, animowany
+    icon_name: animation_cz.png
+    description: "Animace"
+  recommended:
+    identifiers: recommended, poleca
+    icon_name: recommended_cz.png
+    description: "Doporučené"
+    
+UltimatePackage:
+  scifi:
+    identifiers: scifi
+    icon_name: sci-fi_cz.png
+    description: "Sci-Fi"
+  comedy:
+    identifiers: comedy, komedi
+    icon_name: comedy_cz.png
+    description: "Komedie"
+  romance:
+    identifiers: romance, romans
+    icon_name: romance_cz.png
+    description: "Romance"
+  action:
+    identifiers: action, akcja
+    icon_name: action_cz.png
+    description: "Akce"
+  drama:
+    identifiers: drama, dramat
+    icon_name: drama_cz.png
+    description: "Drama"
+  thriller:
+    identifiers: thriller
+    icon_name: thriller_cz.png
+    description: "Detektivka"
+  horror: 
+    identifiers: horror
+    icon_name: horror_cz.png
+    description: "Hrůza"
+  family:
+    identifiers: family, familijny
+    icon_name: family_cz.png
+    description: "Rodina"
+  documentary:
+    identifiers: documentary, dokument
+    icon_name: documentary_cz.png
+    description: "Dokumentární"
+  animated:
+    identifiers: animated, animation, animowany
+    icon_name: animation_cz.png
+    description: "Animace"
+  recommended:
+    identifiers: recommended, poleca
+    icon_name: recommended_cz.png
+    description: "Doporučené"
+  kickbox:
+    identifiers: kickbox
+    icon_name: hdfightbox_icon_cz.png
+    description: "kickbox"
+  sumo:
+    identifiers: sumo
+    icon_name: hdfightbox_icon_cz.png
+    description: "sumo"
+  wrestling:
+    identifiers: wrestling
+    icon_name: hdfightbox_icon_cz.png
+    description: "wrestling"
+  karate:
+    identifiers: karate
+    icon_name: hdfightbox_icon_cz.png
+    description: "karate"
+  lookbook:
+    identifiers: lookbook
+    icon_name: hdfashion_icon_cz.png
+    description: "lookbook"
+  fashion_cities:
+    identifiers: "fashion cities"
+    icon_name: hdfashion_icon_cz.png
+    description: "fashion cities"
+  vintage:
+    identifiers: vintage
+    icon_name: hdfashion_icon_cz.png
+    description: "vintage"
+  homme:
+    identifiers: homme
+    icon_name: hdfashion_icon_cz.png
+    description: "homme"
+  femme:
+    identifiers: femme
+    icon_name: hdfashion_icon_cz.png
+    description: "femme"
+  fashion_candies:
+    identifiers: "fashion candies"
+    icon_name: hdfashion_icon_cz.png
+    description: "fashion candies"
+  historical: 
+    identifiers: historical
+    icon_name: hddocubox_icon_cz.png
+    description: "historical"
+  roads:
+    identifiers: roads
+    icon_name: hddocubox_icon_cz.png
+    description: "roads"
+  documentary:
+    identifiers: documentary
+    icon_name: hddocubox_icon_cz.png
+    description: "Dokumentární"
+
+PolishPackage:
+  recommended: 
+    identifiers: recommended, poleca
+    icon_name: recommended_cz.png
+    description: "Doporučené"
+  top_movies:
+    identifiers: movie, movies
+    icon_name: top_movies_cz.png
+    description: "Film"
+
