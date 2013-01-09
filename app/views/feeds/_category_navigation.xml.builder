@@ -10,27 +10,27 @@ categories.map do |category, subcategories|
       end
       xml.language(:id => "cz") do
         xml.title category.title
-        xml.description translation_for_description("description")
+        xml.description category.description
       end
       xml.language(:id => "hu") do
         xml.title category.title
-        xml.description translation_for_description("description")
+        xml.description category.description
       end
       xml.language(:id => "pl") do
         xml.title category.title
-        xml.description translation_for_description("description")
+        xml.description category.description
       end
       xml.language(:id => "sk") do
         xml.title category.title
-        xml.description translation_for_description("description")
+        xml.description category.description
       end
       xml.language(:id => "ro") do
         xml.title category.title
-        xml.description translation_for_description("description")
+        xml.description category.description
       end
       xml.language(:id => "tr") do
         xml.title category.title
-        xml.description translation_for_description("description")
+        xml.description category.description
       end
     end
     xml << render( :partial => 'category_navigation', :locals => { :categories => subcategories})

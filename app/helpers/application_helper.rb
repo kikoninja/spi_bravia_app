@@ -62,15 +62,15 @@ require 'digest/md5'
     [scheme_plus_punctuation, authority_with_punctuation, path, '?', query, fragment].join
   end  
 
-  def translation_for_description(lang, package_name, description)
+  def translation_for_description(lang, package)
     package_config = YAML.load_file("config/packages_#{lang}.yml")
-    description = package_config[package]["description"]
+    package = package_config[package]["description"]
   end
 
     #Ako ne e vaka da vidam so Peco za ova
     
-  def translation_for_subcategory(lang, package_name, subcategory)
+  def translation_for_subcategory(lang, package)
     package_config = YAML.load_file("config/packages_#{lang}.yml")
-    subcategory = package_config[package]["identifiers"]
+    package = package_config["identifiers"]
   end
 end

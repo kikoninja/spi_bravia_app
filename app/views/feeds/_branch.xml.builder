@@ -19,27 +19,27 @@ xml.root_category(:id => "ROOTCAT_ID") do
     end
     xml.language(:id => "cz") do
       xml.title channel.title
-      xml.description translation_for_subcategory("identifiers")
+      xml.description translation_for_subcategory("cz", channel.description)
     end
     xml.language(:id => "hu") do
       xml.title channel.title
-      xml.description translation_for_subcategory("identifiers")
+      xml.description translation_for_subcategory("hu", channel.description)
     end
     xml.language(:id => "pl") do
       xml.title channel.title
-      xml.description translation_for_subcategory("identifiers")
+      xml.description translation_for_subcategory("po", channel.description)
     end
     xml.language(:id => "sk") do
       xml.title channel.title
-      xml.description translation_for_subcategory("identifiers")
+      xml.description translation_for_subcategory("sk", channel.description)
     end
     xml.language(:id => "ro") do
       xml.title channel.title
-      xml.description translation_for_subcategory("identifiers")
+      xml.description translation_for_subcategory("ro", channel.description)
     end
     xml.language(:id => "tr") do
       xml.title channel.title
-      xml.description translation_for_subcategory("identifiers")
+      xml.description translation_for_subcategory("tr", channel.description)
     end
   end
 
