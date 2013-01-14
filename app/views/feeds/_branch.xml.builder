@@ -14,7 +14,6 @@ xml.root_category(:id => "ROOTCAT_ID") do
   end
   xml.regions do
     xml.region(:id => 1) do
-      xml.country("en")
       xml.country("cz")
       xml.country("hu")
       xml.country("pl")
@@ -23,30 +22,26 @@ xml.root_category(:id => "ROOTCAT_ID") do
       xml.country("tr")
     end
     xml.region(:id => 2) do
-      xml.country "en"
-      xml.fallback_language "en"
-    end
-    xml.region(:id => 3) do
       xml.country "cz" 
       xml.fallback_language "cz"
     end
-    xml.region(:id => 4) do
+    xml.region(:id => 3) do
       xml.country "hu"
       xml.fallback_language "hu"
     end
-    xml.region(:id => 5) do
+    xml.region(:id => 4) do
       xml.country "pl"
       xml.fallback_language "pl"
     end
-    xml.region(:id => 6) do
+    xml.region(:id => 5) do
       xml.country "sk"
       xml.fallback_language "sk"
     end
-    xml.region(:id => 7) do
+    xml.region(:id => 6) do
       xml.country("ro")
       xml.fallback_language "ro"
     end
-    xml.region(:id => 8) do
+    xml.region(:id => 7) do
       xml.country("tr")
       xml.fallback_language "tr"
     end
