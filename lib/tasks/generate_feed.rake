@@ -94,7 +94,7 @@ namespace :feed do
       base_uri = APP_SETTINGS[Rails.env]['base_logo_uri']
       
       # Define all the hls assets
-      kinopolska_asset = HlsAsset.new("01", "Pakiet Kino Polska", "KinoPolska Live Package", "kinopolska.png", "http://spiinternational-i.akamaihd.net/hls/live/204304/KINOPOLSKA_PL_HLS/once1200.m3u8")
+      kinopolska_asset = HlsAsset.new("01", "Pakiet Kino Polska", "KinoPolska Live Package", "#{base_uri}kinopolska.png", "http://spiinternational-i.akamaihd.net/hls/live/204304/KINOPOLSKA_PL_HLS/once1200.m3u8")
       hls_assets << kinopolska_asset
 
       docubox_asset = HlsAsset.new("02", "Pakiet DocuBox", "DocuBox Live Package", "#{base_uri}docubox.png", "http://spiinternational-i.akamaihd.net/hls/live/204306/DOCUBOXHD_MT_HLS/once1200.m3u8")
