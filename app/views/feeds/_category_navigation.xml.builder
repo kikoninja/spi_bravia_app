@@ -8,7 +8,7 @@ categories.map do |category, subcategories|
         xml.title category.title
         xml.description category.description
       end
-      xml.language(:id => "cz") do
+      xml.language(:id => "cs") do
         xml.title category.title
         xml.description category.description
       end

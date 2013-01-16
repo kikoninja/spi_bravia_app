@@ -23,7 +23,7 @@ xml.assets do
             xml.description "- #{asset.description}"
             xml.icon_std asset.thumbnail_url
           end
-          xml.language(:id => "cz") do
+          xml.language(:id => "cs") do
             #xml.title asset.title
             #xml.description asset.description
             xml.title asset.title
