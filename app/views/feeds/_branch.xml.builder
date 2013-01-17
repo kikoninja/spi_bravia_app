@@ -44,37 +44,30 @@ xml.root_category(:id => "ROOTCAT_ID") do
 
   xml.languages do
     xml.language(:id => "en") do
-      xml.region_ref(:id => 2)
       xml.title channel.title
       xml.description channel.description
     end
     xml.language(:id => "cs") do
-      xml.region_ref(:id => 3)
       xml.title channel.title
       xml.description translation_for_subcategory("cz", channel.description)
     end
     xml.language(:id => "hu") do
-      xml.region_ref(:id => 4)
       xml.title channel.title
       xml.description translation_for_subcategory("hu", channel.description)
     end
     xml.language(:id => "pl") do
-      xml.region_ref(:id => 5)
       xml.title channel.title
       xml.description translation_for_subcategory("po", channel.description)
     end
     xml.language(:id => "sk") do
-      xml.region_ref(:id => 6)
       xml.title channel.title
       xml.description translation_for_subcategory("sk", channel.description)
     end
     xml.language(:id => "ro") do
-      xml.region_ref(:id => 7)
       xml.title channel.title
       xml.description translation_for_subcategory("ro", channel.description)
     end
     xml.language(:id => "tr") do
-      xml.region_ref(:id => 8)
       xml.title channel.title
       xml.description translation_for_subcategory("tr", channel.description)
     end
