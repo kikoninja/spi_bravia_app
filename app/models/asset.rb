@@ -54,6 +54,7 @@ qclass Asset < ActiveRecord::Base
     def update_description
       if description.blank? && video.present? && video.description.present?
         update_attribute(:description, video.description)
+      end
       else
         update_attribute(:description, "Description missing")
       end
