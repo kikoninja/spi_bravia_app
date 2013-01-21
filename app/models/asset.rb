@@ -1,4 +1,4 @@
-qclass Asset < ActiveRecord::Base
+class Asset < ActiveRecord::Base
 
   TYPES = [ "video", "audio", "message", "icon" ]
 
@@ -55,7 +55,7 @@ qclass Asset < ActiveRecord::Base
       if description.blank? && video.present? && video.description.present?
         update_attribute(:description, video.description)
       end
-      else
+      if description.blank?
         update_attribute(:description, "Description missing")
       end
     end
