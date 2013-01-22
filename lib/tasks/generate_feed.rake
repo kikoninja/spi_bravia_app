@@ -94,22 +94,22 @@ namespace :feed do
       base_uri = APP_SETTINGS[Rails.env]['base_logo_uri']
       
       # Define all the hls assets
-      kinopolska_asset = HlsAsset.new("01", "Pakiet Kino Polska", "KinoPolska Live Package", "#{base_uri}kinopolska.png", "http://spiinternational-i.akamaihd.net/hls/live/204304/KINOPOLSKA_PL_HLS/once1200.m3u8")
+      kinopolska_asset = HlsAsset.new("01", "Pakiet Kino Polska", "KinoPolska Live Package", "#{asset_description}", "#{base_uri}kinopolska.png", "http://spiinternational-i.akamaihd.net/hls/live/204304/KINOPOLSKA_PL_HLS/once1200.m3u8")
       hls_assets << kinopolska_asset
 
-      docubox_asset = HlsAsset.new("02", "Pakiet DocuBox", "DocuBox Live Package", "#{base_uri}docubox.png", "http://spiinternational-i.akamaihd.net/hls/live/204306/DOCUBOXHD_MT_HLS/once1200.m3u8")
+      docubox_asset = HlsAsset.new("02", "Pakiet DocuBox", "DocuBox Live Package", "#{asset_description}", "#{base_uri}docubox.png", "http://spiinternational-i.akamaihd.net/hls/live/204306/DOCUBOXHD_MT_HLS/once1200.m3u8")
       hls_assets << docubox_asset
 
-      fashionbox_asset = HlsAsset.new("03", "Pakiet FashionBox", "FashionBox Live Package", "#{base_uri}fashionbox.png", "http://spiinternational-i.akamaihd.net/hls/live/204307/FASHIONBOXHD_MT_HLS/once1200.m3u8")
+      fashionbox_asset = HlsAsset.new("03", "Pakiet FashionBox", "FashionBox Live Package", "#{asset_description}", "#{base_uri}fashionbox.png", "http://spiinternational-i.akamaihd.net/hls/live/204307/FASHIONBOXHD_MT_HLS/once1200.m3u8")
       hls_assets << fashionbox_asset
 
-      filmbox_asset = HlsAsset.new("04", "Pakiet Film", "FilmBox", "#{base_uri}filmbox.png", "http://spiinternational-i.akamaihd.net/hls/live/204302/FILMBOXBASIC_PL_HLS/once1200.m3u8")
+      filmbox_asset = HlsAsset.new("04", "Pakiet Film", "FilmBox", "#{asset_description}", "#{base_uri}filmbox.png", "http://spiinternational-i.akamaihd.net/hls/live/204302/FILMBOXBASIC_PL_HLS/once1200.m3u8")
       hls_assets << filmbox_asset
 
-      filmbox_prem_asset = HlsAsset.new("05", "Pakiet Full", "FilmBox Premiere", "#{base_uri}filmbox_prem.png", "http://spiinternational-i.akamaihd.net/hls/live/204303/FILMBOXEXTRA_PL_HLS/once1200.m3u8")
+      filmbox_prem_asset = HlsAsset.new("05", "Pakiet Full", "FilmBox Premiere", "#{asset_description}", "#{base_uri}filmbox_prem.png", "http://spiinternational-i.akamaihd.net/hls/live/204303/FILMBOXEXTRA_PL_HLS/once1200.m3u8")
       hls_assets << filmbox_prem_asset
 
-      fightbox_asset = HlsAsset.new("06", "Pakiet FightBox", "FightBox Live Package", "#{base_uri}fightbox.png", "http://spiinternational-i.akamaihd.net/hls/live/204308/FIGHTBOXHD_MT_HLS/once1200.m3u8")
+      fightbox_asset = HlsAsset.new("06", "Pakiet FightBox", "FightBox Live Package", "#{asset_description}", "#{base_uri}fightbox.png", "http://spiinternational-i.akamaihd.net/hls/live/204308/FIGHTBOXHD_MT_HLS/once1200.m3u8")
       hls_assets << fightbox_asset
 
       hls_assets.each do |hls_asset|
@@ -122,6 +122,7 @@ namespace :feed do
           :pay_content => "true",
           :asset_type => "video",
           :duration => 0,
+          :asset_description => hls_asset.asset_description,
           :thumbnail_url => hls_asset.thumbnail_url,
           :live => true,
           :source_url => hls_asset.source_url,
@@ -139,12 +140,13 @@ end
 
 class HlsAsset
 
-  attr_accessor :id, :category_title, :asset_title, :thumbnail_url, :source_url
+  attr_accessor :id, :category_title, :asset_title, :asset_description, :thumbnail_url, :source_url
 
-  def initialize(id, category_title, asset_title, thumbnail_url, source_url)
+  def initialize(id, category_title, asset_title, asset_description, thumbnail_url, source_url)
     @id = id
     @category_title = category_title
     @asset_title = asset_title
+    @asset_description = asset_description
     @thumbnail_url = thumbnail_url
     @source_url = source_url
   end
