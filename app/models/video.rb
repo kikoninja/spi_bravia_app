@@ -6,7 +6,7 @@ class Video < ActiveRecord::Base
   has_many :video_custom_attributes
 
   # Scopes
-  default_scope where('user_id =?', 5842)
+  #default_scope where('user_id =?', 5842)
 
 
   def genres
