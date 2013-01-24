@@ -18,9 +18,13 @@ namespace :feed do
       # Generate the feeds
       generate_feeds(channel)
 
-      # Publishers
+      # Generate publishers
 
-      PUBLISHERS = [{:id => 5842, :cc => "PL"}, {:id => 25131, :cc => "HU"}, {:id => 25132, :cc => "TR"}, {:id => 25136, :cc => "CZ"}, {:id => 25137, :cc => "RO"}]
+      PUBLISHERS = [{:id => 5842, :cc => "PL"}, 
+                    {:id => 25131, :cc => "HU"}, 
+                    {:id => 25132, :cc => "TR"}, 
+                    {:id => 25136, :cc => "CZ"}, 
+                    {:id => 25137, :cc => "RO"}]
 
       PUBLISHERS.each do |publisher|
         Publisher.create!(
@@ -29,8 +33,10 @@ namespace :feed do
           )
       end
 
-      # Load the package config
-      packages_config = YAML.load_file("config/packages_#{publisher.country_code}.yml")
+      Publisher.all.each do |publisher|
+        # Load the package config
+        packages_config = YAML.load_file("config/packages_#{publisher.country_code}.yml")
+      end
 
       # Iterate through packages from the config
       packages_config.each do |package_id, value|
