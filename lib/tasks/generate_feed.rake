@@ -30,7 +30,7 @@ namespace :feed do
       end
 
       # Load the package config
-      packages_config = YAML.load_file('config/packages.yml')
+      packages_config = YAML.load_file("config/packages_#{publisher.country_code}.yml")
 
       # Iterate through packages from the config
       packages_config.each do |package_id, value|
