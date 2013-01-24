@@ -1,4 +1,4 @@
-FightBox:
+﻿FightBox:
   kickbox:
     identifiers: kickbox
     icon_name: hdfightbox_icon_pl.png
@@ -10,10 +10,10 @@ FightBox:
   wrestling:
     identifiers: wrestling
     icon_name: hdfightbox_icon_pl.png
-    description: "wrestling"
+    description: "zápas"
   karate:
     identifiers: karate
-    icon_name: hdfightbox_icon_pl.png
+    icon_name: hdfightbox_icon_pl.png 
     description: "karate"
 
 FashionBox:
@@ -24,129 +24,129 @@ FashionBox:
   fashion_cities:
     identifiers: "fashion cities"
     icon_name: hdfashion_icon_pl.png
-    description: "fashion cities"
+    description: "módní m?st"
   vintage:
     identifiers: vintage
     icon_name: hdfashion_icon_pl.png
-    description: "vintage"
+    description: "vinobraní"
   homme:
     identifiers: homme
     icon_name: hdfashion_icon_pl.png
-    description: "homme"
+    description: "mu"
   femme:
     identifiers: femme
     icon_name: hdfashion_icon_pl.png
-    description: "femme"
+    description: "ena"
   fashion_candies:
     identifiers: "fashion candies"
     icon_name: hdfashion_icon_pl.png
-    description: "fashion candies"
+    description: "módní bonbóny"
 
 DocuBox:
   historical: 
     identifiers: historical
     icon_name: hddocubox_icon_pl.png
-    description: "historical"
+    description: "historický"
   roads:
     identifiers: roads
     icon_name: hddocubox_icon_pl.png
-    description: "roads"
+    description: "silnice"
   documentary:
     identifiers: documentary
     icon_name: hddocubox_icon_pl.png
-    description: "Dokument"
+    description: "dokumentární"
 
 FilmPackage:
   scifi:
     identifiers: scifi
     icon_name: sci-fi_pl.png
-    description: "Sci-Fi"
+    description: "sci-fi"
   comedy:
     identifiers: comedy, komedi
     icon_name: comedy_pl.png
-    description: "Komedia"
+    description: "komedie"
   romance:
     identifiers: romance, romans
     icon_name: romance_pl.png
-    description: "Romans"
+    description: "romance"
   action:
     identifiers: action, akcja
     icon_name: action_pl.png
-    description: "Akcja"
+    description: "actian"
   drama:
     identifiers: drama, dramat
     icon_name: drama_pl.png
-    description: "Dramat"
+    description: "drama"
   thriller:
     identifiers: thriller
     icon_name: thriller_pl.png
-    description: "Thriller"
+    description: "detektivka"
   horror: 
     identifiers: horror
     icon_name: horror_pl.png
-    description: "Horror"
+    description: "hr?za"
   family:
     identifiers: family, familijny
     icon_name: family_pl.png
-    description: "Familijny"
+    description: "rodina"
   documentary:
     identifiers: documentary, dokument
     icon_name: documentary_pl.png
-    description: "Dokument"
+    description: "dokumentární"
   animated:
     identifiers: animated, animation, animowany
     icon_name: animation_pl.png
-    description: "Animowany"
+    description: "ivý"
   recommended:
     identifiers: recommended, poleca
     icon_name: recommended_pl.png
-    description: "Poleca"
+    description: "doporu?uje"
     
 UltimatePackage:
   scifi:
     identifiers: scifi
-    icon_name: sci-fi_pl.png
-    description: "Sci-Fi"
+    icon_name: sci-fi_pl.png  
+    description: "sci-fi"
   comedy:
     identifiers: comedy, komedi
     icon_name: comedy_pl.png
-    description: "Komedia"
+    description: "komedie"
   romance:
     identifiers: romance, romans
     icon_name: romance_pl.png
-    description: "Romans"
+    description: "romance"
   action:
     identifiers: action, akcja
     icon_name: action_pl.png
-    description: "Akcja"
+    description: "akce"
   drama:
     identifiers: drama, dramat
     icon_name: drama_pl.png
-    description: "Dramat"
+    description: "drama"
   thriller:
     identifiers: thriller
     icon_name: thriller_pl.png
-    description: "Thriller"
+    description: "detektivka"
   horror: 
     identifiers: horror
     icon_name: horror_pl.png
-    description: "Horror"
+    description: "hr?za"
   family:
     identifiers: family, familijny
     icon_name: family_pl.png
-    description: "Familijny"
+    description: "rodina"
   documentary:
     identifiers: documentary, dokument
     icon_name: documentary_pl.png
-    description: "Dokument"
+    description: "dokumentární"
   animated:
     identifiers: animated, animation, animowany
     icon_name: animation_pl.png
-    description: "Animowany"
+    description: "ivý"
   recommended:
     identifiers: recommended, poleca
     icon_name: recommended_pl.png
-    description: "Poleca"
+    description: "ajánlott"
   kickbox:
     identifiers: kickbox
     icon_name: hdfightbox_icon_pl.png
@@ -158,7 +158,7 @@ UltimatePackage:
   wrestling:
     identifiers: wrestling
     icon_name: hdfightbox_icon_pl.png
-    description: "wrestling"
+    description: "zápas"
   karate:
     identifiers: karate
     icon_name: hdfightbox_icon_pl.png
@@ -170,43 +170,42 @@ UltimatePackage:
   fashion_cities:
     identifiers: "fashion cities"
     icon_name: hdfashion_icon_pl.png
-    description: "fashion cities"
+    description: "módní m?st"
   vintage:
     identifiers: vintage
     icon_name: hdfashion_icon_pl.png
-    description: "vintage"
+    description: "vinobraní"
   homme:
     identifiers: homme
     icon_name: hdfashion_icon_pl.png
-    description: "homme"
+    description: "mu"
   femme:
     identifiers: femme
     icon_name: hdfashion_icon_pl.png
-    description: "femme"
+    description: "ena"
   fashion_candies:
     identifiers: "fashion candies"
     icon_name: hdfashion_icon_pl.png
-    description: "fashion candies"
+    description: "módní bonbóny"
   historical: 
     identifiers: historical
     icon_name: hddocubox_icon_pl.png
-    description: "historical"
+    description: "historický"
   roads:
     identifiers: roads
     icon_name: hddocubox_icon_pl.png
-    description: "roads"
+    description: "silnice"
   documentary:
     identifiers: documentary
     icon_name: hddocubox_icon_pl.png
-    description: "Dokument"
+    description: "dokumentární"
 
 PolishPackage:
   recommended: 
     identifiers: recommended, poleca
     icon_name: recommended_pl.png
-    description: "Poleca"
+    description: "doporu?uje"
   top_movies:
     identifiers: movie, movies
     icon_name: top_movies_pl.png
-    description: "Filmowy"
-
+    description: "top filmy"

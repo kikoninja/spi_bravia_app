@@ -1,0 +1,211 @@
+﻿FightBox:
+  kickbox:
+    identifiers: kickbox
+    icon_name: hdfightbox_icon_pl.png
+    description: "kickbox"
+  sumo:
+    identifiers: sumo
+    icon_name: hdfightbox_icon_pl.png
+    description: "sumo"
+  wrestling:
+    identifiers: wrestling
+    icon_name: hdfightbox_icon_pl.png
+    description: "lupta greco-romane"
+  karate:
+    identifiers: karate
+    icon_name: hdfightbox_icon_pl.png 
+    description: "karate"
+
+FashionBox:
+  lookbook:
+    identifiers: lookbook
+    icon_name: hdfashion_icon_pl.png
+    description: "lookbook"
+  fashion_cities:
+    identifiers: "fashion cities"
+    icon_name: hdfashion_icon_pl.png
+    description: "moda ora?e"
+  vintage:
+    identifiers: vintage
+    icon_name: hdfashion_icon_pl.png
+    description: "vin"
+  homme:
+    identifiers: homme
+    icon_name: hdfashion_icon_pl.png
+    description: "om"
+  femme:
+    identifiers: femme
+    icon_name: hdfashion_icon_pl.png
+    description: "femeie"
+  fashion_candies:
+    identifiers: "fashion candies"
+    icon_name: hdfashion_icon_pl.png
+    description: "moda bomboane"
+
+DocuBox:
+  historical: 
+    identifiers: historical
+    icon_name: hddocubox_icon_pl.png
+    description: "istoric"
+  roads:
+    identifiers: roads
+    icon_name: hddocubox_icon_pl.png
+    description: "drumuri"
+  documentary:
+    identifiers: documentary
+    icon_name: hddocubox_icon_pl.png
+    description: "documentar"
+
+FilmPackage:
+  scifi:
+    identifiers: scifi
+    icon_name: sci-fi_pl.png
+    description: "sci-fi"
+  comedy:
+    identifiers: comedy, komedi
+    icon_name: comedy_pl.png
+    description: "comedie"
+  romance:
+    identifiers: romance, romans
+    icon_name: romance_pl.png
+    description: "romantism"
+  action:
+    identifiers: action, akcja
+    icon_name: action_pl.png
+    description: "ac?iune"
+  drama:
+    identifiers: drama, dramat
+    icon_name: drama_pl.png
+    description: "dram?"
+  thriller:
+    identifiers: thriller
+    icon_name: thriller_pl.png
+    description: "film de aventuri"
+  horror: 
+    identifiers: horror
+    icon_name: horror_pl.png
+    description: "groaz?"
+  family:
+    identifiers: family, familijny
+    icon_name: family_pl.png
+    description: "familie"
+  documentary:
+    identifiers: documentary, dokument
+    icon_name: documentary_pl.png
+    description: "documentar"
+  animated:
+    identifiers: animated, animation, animowany
+    icon_name: animation_pl.png
+    description: "animat"
+  recommended:
+    identifiers: recommended, poleca
+    icon_name: recommended_pl.png
+    description: "recomandat"
+    
+UltimatePackage:
+  scifi:
+    identifiers: scifi
+    icon_name: sci-fi_pl.png  
+    description: "sci-fi"
+  comedy:
+    identifiers: comedy, komedi
+    icon_name: comedy_pl.png
+    description: "comedie"
+  romance:
+    identifiers: romance, romans
+    icon_name: romance_pl.png
+    description: "romantism"
+  action:
+    identifiers: action, akcja
+    icon_name: action_pl.png
+    description: "ac?iune"
+  drama:
+    identifiers: drama, dramat
+    icon_name: drama_pl.png
+    description: "dram?"
+  thriller:
+    identifiers: thriller
+    icon_name: thriller_pl.png
+    description: "film de aventuri"
+  horror: 
+    identifiers: horror
+    icon_name: horror_pl.png
+    description: "groaz?"
+  family:
+    identifiers: family, familijny
+    icon_name: family_pl.png
+    description: "csafamilielád"
+  documentary:
+    identifiers: documentary, dokument
+    icon_name: documentary_pl.png
+    description: "documentar"
+  animated:
+    identifiers: animated, animation, animowany
+    icon_name: animation_pl.png
+    description: "animat"
+  recommended:
+    identifiers: recommended, poleca
+    icon_name: recommended_pl.png
+    description: "recomandat"
+  kickbox:
+    identifiers: kickbox
+    icon_name: hdfightbox_icon_pl.png
+    description: "kickbox"
+  sumo:
+    identifiers: sumo
+    icon_name: hdfightbox_icon_pl.png
+    description: "sumo"
+  wrestling:
+    identifiers: wrestling
+    icon_name: hdfightbox_icon_pl.png
+    description: "lupta greco-romane"
+  karate:
+    identifiers: karate
+    icon_name: hdfightbox_icon_pl.png
+    description: "karate"
+  lookbook:
+    identifiers: lookbook
+    icon_name: hdfashion_icon_pl.png
+    description: "lookbook"
+  fashion_cities:
+    identifiers: "fashion cities"
+    icon_name: hdfashion_icon_pl.png
+    description: "moda ora?e"
+  vintage:
+    identifiers: vintage
+    icon_name: hdfashion_icon_pl.png
+    description: "vin"
+  homme:
+    identifiers: homme
+    icon_name: hdfashion_icon_pl.png
+    description: "om"
+  femme:
+    identifiers: femme
+    icon_name: hdfashion_icon_pl.png
+    description: "femeie"
+  fashion_candies:
+    identifiers: "fashion candies"
+    icon_name: hdfashion_icon_pl.png
+    description: "divat cukorka"
+  historical: 
+    identifiers: historical
+    icon_name: hddocubox_icon_pl.png
+    description: "istoric"
+  roads:
+    identifiers: roads
+    icon_name: hddocubox_icon_pl.png
+    description: "drumuri"
+  documentary:
+    identifiers: documentary
+    icon_name: hddocubox_icon_pl.png
+    description: "documentar"
+
+PolishPackage:
+  recommended: 
+    identifiers: recommended, poleca
+    icon_name: recommended_pl.png
+    description: "recomandat"
+  top_movies:
+    identifiers: movie, movies
+    icon_name: top_movies_pl.png
+    description: "filme de top"

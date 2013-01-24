@@ -1,0 +1,211 @@
+﻿FightBox:
+  kickbox:
+    identifiers: kickbox
+    icon_name: hdfightbox_icon_pl.png
+    description: "kickbox"
+  sumo:
+    identifiers: sumo
+    icon_name: hdfightbox_icon_pl.png
+    description: "sumo"
+  wrestling:
+    identifiers: wrestling
+    icon_name: hdfightbox_icon_pl.png
+    description: "birkózás"
+  karate:
+    identifiers: karate
+    icon_name: hdfightbox_icon_pl.png 
+    description: "karate"
+
+FashionBox:
+  lookbook:
+    identifiers: lookbook
+    icon_name: hdfashion_icon_pl.png
+    description: "lookbook"
+  fashion_cities:
+    identifiers: "fashion cities"
+    icon_name: hdfashion_icon_pl.png
+    description: "divat városok"
+  vintage:
+    identifiers: vintage
+    icon_name: hdfashion_icon_pl.png
+    description: "szüret"
+  homme:
+    identifiers: homme
+    icon_name: hdfashion_icon_pl.png
+    description: "férfi"
+  femme:
+    identifiers: femme
+    icon_name: hdfashion_icon_pl.png
+    description: "n?"
+  fashion_candies:
+    identifiers: "fashion candies"
+    icon_name: hdfashion_icon_pl.png
+    description: "divat cukorka"
+
+DocuBox:
+  historical: 
+    identifiers: historical
+    icon_name: hddocubox_icon_pl.png
+    description: "történelmi"
+  roads:
+    identifiers: roads
+    icon_name: hddocubox_icon_pl.png
+    description: "utak"
+  documentary:
+    identifiers: documentary
+    icon_name: hddocubox_icon_pl.png
+    description: "dokumentumfilm"
+
+FilmPackage:
+  scifi:
+    identifiers: scifi
+    icon_name: sci-fi_pl.png
+    description: "sci-fi"
+  comedy:
+    identifiers: comedy, komedi
+    icon_name: comedy_pl.png
+    description: "vígjáték"
+  romance:
+    identifiers: romance, romans
+    icon_name: romance_pl.png
+    description: "románc"
+  action:
+    identifiers: action, akcja
+    icon_name: action_pl.png
+    description: "akció"
+  drama:
+    identifiers: drama, dramat
+    icon_name: drama_pl.png
+    description: "dráma"
+  thriller:
+    identifiers: thriller
+    icon_name: thriller_pl.png
+    description: "krimi"
+  horror: 
+    identifiers: horror
+    icon_name: horror_pl.png
+    description: "borzalom"
+  family:
+    identifiers: family, familijny
+    icon_name: family_pl.png
+    description: "család"
+  documentary:
+    identifiers: documentary, dokument
+    icon_name: documentary_pl.png
+    description: "dokumentumfilm"
+  animated:
+    identifiers: animated, animation, animowany
+    icon_name: animation_pl.png
+    description: "élénk"
+  recommended:
+    identifiers: recommended, poleca
+    icon_name: recommended_pl.png
+    description: "ajánlott"
+    
+UltimatePackage:
+  scifi:
+    identifiers: scifi
+    icon_name: sci-fi_pl.png  
+    description: "sci-fi"
+  comedy:
+    identifiers: comedy, komedi
+    icon_name: comedy_pl.png
+    description: "vígjáték"
+  romance:
+    identifiers: romance, romans
+    icon_name: romance_pl.png
+    description: "románc"
+  action:
+    identifiers: action, akcja
+    icon_name: action_pl.png
+    description: "akció"
+  drama:
+    identifiers: drama, dramat
+    icon_name: drama_pl.png
+    description: "dráma"
+  thriller:
+    identifiers: thriller
+    icon_name: thriller_pl.png
+    description: "krimi"
+  horror: 
+    identifiers: horror
+    icon_name: horror_pl.png
+    description: "borzalom"
+  family:
+    identifiers: family, familijny
+    icon_name: family_pl.png
+    description: "család"
+  documentary:
+    identifiers: documentary, dokument
+    icon_name: documentary_pl.png
+    description: "dokumentumfilm"
+  animated:
+    identifiers: animated, animation, animowany
+    icon_name: animation_pl.png
+    description: "élénk"
+  recommended:
+    identifiers: recommended, poleca
+    icon_name: recommended_pl.png
+    description: "ajánlott"
+  kickbox:
+    identifiers: kickbox
+    icon_name: hdfightbox_icon_pl.png
+    description: "kickbox"
+  sumo:
+    identifiers: sumo
+    icon_name: hdfightbox_icon_pl.png
+    description: "sumo"
+  wrestling:
+    identifiers: wrestling
+    icon_name: hdfightbox_icon_pl.png
+    description: "birkózás"
+  karate:
+    identifiers: karate
+    icon_name: hdfightbox_icon_pl.png
+    description: "karate"
+  lookbook:
+    identifiers: lookbook
+    icon_name: hdfashion_icon_pl.png
+    description: "lookbook"
+  fashion_cities:
+    identifiers: "fashion cities"
+    icon_name: hdfashion_icon_pl.png
+    description: "divat városok"
+  vintage:
+    identifiers: vintage
+    icon_name: hdfashion_icon_pl.png
+    description: "szüret"
+  homme:
+    identifiers: homme
+    icon_name: hdfashion_icon_pl.png
+    description: "férfi"
+  femme:
+    identifiers: femme
+    icon_name: hdfashion_icon_pl.png
+    description: "n?"
+  fashion_candies:
+    identifiers: "fashion candies"
+    icon_name: hdfashion_icon_pl.png
+    description: "divat cukorka"
+  historical: 
+    identifiers: historical
+    icon_name: hddocubox_icon_pl.png
+    description: "történelmi"
+  roads:
+    identifiers: roads
+    icon_name: hddocubox_icon_pl.png
+    description: "utak"
+  documentary:
+    identifiers: documentary
+    icon_name: hddocubox_icon_pl.png
+    description: "dokumentumfilm"
+
+PolishPackage:
+  recommended: 
+    identifiers: recommended, poleca
+    icon_name: recommended_pl.png
+    description: "ajánlott"
+  top_movies:
+    identifiers: movie, movies
+    icon_name: top_movies_pl.png
+    description: "etop filmek"
