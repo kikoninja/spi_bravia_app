@@ -36,6 +36,8 @@ namespace :feed do
       Publisher.all.each do |publisher|
         # Load the package config
         packages_config = YAML.load_file("config/packages_#{publisher.country_code}.yml")
+        # Load hls_videos
+        hls_videos = Video.where(publisher_id: Publisher.publisher_id, live: '1')
       end
 
       # Iterate through packages from the config
