@@ -108,7 +108,7 @@ namespace :feed do
       feed_leaf2 = Feed.create!(:channel => channel, :title => "2m_leaf1_2")
       puts "- created feed: #{feed_leaf2.title}"
 
-      puts "Generating manual feeds for HLS"
+      #puts "Generating manual feeds for HLS"
       #hls_assets = []
       #base_uri = APP_SETTINGS[Rails.env]['base_logo_uri']
       
@@ -131,26 +131,26 @@ namespace :feed do
       # fightbox_asset = HlsAsset.new("06", "Pakiet FightBox", "FightBox Live Package", "#{asset_description}", "#{base_uri}fightbox.png", "http://spiinternational-i.akamaihd.net/hls/live/204308/FIGHTBOXHD_MT_HLS/once1200.m3u8")
       # hls_assets << fightbox_asset
 
-      hls_assets.each do |hls_asset|
-        category = Category.find_by_title(hls_asset.category_title)
+      # hls_assets.each do |hls_asset|
+      #   category = Category.find_by_title(hls_asset.category_title)
 
-        asset = Asset.create!(
-          :title => hls_asset.asset_title,
-          :feed => feed_leaf2,
-          :content_id => "hls-asset-#{hls_asset.id}",
-          :pay_content => "true",
-          :asset_type => "video",
-          :duration => 0,
-          :asset_description => hls_asset.asset_description,
-          :thumbnail_url => hls_asset.thumbnail_url,
-          :live => true,
-          :source_url => hls_asset.source_url,
-          :rating => "15" 
-        )
-        puts "- created asset for HLS link for #{asset.title} with asset ID: #{asset.content_id}"
+      #   asset = Asset.create!(
+      #     :title => hls_asset.asset_title,
+      #     :feed => feed_leaf2,
+      #     :content_id => "hls-asset-#{hls_asset.id}",
+      #     :pay_content => "true",
+      #     :asset_type => "video",
+      #     :duration => 0,
+      #     :asset_description => hls_asset.asset_description,
+      #     :thumbnail_url => hls_asset.thumbnail_url,
+      #     :live => true,
+      #     :source_url => hls_asset.source_url,
+      #     :rating => "15" 
+      #   )
+      #   puts "- created asset for HLS link for #{asset.title} with asset ID: #{asset.content_id}"
 
-        AssetCategorization.create!(:asset_id => asset.id, :category_id => category.id)
-      end
+      #   AssetCategorization.create!(:asset_id => asset.id, :category_id => category.id)
+      # end
 
     end
 
