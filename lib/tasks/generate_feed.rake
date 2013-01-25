@@ -107,8 +107,8 @@ namespace :feed do
       puts "- created feed: #{feed_leaf2.title}"
 
       puts "Generating manual feeds for HLS"
-      hls_assets = []
-      base_uri = APP_SETTINGS[Rails.env]['base_logo_uri']
+      #hls_assets = []
+      #base_uri = APP_SETTINGS[Rails.env]['base_logo_uri']
       
       # # Define all the hls assets
       # kinopolska_asset = HlsAsset.new("01", "Pakiet Kino Polska", "KinoPolska Live Package", "#{asset_description}", "#{base_uri}kinopolska.png", "http://spiinternational-i.akamaihd.net/hls/live/204304/KINOPOLSKA_PL_HLS/once1200.m3u8")
