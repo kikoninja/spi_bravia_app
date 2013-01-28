@@ -20,16 +20,17 @@ namespace :feed do
 
       # Generate publishers
 
-      PUBLISHERS = [{:publisher_id => 5842, :cc => "PL"}, 
-                    {:publisher_id => 25131, :cc => "HU"}, 
-                    {:publisher_id => 25132, :cc => "TR"}, 
-                    {:publisher_id => 25136, :cc => "CZ"}, 
-                    {:publisher_id => 25137, :cc => "RO"}]
+      PUBLISHERS = [{:publisher_id => 5842, :cc => "PL", :region_id => 1}, 
+                    {:publisher_id => 25131, :cc => "HU", :region_id => 2}, 
+                    {:publisher_id => 25132, :cc => "TR", :region_id => 3}, 
+                    {:publisher_id => 25136, :cc => "CZ", :region_id => 4}, 
+                    {:publisher_id => 25137, :cc => "RO", :region_id => 5}]
 
       PUBLISHERS.each do |publisher|
         Publisher.create!(
           :publisher_id => publisher[:id], 
-          :country_code => publisher[:cc]
+          :country_code => publisher[:cc],
+          :region_id => publisher[:region_id]
           )
       end
 
