@@ -73,10 +73,9 @@ ActiveRecord::Schema.define(:version => 20130128101039) do
 
   create_table "channels", :force => true do |t|
     t.string   "title"
-    t.datetime "created_at",   :null => false
-    t.datetime "updated_at",   :null => false
+    t.datetime "created_at",  :null => false
+    t.datetime "updated_at",  :null => false
     t.text     "description"
-    t.integer  "publisher_id"
   end
 
   create_table "feeds", :force => true do |t|
