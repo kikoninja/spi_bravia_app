@@ -8,8 +8,11 @@ xml.supported_features do
   xml.icon_formats "std"
 end
 xml.regions do
-  xml.region(:id => publisher.region_id)
-  xml.country(:cc => publisher.country_code)
+  Publisher.all.each do |publisher|
+    xml.region(:id => publisher.id) do
+      xml.country(:country => publisher.country_code)
+    end
+  end
 end
 #   xml.region(:id => 2) do
 #     xml.country("CZ", :fallback_language => "cs")
