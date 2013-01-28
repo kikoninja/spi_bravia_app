@@ -1,0 +1,640 @@
+Deleted old categories...
+Deleted old feeds...
+Deleted old assets...
+Deleted old categorizations...
+- created feed: branch
+- created feed: 2m_leaf1_1
+- created feed: 2m_leaf1_3
+Processing package... FightBoxPackage Publisher... 5842(74 videos, 4 categories)
+ - creating category Pakiet FightBox...done
+   - creating subcategory Kickbox...done
+   - creating subcategory Sumo...done
+   - creating subcategory Wrestling...done
+   - creating subcategory Karate...done
+    - created asset for video FightBox HD with asset ID: 15-asset-4367668 for Publisher: 5842
+       - Warning: Genres  not found in this package, attaching the asset to category Pakiet FightBox instead
+    - created asset for video AGORA with asset ID: 15-asset-5526324 for Publisher: 5842
+       - Warning: Genres Drama,History,recommended not found in this package, attaching the asset to category Pakiet FightBox instead
+    - created asset for video Art Of Fighting IX Part 1 with asset ID: 15-asset-5526364 for Publisher: 5842
+       - Warning: Genres Martial Mixed Arts,Fightbox not found in this package, attaching the asset to category Pakiet FightBox instead
+    - created asset for video Art Of Fighting IX Part 2 with asset ID: 15-asset-5526365 for Publisher: 5842
+       - Warning: Genres Martial Mixed Arts,Fightbox not found in this package, attaching the asset to category Pakiet FightBox instead
+    - created asset for video Art Of Fighting IX Part 3 with asset ID: 15-asset-5526366 for Publisher: 5842
+       - Warning: Genres Martial Mixed Arts,Fightbox not found in this package, attaching the asset to category Pakiet FightBox instead
+    - created asset for video Art Of Fighting VII Part 1 with asset ID: 15-asset-5526367 for Publisher: 5842
+       - Warning: Genres Martial Mixed Arts,Fightbox not found in this package, attaching the asset to category Pakiet FightBox instead
+    - created asset for video Art Of Fighting VII Part 2 with asset ID: 15-asset-5526368 for Publisher: 5842
+       - Warning: Genres Martial Mixed Arts,Fightbox not found in this package, attaching the asset to category Pakiet FightBox instead
+    - created asset for video Art Of Fighting VII Part 3 with asset ID: 15-asset-5526369 for Publisher: 5842
+       - Warning: Genres Martial Mixed Arts,Fightbox not found in this package, attaching the asset to category Pakiet FightBox instead
+    - created asset for video Art Of Fighting VIII Part 1 with asset ID: 15-asset-5526370 for Publisher: 5842
+       - Warning: Genres Martial Mixed Arts,Fightbox not found in this package, attaching the asset to category Pakiet FightBox instead
+    - created asset for video Art Of Fighting VIII Part 2 with asset ID: 15-asset-5526371 for Publisher: 5842
+       - Warning: Genres Martial Mixed Arts,Fightbox not found in this package, attaching the asset to category Pakiet FightBox instead
+    - created asset for video Art Of Fighting X Part 1 with asset ID: 15-asset-5526372 for Publisher: 5842
+       - Warning: Genres Martial Mixed Arts,Fightbox not found in this package, attaching the asset to category Pakiet FightBox instead
+    - created asset for video Art Of Fighting X Part 2 with asset ID: 15-asset-5526373 for Publisher: 5842
+       - Warning: Genres Martial Mixed Arts,Fightbox not found in this package, attaching the asset to category Pakiet FightBox instead
+    - created asset for video Beyond MMA: Anderson's Martial Arts Academy - MMA with asset ID: 15-asset-5526376 for Publisher: 5842
+       - Warning: Genres Martial Mixed Arts,Fightbox not found in this package, attaching the asset to category Pakiet FightBox instead
+    - created asset for video Beyond MMA: Nadine's Capoeira - Brazilian JuJitsu with asset ID: 15-asset-5526377 for Publisher: 5842
+       - Warning: Genres Capoeira,Fightbox not found in this package, attaching the asset to category Pakiet FightBox instead
+    - created asset for video Beyond MMA: Sambo with asset ID: 15-asset-5526378 for Publisher: 5842
+       - Warning: Genres Sambo,Fightbox not found in this package, attaching the asset to category Pakiet FightBox instead
+    - created asset for video Beyond MMA: The Art Of Muay Thai / Five Points Academy - New York with asset ID: 15-asset-5526379 for Publisher: 5842
+       - Warning: Genres Muay Thai,Fightbox not found in this package, attaching the asset to category Pakiet FightBox instead
+    - created asset for video Grand Sumo Tournament Nagoya Day 10: Aichi Prefectural Gymnasium with asset ID: 15-asset-5526392 for Publisher: 5842
+       - Warning: Genres Sumo,Fightbox not found in this package, attaching the asset to category Pakiet FightBox instead
+    - created asset for video Grand Sumo Tournament Nagoya Day 11: Aichi Prefectural Gymnasium with asset ID: 15-asset-5526393 for Publisher: 5842
+       - Warning: Genres Sumo,Fightbox not found in this package, attaching the asset to category Pakiet FightBox instead
+    - created asset for video Grand Sumo Tournament Nagoya Day 12: Aichi Prefectural Gymnasium with asset ID: 15-asset-5526394 for Publisher: 5842
+       - Warning: Genres Sumo,Fightbox not found in this package, attaching the asset to category Pakiet FightBox instead
+    - created asset for video Grand Sumo Tournament Nagoya Day 13: Aichi Prefectural Gymnasium with asset ID: 15-asset-5526395 for Publisher: 5842
+       - Warning: Genres Sumo,Fightbox not found in this package, attaching the asset to category Pakiet FightBox instead
+    - created asset for video Grand Sumo Tournament Nagoya Day 14: Aichi Prefectural Gymnasium with asset ID: 15-asset-5526396 for Publisher: 5842
+       - Warning: Genres Sumo,Fightbox not found in this package, attaching the asset to category Pakiet FightBox instead
+    - created asset for video Grand Sumo Tournament Nagoya Day 15: Aichi Prefectural Gymnasium with asset ID: 15-asset-5526397 for Publisher: 5842
+       - Warning: Genres Sumo,Fightbox not found in this package, attaching the asset to category Pakiet FightBox instead
+    - created asset for video Grand Sumo Tournament Nagoya Day 1: Aichi Prefectural Gymnasium with asset ID: 15-asset-5526398 for Publisher: 5842
+       - Warning: Genres Sumo,Fightbox not found in this package, attaching the asset to category Pakiet FightBox instead
+    - created asset for video Grand Sumo Tournament Nagoya Day 2: Aichi Prefectural Gymnasium with asset ID: 15-asset-5526399 for Publisher: 5842
+       - Warning: Genres Sumo,Fightbox not found in this package, attaching the asset to category Pakiet FightBox instead
+    - created asset for video Grand Sumo Tournament Nagoya Day 3: Aichi Prefectural Gymnasium with asset ID: 15-asset-5526400 for Publisher: 5842
+       - Warning: Genres Sumo,Kickbox not found in this package, attaching the asset to category Pakiet FightBox instead
+    - created asset for video Grand Sumo Tournament Nagoya Day 4: Aichi Prefectural Gymnasium with asset ID: 15-asset-5526401 for Publisher: 5842
+       - Warning: Genres Sumo,Fightbox not found in this package, attaching the asset to category Pakiet FightBox instead
+    - created asset for video Grand Sumo Tournament Nagoya Day 6: Aichi Prefectural Gymnasium with asset ID: 15-asset-5526402 for Publisher: 5842
+       - Warning: Genres Sumo,Fightbox not found in this package, attaching the asset to category Pakiet FightBox instead
+    - created asset for video Grand Sumo Tournament Nagoya Day 7: Aichi Prefectural Gymnasium with asset ID: 15-asset-5526403 for Publisher: 5842
+       - Warning: Genres Sumo,Fightbox not found in this package, attaching the asset to category Pakiet FightBox instead
+    - created asset for video Grand Sumo Tournament Nagoya Day 8: Aichi Prefectural Gymnasium with asset ID: 15-asset-5526404 for Publisher: 5842
+       - Warning: Genres Sumo,Fightbox not found in this package, attaching the asset to category Pakiet FightBox instead
+    - created asset for video Grand Sumo Tournament Nagoya Day 9: Aichi Prefectural Gymnasium with asset ID: 15-asset-5526405 for Publisher: 5842
+       - Warning: Genres Sumo,Fightbox not found in this package, attaching the asset to category Pakiet FightBox instead
+    - created asset for video Krush Part 1 with asset ID: 15-asset-5526425 for Publisher: 5842
+       - Warning: Genres Kickbox,Fightbox not found in this package, attaching the asset to category Pakiet FightBox instead
+    - created asset for video Krush Part 10 with asset ID: 15-asset-5526426 for Publisher: 5842
+       - Warning: Genres Kickbox,Fightbox not found in this package, attaching the asset to category Pakiet FightBox instead
+    - created asset for video Krush Part 12 with asset ID: 15-asset-5526427 for Publisher: 5842
+       - Warning: Genres Kickbox,Fightbox not found in this package, attaching the asset to category Pakiet FightBox instead
+    - created asset for video Krush Part 13 with asset ID: 15-asset-5526428 for Publisher: 5842
+       - Warning: Genres Kickbox,Fightbox not found in this package, attaching the asset to category Pakiet FightBox instead
+    - created asset for video Krush Part 14 with asset ID: 15-asset-5526429 for Publisher: 5842
+       - Warning: Genres Kickbox,Fightbox not found in this package, attaching the asset to category Pakiet FightBox instead
+    - created asset for video Krush Part 15 with asset ID: 15-asset-5526430 for Publisher: 5842
+       - Warning: Genres Kickbox,Fightbox not found in this package, attaching the asset to category Pakiet FightBox instead
+    - created asset for video Krush Part 16 with asset ID: 15-asset-5526431 for Publisher: 5842
+       - Warning: Genres Kickbox,Fightbox not found in this package, attaching the asset to category Pakiet FightBox instead
+    - created asset for video Krush Part 3 with asset ID: 15-asset-5526432 for Publisher: 5842
+       - Warning: Genres Kickbox,Fightbox not found in this package, attaching the asset to category Pakiet FightBox instead
+    - created asset for video Krush Part 4 with asset ID: 15-asset-5526433 for Publisher: 5842
+       - Warning: Genres Kickbox,Fightbox not found in this package, attaching the asset to category Pakiet FightBox instead
+    - created asset for video Krush Part 5 with asset ID: 15-asset-5526434 for Publisher: 5842
+       - Warning: Genres Kickbox,Fightbox not found in this package, attaching the asset to category Pakiet FightBox instead
+    - created asset for video Krush Part 6 with asset ID: 15-asset-5526435 for Publisher: 5842
+       - Warning: Genres Kickbox,Fightbox not found in this package, attaching the asset to category Pakiet FightBox instead
+    - created asset for video Krush Part 7 with asset ID: 15-asset-5526436 for Publisher: 5842
+       - Warning: Genres Kickbox,Fightbox not found in this package, attaching the asset to category Pakiet FightBox instead
+    - created asset for video Krush Part 8 with asset ID: 15-asset-5526437 for Publisher: 5842
+       - Warning: Genres Kickbox,Fightbox not found in this package, attaching the asset to category Pakiet FightBox instead
+    - created asset for video Krush Part 9 with asset ID: 15-asset-5526438 for Publisher: 5842
+       - Warning: Genres Kickbox,Fightbox not found in this package, attaching the asset to category Pakiet FightBox instead
+    - created asset for video Muay Thai Part 1 with asset ID: 15-asset-5526464 for Publisher: 5842
+       - Warning: Genres Muay Thai,Fightbox not found in this package, attaching the asset to category Pakiet FightBox instead
+    - created asset for video Muay Thai Part 2 with asset ID: 15-asset-5526465 for Publisher: 5842
+       - Warning: Genres Muay Thai,Fightbox not found in this package, attaching the asset to category Pakiet FightBox instead
+    - created asset for video Muay Thai Part 3 with asset ID: 15-asset-5526466 for Publisher: 5842
+       - Warning: Genres Muay Thai,Fightbox not found in this package, attaching the asset to category Pakiet FightBox instead
+    - created asset for video Muay Thai Part 4 with asset ID: 15-asset-5526467 for Publisher: 5842
+       - Warning: Genres Muay Thai,Fightbox not found in this package, attaching the asset to category Pakiet FightBox instead
+    - created asset for video Muay Thai Part 5 with asset ID: 15-asset-5526468 for Publisher: 5842
+       - Warning: Genres Muay Thai,Fightbox not found in this package, attaching the asset to category Pakiet FightBox instead
+    - created asset for video Muay Thai Trophy Part 1 with asset ID: 15-asset-5526469 for Publisher: 5842
+       - Warning: Genres Muay Thai,Fightbox not found in this package, attaching the asset to category Pakiet FightBox instead
+    - created asset for video Muay Thai Trophy Part 2 with asset ID: 15-asset-5526470 for Publisher: 5842
+       - Warning: Genres Muay Thai,Fightbox not found in this package, attaching the asset to category Pakiet FightBox instead
+    - created asset for video Muay Thai Trophy Part 3 with asset ID: 15-asset-5526471 for Publisher: 5842
+       - Warning: Genres Muay Thai,Fightbox not found in this package, attaching the asset to category Pakiet FightBox instead
+    - created asset for video Muay Thai Trophy Part 4 with asset ID: 15-asset-5526472 for Publisher: 5842
+       - Warning: Genres Muay Thai,Fightbox not found in this package, attaching the asset to category Pakiet FightBox instead
+    - created asset for video Muay Thai Trophy Part 5 with asset ID: 15-asset-5526473 for Publisher: 5842
+       - Warning: Genres Muay Thai,Fightbox not found in this package, attaching the asset to category Pakiet FightBox instead
+    - created asset for video Mythical Roads: The Road Of Blues (2) with asset ID: 15-asset-5526481 for Publisher: 5842
+       - Warning: Genres Travel,Docubox not found in this package, attaching the asset to category Pakiet FightBox instead
+    - created asset for video New Japan Pro-Wrestling 2009: Alive Part 1 with asset ID: 15-asset-5526490 for Publisher: 5842
+       - Warning: Genres Japan Wrestling,Fightbox not found in this package, attaching the asset to category Pakiet FightBox instead
+    - created asset for video New Japan Pro-Wrestling 2009: Alive Part 2 with asset ID: 15-asset-5526491 for Publisher: 5842
+       - Warning: Genres Japan Wrestling,Fightbox not found in this package, attaching the asset to category Pakiet FightBox instead
+    - created asset for video New Japan Pro-Wrestling 2009: Alive Part 3 with asset ID: 15-asset-5526492 for Publisher: 5842
+       - Warning: Genres Japan Wrestling,Fightbox not found in this package, attaching the asset to category Pakiet FightBox instead
+    - created asset for video New Japan Pro-Wrestling 2009: Destruction Part 1 with asset ID: 15-asset-5526493 for Publisher: 5842
+       - Warning: Genres Japan Wrestling,Fightbox not found in this package, attaching the asset to category Pakiet FightBox instead
+    - created asset for video New Japan Pro-Wrestling 2009: Destruction Part 2 with asset ID: 15-asset-5526494 for Publisher: 5842
+       - Warning: Genres Japan Wrestling,Fightbox not found in this package, attaching the asset to category Pakiet FightBox instead
+    - created asset for video New Japan Pro-Wrestling 2009: Destruction Part 3 with asset ID: 15-asset-5526495 for Publisher: 5842
+       - Warning: Genres Japan Wrestling,Fightbox not found in this package, attaching the asset to category Pakiet FightBox instead
+    - created asset for video New Japan Pro-Wrestling 2009: Destruction Part 4 with asset ID: 15-asset-5526496 for Publisher: 5842
+       - Warning: Genres Japan Wrestling,Fightbox not found in this package, attaching the asset to category Pakiet FightBox instead
+    - created asset for video New Japan Pro-Wrestling 2009: Destruction Part 5 with asset ID: 15-asset-5526497 for Publisher: 5842
+       - Warning: Genres Japan Wrestling,Fightbox not found in this package, attaching the asset to category Pakiet FightBox instead
+    - created asset for video New Japan Pro-Wrestling 2009: Destruction Part 6 with asset ID: 15-asset-5526498 for Publisher: 5842
+       - Warning: Genres Japan Wrestling,Fightbox not found in this package, attaching the asset to category Pakiet FightBox instead
+    - created asset for video New Japan Pro-Wrestling 2009: Destruction Part 7 with asset ID: 15-asset-5526499 for Publisher: 5842
+       - Warning: Genres Japan Wrestling,Fightbox not found in this package, attaching the asset to category Pakiet FightBox instead
+    - created asset for video New Japan Pro-Wrestling 2009: Destruction Part 8 with asset ID: 15-asset-5526500 for Publisher: 5842
+       - Warning: Genres Japan Wrestling,Fightbox not found in this package, attaching the asset to category Pakiet FightBox instead
+    - created asset for video New Japan Pro-Wrestling 2009: Destruction Part 9 with asset ID: 15-asset-5526501 for Publisher: 5842
+       - Warning: Genres Japan Wrestling,Fightbox not found in this package, attaching the asset to category Pakiet FightBox instead
+    - created asset for video ROH / NYWC Part 1 with asset ID: 15-asset-5526507 for Publisher: 5842
+       - Warning: Genres American Wrestling,Fightbox not found in this package, attaching the asset to category Pakiet FightBox instead
+    - created asset for video ROH / NYWC Part 2 with asset ID: 15-asset-5526508 for Publisher: 5842
+       - Warning: Genres American Wrestling,Fightbox not found in this package, attaching the asset to category Pakiet FightBox instead
+    - created asset for video ROH / NYWC Part 3 with asset ID: 15-asset-5526509 for Publisher: 5842
+       - Warning: Genres American Wrestling,Fightbox not found in this package, attaching the asset to category Pakiet FightBox instead
+    - created asset for video ROH / NYWC Part 4 with asset ID: 15-asset-5526510 for Publisher: 5842
+       - Warning: Genres American Wrestling,Fightbox not found in this package, attaching the asset to category Pakiet FightBox instead
+    - created asset for video World Karate Federation 20th Karate Championships : Belgrade 2010 Part.1 with asset ID: 15-asset-5526533 for Publisher: 5842
+       - Warning: Genres Karate,Fightbox not found in this package, attaching the asset to category Pakiet FightBox instead
+    - created asset for video World Karate Federation 20th Karate Championships : Belgrade 2010 Part.2 with asset ID: 15-asset-5526534 for Publisher: 5842
+       - Warning: Genres Karate,Fightbox not found in this package, attaching the asset to category Pakiet FightBox instead
+    - created asset for video Chasing Wild Horses with asset ID: 15-asset-5542074 for Publisher: 5842
+       - Warning: Genres Culture,Docubox not found in this package, attaching the asset to category Pakiet FightBox instead
+Processing package... FashionBoxPackage Publisher... 25131(235 videos, 6 categories)
+ - creating category Pakiet FashionBox...done
+   - creating subcategory Lookbook...done
+   - creating subcategory Fashion cities...done
+   - creating subcategory Vintage...done
+   - creating subcategory Homme...done
+   - creating subcategory Femme...done
+   - creating subcategory Fashion candies...done
+    - created asset for video FashionBox HD with asset ID: 17-asset-4367665 for Publisher: 25131
+       - Warning: Genres  not found in this package, attaching the asset to category Pakiet FashionBox instead
+    - created asset for video AGORA with asset ID: 17-asset-5526324 for Publisher: 25131
+       - Warning: Genres Drama,History,recommended not found in this package, attaching the asset to category Pakiet FashionBox instead
+    - created asset for video Fashion Cities: London - Season 1 Part 1 with asset ID: 17-asset-5526380 for Publisher: 25131
+       - Warning: Genres Fashion cities,Fashionbox not found in this package, attaching the asset to category Pakiet FashionBox instead
+    - created asset for video Homme: Season 1 Part 1 with asset ID: 17-asset-5526406 for Publisher: 25131
+       - Warning: Genres Homme,Fashionbox not found in this package, attaching the asset to category Pakiet FashionBox instead
+    - created asset for video Homme: Season 1 Part 13 with asset ID: 17-asset-5526407 for Publisher: 25131
+       - Warning: Genres Homme,Fashionbox not found in this package, attaching the asset to category Pakiet FashionBox instead
+    - created asset for video Homme: Season 1 Part 15 with asset ID: 17-asset-5526408 for Publisher: 25131
+       - Warning: Genres Homme,Fashionbox not found in this package, attaching the asset to category Pakiet FashionBox instead
+    - created asset for video Homme: Season 1 Part 16 with asset ID: 17-asset-5526409 for Publisher: 25131
+       - Warning: Genres Homme,Fashionbox not found in this package, attaching the asset to category Pakiet FashionBox instead
+    - created asset for video Homme: Season 1 Part 2 with asset ID: 17-asset-5526410 for Publisher: 25131
+       - Warning: Genres Homme,Fashionbox not found in this package, attaching the asset to category Pakiet FashionBox instead
+    - created asset for video Homme: Season 1 Part 4 with asset ID: 17-asset-5526411 for Publisher: 25131
+       - Warning: Genres Homme,Fashionbox not found in this package, attaching the asset to category Pakiet FashionBox instead
+    - created asset for video Homme: Season 1 Part 5 with asset ID: 17-asset-5526412 for Publisher: 25131
+       - Warning: Genres Homme,Fashionbox not found in this package, attaching the asset to category Pakiet FashionBox instead
+    - created asset for video Homme: Season 1 Part 6 with asset ID: 17-asset-5526413 for Publisher: 25131
+       - Warning: Genres Homme,Fashionbox not found in this package, attaching the asset to category Pakiet FashionBox instead
+    - created asset for video Homme: Season 1 Part 7 with asset ID: 17-asset-5526414 for Publisher: 25131
+       - Warning: Genres Homme,Fashionbox not found in this package, attaching the asset to category Pakiet FashionBox instead
+    - created asset for video Homme: Season 1 Part 8 with asset ID: 17-asset-5526415 for Publisher: 25131
+       - Warning: Genres Homme,Fashionbox not found in this package, attaching the asset to category Pakiet FashionBox instead
+    - created asset for video Homme: Season 1 Part 9 with asset ID: 17-asset-5526416 for Publisher: 25131
+       - Warning: Genres Homme,Fashionbox not found in this package, attaching the asset to category Pakiet FashionBox instead
+    - created asset for video Homme: Season 2 Part 3 with asset ID: 17-asset-5526417 for Publisher: 25131
+       - Warning: Genres Homme,Fashionbox not found in this package, attaching the asset to category Pakiet FashionBox instead
+    - created asset for video Homme: Season 2 Part 4 with asset ID: 17-asset-5526418 for Publisher: 25131
+       - Warning: Genres Homme,Fashionbox not found in this package, attaching the asset to category Pakiet FashionBox instead
+    - created asset for video Homme: Season 2 Part 5 with asset ID: 17-asset-5526419 for Publisher: 25131
+       - Warning: Genres Homme,Fashionbox not found in this package, attaching the asset to category Pakiet FashionBox instead
+    - created asset for video Homme: Season 2 Part 6 with asset ID: 17-asset-5526420 for Publisher: 25131
+       - Warning: Genres Homme,Fashionbox not found in this package, attaching the asset to category Pakiet FashionBox instead
+    - created asset for video Lookbook: Alexander McQueen with asset ID: 17-asset-5526443 for Publisher: 25131
+       - Warning: Genres Lookbook,Fashionbox not found in this package, attaching the asset to category Pakiet FashionBox instead
+    - created asset for video Lookbook: Alexander Wang Part 1 with asset ID: 17-asset-5526444 for Publisher: 25131
+       - Warning: Genres Lookbook not found in this package, attaching the asset to category Pakiet FashionBox instead
+    - created asset for video Lookbook: Alexander Wang Part 2 with asset ID: 17-asset-5526445 for Publisher: 25131
+       - Warning: Genres Lookbook,Fashionbox not found in this package, attaching the asset to category Pakiet FashionBox instead
+    - created asset for video Lookbook: Calvin Klein Part 1 with asset ID: 17-asset-5526446 for Publisher: 25131
+       - Warning: Genres Lookbook,Fashionbox not found in this package, attaching the asset to category Pakiet FashionBox instead
+    - created asset for video Lookbook: Carolina Herrera Part 2 with asset ID: 17-asset-5526447 for Publisher: 25131
+       - Warning: Genres Lookbook,Fashionbox not found in this package, attaching the asset to category Pakiet FashionBox instead
+    - created asset for video Lookbook: Diane Von Frustenburg with asset ID: 17-asset-5526448 for Publisher: 25131
+       - Warning: Genres Lookbook,Fashionbox not found in this package, attaching the asset to category Pakiet FashionBox instead
+    - created asset for video Lookbook: Dries Van Noten with asset ID: 17-asset-5526449 for Publisher: 25131
+       - Warning: Genres Lookbook,Fashionbox not found in this package, attaching the asset to category Pakiet FashionBox instead
+    - created asset for video Lookbook: Giorgo Armani Part 1 with asset ID: 17-asset-5526450 for Publisher: 25131
+       - Warning: Genres Lookbook,Fashionbox not found in this package, attaching the asset to category Pakiet FashionBox instead
+    - created asset for video Lookbook: Jason Wu with asset ID: 17-asset-5526451 for Publisher: 25131
+       - Warning: Genres Lookbook,Fashionbox not found in this package, attaching the asset to category Pakiet FashionBox instead
+    - created asset for video Lookbook: John Galliano Part 1 with asset ID: 17-asset-5526452 for Publisher: 25131
+       - Warning: Genres Lookbook,Fashionbox not found in this package, attaching the asset to category Pakiet FashionBox instead
+    - created asset for video Lookbook: Lacroix with asset ID: 17-asset-5526453 for Publisher: 25131
+       - Warning: Genres Lookbook,Fashionbox not found in this package, attaching the asset to category Pakiet FashionBox instead
+    - created asset for video Lookbook: Louis Vuitton Part 3 with asset ID: 17-asset-5526454 for Publisher: 25131
+       - Warning: Genres Lookbook,Fashionbox not found in this package, attaching the asset to category Pakiet FashionBox instead
+    - created asset for video Lookbook: Louis Vuitton Part 5 with asset ID: 17-asset-5526455 for Publisher: 25131
+       - Warning: Genres Lookbook,Fashionbox not found in this package, attaching the asset to category Pakiet FashionBox instead
+    - created asset for video Lookbook: Michael Kors with asset ID: 17-asset-5526456 for Publisher: 25131
+       - Warning: Genres Lookbook,Fashionbox not found in this package, attaching the asset to category Pakiet FashionBox instead
+    - created asset for video Lookbook: Narsico Rodriguez with asset ID: 17-asset-5526457 for Publisher: 25131
+       - Warning: Genres Lookbook,Fashionbox not found in this package, attaching the asset to category Pakiet FashionBox instead
+    - created asset for video Lookbook: Paul Smith with asset ID: 17-asset-5526458 for Publisher: 25131
+       - Warning: Genres Lookbook,Fashionbox not found in this package, attaching the asset to category Pakiet FashionBox instead
+    - created asset for video Lookbook: Sonia Rykiel Part 4 with asset ID: 17-asset-5526459 for Publisher: 25131
+       - Warning: Genres Lookbook,Fashionbox not found in this package, attaching the asset to category Pakiet FashionBox instead
+    - created asset for video Lookbook: Yohji Yamamoto with asset ID: 17-asset-5526460 for Publisher: 25131
+       - Warning: Genres Lookbook,Fashionbox not found in this package, attaching the asset to category Pakiet FashionBox instead
+    - created asset for video Lookbook: Yves Saint Laurent Part 2 with asset ID: 17-asset-5526461 for Publisher: 25131
+       - Warning: Genres Lookbook,Fashionbox not found in this package, attaching the asset to category Pakiet FashionBox instead
+    - created asset for video Vintage: Anna Sui Part 2 with asset ID: 17-asset-5526526 for Publisher: 25131
+       - Warning: Genres Vintage,Fashionbox not found in this package, attaching the asset to category Pakiet FashionBox instead
+    - created asset for video Vintage: Betsey Johnson with asset ID: 17-asset-5526527 for Publisher: 25131
+       - Warning: Genres Vintage,Fashionbox not found in this package, attaching the asset to category Pakiet FashionBox instead
+    - created asset for video Vintage: Burberry with asset ID: 17-asset-5526528 for Publisher: 25131
+       - Warning: Genres Vintage,Fashionbox not found in this package, attaching the asset to category Pakiet FashionBox instead
+    - created asset for video Vintage: Calvin Klein Part 6 with asset ID: 17-asset-5526529 for Publisher: 25131
+       - Warning: Genres Vintage,Fashionbox not found in this package, attaching the asset to category Pakiet FashionBox instead
+    - created asset for video Vintage: Diane Von Frustenburg with asset ID: 17-asset-5526530 for Publisher: 25131
+       - Warning: Genres Vintage,Fashionbox not found in this package, attaching the asset to category Pakiet FashionBox instead
+    - created asset for video Vintage: Julien MacDonald with asset ID: 17-asset-5526531 for Publisher: 25131
+       - Warning: Genres Vintage,Fashionbox not found in this package, attaching the asset to category Pakiet FashionBox instead
+    - created asset for video Vintage: Stella McCartney with asset ID: 17-asset-5526532 for Publisher: 25131
+       - Warning: Genres Vintage,Fashionbox not found in this package, attaching the asset to category Pakiet FashionBox instead
+    - created asset for video Homme: Season 1 Part 10 with asset ID: 17-asset-5529074 for Publisher: 25131
+       - Warning: Genres Homme,Fashionbox not found in this package, attaching the asset to category Pakiet FashionBox instead
+    - created asset for video Homme: Season 1 Part 11 with asset ID: 17-asset-5529075 for Publisher: 25131
+       - Warning: Genres Homme not found in this package, attaching the asset to category Pakiet FashionBox instead
+    - created asset for video Homme: Season 1 Part 12 with asset ID: 17-asset-5529076 for Publisher: 25131
+       - Warning: Genres Homme,Fashionbox not found in this package, attaching the asset to category Pakiet FashionBox instead
+    - created asset for video Homme: Season 1 Part 14 with asset ID: 17-asset-5529077 for Publisher: 25131
+       - Warning: Genres Homme,Fashionbox not found in this package, attaching the asset to category Pakiet FashionBox instead
+    - created asset for video Homme: Season 2 Part 1 with asset ID: 17-asset-5529078 for Publisher: 25131
+       - Warning: Genres Homme,Fashionbox not found in this package, attaching the asset to category Pakiet FashionBox instead
+    - created asset for video Homme: Season 2 Part 2 with asset ID: 17-asset-5529079 for Publisher: 25131
+       - Warning: Genres Homme,Fashionbox not found in this package, attaching the asset to category Pakiet FashionBox instead
+    - created asset for video Lookbook: Adam by Adam Lippes with asset ID: 17-asset-5529080 for Publisher: 25131
+       - Warning: Genres Lookbook,Fashionbox not found in this package, attaching the asset to category Pakiet FashionBox instead
+    - created asset for video Lookbook: Calvin Klein Part 2 with asset ID: 17-asset-5529081 for Publisher: 25131
+       - Warning: Genres Lookbook,Fashionbox not found in this package, attaching the asset to category Pakiet FashionBox instead
+    - created asset for video Lookbook: Calvin Klein Part 3 with asset ID: 17-asset-5529082 for Publisher: 25131
+       - Warning: Genres Lookbook,Fashionbox not found in this package, attaching the asset to category Pakiet FashionBox instead
+    - created asset for video Lookbook: Calvin Klein Part 4 with asset ID: 17-asset-5529083 for Publisher: 25131
+       - Warning: Genres Lookbook,Fashionbox not found in this package, attaching the asset to category Pakiet FashionBox instead
+    - created asset for video Lookbook: Carolina Herrera Part 1 with asset ID: 17-asset-5529084 for Publisher: 25131
+       - Warning: Genres Lookbook,Fashionbox not found in this package, attaching the asset to category Pakiet FashionBox instead
+    - created asset for video Lookbook: Christian Dior Part 1 with asset ID: 17-asset-5529085 for Publisher: 25131
+       - Warning: Genres Lookbook,Fashionbox not found in this package, attaching the asset to category Pakiet FashionBox instead
+    - created asset for video Lookbook: Christian Dior Part 2 with asset ID: 17-asset-5529086 for Publisher: 25131
+       - Warning: Genres Lookbook,Fashionbox not found in this package, attaching the asset to category Pakiet FashionBox instead
+    - created asset for video Lookbook: Derek Lam with asset ID: 17-asset-5529087 for Publisher: 25131
+       - Warning: Genres Lookbook,Fashionbox not found in this package, attaching the asset to category Pakiet FashionBox instead
+    - created asset for video Lookbook: DKNY Part 2 with asset ID: 17-asset-5529088 for Publisher: 25131
+       - Warning: Genres Lookbook,Fashionbox not found in this package, attaching the asset to category Pakiet FashionBox instead
+    - created asset for video Lookbook: Doo.ri with asset ID: 17-asset-5529089 for Publisher: 25131
+       - Warning: Genres Lookbook,Fashionbox not found in this package, attaching the asset to category Pakiet FashionBox instead
+    - created asset for video Lookbook: Fendi Part 3 with asset ID: 17-asset-5529090 for Publisher: 25131
+       - Warning: Genres Lookbook,Fashionbox not found in this package, attaching the asset to category Pakiet FashionBox instead
+    - created asset for video Lookbook: Fianfranco Ferre Part 1 with asset ID: 17-asset-5529091 for Publisher: 25131
+       - Warning: Genres Lookbook,Fashionbox not found in this package, attaching the asset to category Pakiet FashionBox instead
+    - created asset for video Lookbook: Giorgo Armani Part 3 with asset ID: 17-asset-5529092 for Publisher: 25131
+       - Warning: Genres Lookbook,Fashionbox not found in this package, attaching the asset to category Pakiet FashionBox instead
+    - created asset for video Lookbook: Giorgo Armani Part 4 with asset ID: 17-asset-5529093 for Publisher: 25131
+       - Warning: Genres Lookbook,Fashionbox not found in this package, attaching the asset to category Pakiet FashionBox instead
+    - created asset for video Lookbook: Givenchy Part 3 with asset ID: 17-asset-5529094 for Publisher: 25131
+       - Warning: Genres Lookbook,Fashionbox not found in this package, attaching the asset to category Pakiet FashionBox instead
+    - created asset for video Lookbook: Isaac Mizrahi with asset ID: 17-asset-5529095 for Publisher: 25131
+       - Warning: Genres Lookbook,Fashionbox not found in this package, attaching the asset to category Pakiet FashionBox instead
+    - created asset for video Lookbook: Karl Lagerfield Part 1 with asset ID: 17-asset-5529096 for Publisher: 25131
+       - Warning: Genres Lookbook,Fashionbox not found in this package, attaching the asset to category Pakiet FashionBox instead
+    - created asset for video Lookbook: Karl Lagerfield Part 3 with asset ID: 17-asset-5529097 for Publisher: 25131
+       - Warning: Genres Lookbook,Fashionbox not found in this package, attaching the asset to category Pakiet FashionBox instead
+    - created asset for video Lookbook: Lanvin with asset ID: 17-asset-5529098 for Publisher: 25131
+       - Warning: Genres Lookbook,Fashionbox not found in this package, attaching the asset to category Pakiet FashionBox instead
+    - created asset for video Lookbook: Louis Vuitton Part 1 with asset ID: 17-asset-5529099 for Publisher: 25131
+       - Warning: Genres Lookbook,Fashionbox not found in this package, attaching the asset to category Pakiet FashionBox instead
+    - created asset for video Lookbook: Louis Vuitton Part 2 with asset ID: 17-asset-5529100 for Publisher: 25131
+       - Warning: Genres Lookbook,Fashionbox not found in this package, attaching the asset to category Pakiet FashionBox instead
+    - created asset for video Lookbook: Louis Vuitton Part 4 with asset ID: 17-asset-5529101 for Publisher: 25131
+       - Warning: Genres Lookbook,Fashionbox not found in this package, attaching the asset to category Pakiet FashionBox instead
+    - created asset for video Lookbook: Matthew Williamson with asset ID: 17-asset-5529102 for Publisher: 25131
+       - Warning: Genres Lookbook,Fashionbox not found in this package, attaching the asset to category Pakiet FashionBox instead
+    - created asset for video Lookbook: Missoni with asset ID: 17-asset-5529103 for Publisher: 25131
+       - Warning: Genres Lookbook,Fashionbox not found in this package, attaching the asset to category Pakiet FashionBox instead
+    - created asset for video Lookbook: Moschino with asset ID: 17-asset-5529104 for Publisher: 25131
+       - Warning: Genres Lookbook,Fashionbox not found in this package, attaching the asset to category Pakiet FashionBox instead
+    - created asset for video Lookbook: Oscar De La Renta Part 2 with asset ID: 17-asset-5529105 for Publisher: 25131
+       - Warning: Genres Lookbook,Fashionbox not found in this package, attaching the asset to category Pakiet FashionBox instead
+    - created asset for video Lookbook: Peter Pilotto with asset ID: 17-asset-5529106 for Publisher: 25131
+       - Warning: Genres Lookbook,Fashionbox not found in this package, attaching the asset to category Pakiet FashionBox instead
+    - created asset for video Lookbook: Proenza Schouler Part 2 with asset ID: 17-asset-5529107 for Publisher: 25131
+       - Warning: Genres Lookbook,Fashionbox not found in this package, attaching the asset to category Pakiet FashionBox instead
+    - created asset for video Lookbook: Roberto Cavalli Part 1 with asset ID: 17-asset-5529108 for Publisher: 25131
+       - Warning: Genres Lookbook,Fashionbox not found in this package, attaching the asset to category Pakiet FashionBox instead
+    - created asset for video Lookbook: Roberto Cavalli Part 2 with asset ID: 17-asset-5529109 for Publisher: 25131
+       - Warning: Genres Lookbook,Fashionbox not found in this package, attaching the asset to category Pakiet FashionBox instead
+    - created asset for video Lookbook: Rodarte with asset ID: 17-asset-5529110 for Publisher: 25131
+       - Warning: Genres Lookbook,Fashionbox not found in this package, attaching the asset to category Pakiet FashionBox instead
+    - created asset for video Lookbook: Sonia Rykiel Part 1 with asset ID: 17-asset-5529111 for Publisher: 25131
+       - Warning: Genres Lookbook,Fashionbox not found in this package, attaching the asset to category Pakiet FashionBox instead
+    - created asset for video Lookbook: Sonia Rykiel Part 2 with asset ID: 17-asset-5529112 for Publisher: 25131
+       - Warning: Genres Lookbook,Fashionbox not found in this package, attaching the asset to category Pakiet FashionBox instead
+    - created asset for video Lookbook: Sonia Rykiel Part 3 with asset ID: 17-asset-5529113 for Publisher: 25131
+       - Warning: Genres Lookbook,Fashionbox not found in this package, attaching the asset to category Pakiet FashionBox instead
+    - created asset for video Lookbook: Versace Part 1 with asset ID: 17-asset-5529114 for Publisher: 25131
+       - Warning: Genres Lookbook,Fashionbox not found in this package, attaching the asset to category Pakiet FashionBox instead
+    - created asset for video Lookbook: Versace Part 2 with asset ID: 17-asset-5529115 for Publisher: 25131
+       - Warning: Genres Lookbook,Fashionbox not found in this package, attaching the asset to category Pakiet FashionBox instead
+    - created asset for video Lookbook: Yves Saint Laurent Part 1 with asset ID: 17-asset-5529116 for Publisher: 25131
+       - Warning: Genres Lookbook,Fashionbox not found in this package, attaching the asset to category Pakiet FashionBox instead
+    - created asset for video Lookbook: Yves Saint Laurent Part 3 with asset ID: 17-asset-5529117 for Publisher: 25131
+       - Warning: Genres Lookbook,Fashionbox not found in this package, attaching the asset to category Pakiet FashionBox instead
+    - created asset for video Lookbook: Yves Saint Laurent Part 4 with asset ID: 17-asset-5529118 for Publisher: 25131
+       - Warning: Genres Lookbook,Fashionbox not found in this package, attaching the asset to category Pakiet FashionBox instead
+    - created asset for video Vintage: Anna Sui Part 1 with asset ID: 17-asset-5529119 for Publisher: 25131
+       - Warning: Genres Vintage,Fashionbox not found in this package, attaching the asset to category Pakiet FashionBox instead
+    - created asset for video Vintage: Chanel with asset ID: 17-asset-5529120 for Publisher: 25131
+       - Warning: Genres Vintage,Fashionbox not found in this package, attaching the asset to category Pakiet FashionBox instead
+    - created asset for video Vintage: Christian Lacroix with asset ID: 17-asset-5529121 for Publisher: 25131
+       - Warning: Genres Vintage,Fashionbox not found in this package, attaching the asset to category Pakiet FashionBox instead
+    - created asset for video Vintage: DKNY Part 2 with asset ID: 17-asset-5529122 for Publisher: 25131
+       - Warning: Genres Vintage,Fashionbox not found in this package, attaching the asset to category Pakiet FashionBox instead
+    - created asset for video Vintage: Dries Van Noten with asset ID: 17-asset-5529123 for Publisher: 25131
+       - Warning: Genres Vintage,Fashionbox not found in this package, attaching the asset to category Pakiet FashionBox instead
+    - created asset for video Vintage: Emilio Pucci with asset ID: 17-asset-5529124 for Publisher: 25131
+       - Warning: Genres Vintage,Fashionbox not found in this package, attaching the asset to category Pakiet FashionBox instead
+    - created asset for video Vintage: Fianfranco Ferre with asset ID: 17-asset-5529125 for Publisher: 25131
+       - Warning: Genres Vintage,Fashionbox not found in this package, attaching the asset to category Pakiet FashionBox instead
+    - created asset for video Vintage: Jean Paul Gaultier with asset ID: 17-asset-5529126 for Publisher: 25131
+       - Warning: Genres Vintage,Fashionbox not found in this package, attaching the asset to category Pakiet FashionBox instead
+    - created asset for video Vintage: John Galliano with asset ID: 17-asset-5529127 for Publisher: 25131
+       - Warning: Genres Vintage,Fashionbox not found in this package, attaching the asset to category Pakiet FashionBox instead
+    - created asset for video Vintage: Lacoste with asset ID: 17-asset-5529128 for Publisher: 25131
+       - Warning: Genres Vintage,Fashionbox not found in this package, attaching the asset to category Pakiet FashionBox instead
+    - created asset for video Vintage: Michael Kors with asset ID: 17-asset-5529129 for Publisher: 25131
+       - Warning: Genres Vintage,Fashionbox not found in this package, attaching the asset to category Pakiet FashionBox instead
+    - created asset for video Vintage: Oscar De La Renta with asset ID: 17-asset-5529130 for Publisher: 25131
+       - Warning: Genres Vintage,Fashionbox not found in this package, attaching the asset to category Pakiet FashionBox instead
+    - created asset for video Vintage: Paul Smith with asset ID: 17-asset-5529131 for Publisher: 25131
+       - Warning: Genres Vintage,Fashionbox not found in this package, attaching the asset to category Pakiet FashionBox instead
+    - created asset for video Vintage: Sonia Rykiel with asset ID: 17-asset-5529132 for Publisher: 25131
+       - Warning: Genres Vintage,Fashionbox not found in this package, attaching the asset to category Pakiet FashionBox instead
+    - created asset for video Vintage: Valentino with asset ID: 17-asset-5529133 for Publisher: 25131
+       - Warning: Genres Vintage,Fashionbox not found in this package, attaching the asset to category Pakiet FashionBox instead
+    - created asset for video Vintage: Vera Wang with asset ID: 17-asset-5529134 for Publisher: 25131
+       - Warning: Genres Vintage,Fashionbox not found in this package, attaching the asset to category Pakiet FashionBox instead
+    - created asset for video Vintage: Victor - Rolff with asset ID: 17-asset-5529135 for Publisher: 25131
+       - Warning: Genres Vintage,Fashionbox not found in this package, attaching the asset to category Pakiet FashionBox instead
+    - created asset for video Vintage: Vivienne Westwood with asset ID: 17-asset-5529136 for Publisher: 25131
+       - Warning: Genres Vintage,Fashionbox not found in this package, attaching the asset to category Pakiet FashionBox instead
+    - created asset for video Vintage: Yves Saint Laurent with asset ID: 17-asset-5529137 for Publisher: 25131
+       - Warning: Genres Vintage,Fashionbox not found in this package, attaching the asset to category Pakiet FashionBox instead
+    - created asset for video Vintage: Zac Posen with asset ID: 17-asset-5529138 for Publisher: 25131
+       - Warning: Genres Vintage,Fashionbox not found in this package, attaching the asset to category Pakiet FashionBox instead
+    - created asset for video Fashion Candies: Season 1 Part 1 with asset ID: 17-asset-5530954 for Publisher: 25131
+       - Warning: Genres Fashion candies,Fashionbox not found in this package, attaching the asset to category Pakiet FashionBox instead
+    - created asset for video Fashion Candies: Season 1 Part 10 with asset ID: 17-asset-5530955 for Publisher: 25131
+       - Warning: Genres Fashion candies not found in this package, attaching the asset to category Pakiet FashionBox instead
+    - created asset for video Fashion Candies: Season 1 Part 11 with asset ID: 17-asset-5530956 for Publisher: 25131
+       - Warning: Genres Fashion candies,Fashionbox not found in this package, attaching the asset to category Pakiet FashionBox instead
+    - created asset for video Fashion Candies: Season 1 Part 2 with asset ID: 17-asset-5530957 for Publisher: 25131
+       - Warning: Genres Fashion candies,Fashionbox not found in this package, attaching the asset to category Pakiet FashionBox instead
+    - created asset for video Fashion Candies: Season 1 Part 3 with asset ID: 17-asset-5530958 for Publisher: 25131
+       - Warning: Genres Fashion candies,Fashionbox not found in this package, attaching the asset to category Pakiet FashionBox instead
+    - created asset for video Fashion Candies: Season 1 Part 4 with asset ID: 17-asset-5530959 for Publisher: 25131
+       - Warning: Genres Fashion candies,Fashionbox not found in this package, attaching the asset to category Pakiet FashionBox instead
+    - created asset for video Fashion Candies: Season 1 Part 5 with asset ID: 17-asset-5530960 for Publisher: 25131
+       - Warning: Genres Fashion candies,Fashionbox not found in this package, attaching the asset to category Pakiet FashionBox instead
+    - created asset for video Fashion Candies: Season 1 Part 6 with asset ID: 17-asset-5530961 for Publisher: 25131
+       - Warning: Genres Fashion candies not found in this package, attaching the asset to category Pakiet FashionBox instead
+    - created asset for video Fashion Candies: Season 1 Part 7 with asset ID: 17-asset-5530962 for Publisher: 25131
+       - Warning: Genres Fashion candies,Fashionbox not found in this package, attaching the asset to category Pakiet FashionBox instead
+    - created asset for video Fashion Candies: Season 1 Part 8 with asset ID: 17-asset-5530963 for Publisher: 25131
+       - Warning: Genres Fashion candies,Fashionbox not found in this package, attaching the asset to category Pakiet FashionBox instead
+    - created asset for video Fashion Candies: Season 1 Part 9 with asset ID: 17-asset-5530964 for Publisher: 25131
+       - Warning: Genres Fashion candies,Fashionbox not found in this package, attaching the asset to category Pakiet FashionBox instead
+    - created asset for video Fashion Cities: London - Season 1 Part 2 with asset ID: 17-asset-5530965 for Publisher: 25131
+       - Warning: Genres Fashion cities,Fashionbox not found in this package, attaching the asset to category Pakiet FashionBox instead
+    - created asset for video Fashion Cities: London - Season 1 Part 3 with asset ID: 17-asset-5530966 for Publisher: 25131
+       - Warning: Genres Fashion cities,Fashionbox not found in this package, attaching the asset to category Pakiet FashionBox instead
+    - created asset for video Fashion Cities: London - Season 1 Part 4 with asset ID: 17-asset-5530967 for Publisher: 25131
+       - Warning: Genres Fashion cities,Fashionbox not found in this package, attaching the asset to category Pakiet FashionBox instead
+    - created asset for video Fashion Cities: London - Season 1 Part 5 with asset ID: 17-asset-5530968 for Publisher: 25131
+       - Warning: Genres Fashion cities,Fashionbox not found in this package, attaching the asset to category Pakiet FashionBox instead
+    - created asset for video Fashion Cities: London - Season 3 Part 2 with asset ID: 17-asset-5530969 for Publisher: 25131
+       - Warning: Genres Fashion cities,Fashionbox not found in this package, attaching the asset to category Pakiet FashionBox instead
+    - created asset for video Fashion Cities: London - Season 3 Part 3 with asset ID: 17-asset-5530970 for Publisher: 25131
+       - Warning: Genres Fashion cities,Fashionbox not found in this package, attaching the asset to category Pakiet FashionBox instead
+    - created asset for video Fashion Cities: London - Season 3 Part 4 with asset ID: 17-asset-5530971 for Publisher: 25131
+       - Warning: Genres Fashion cities,Fashionbox not found in this package, attaching the asset to category Pakiet FashionBox instead
+    - created asset for video Fashion Cities: London - Season 3 Part 5 with asset ID: 17-asset-5530972 for Publisher: 25131
+       - Warning: Genres Fashion cities,Fashionbox not found in this package, attaching the asset to category Pakiet FashionBox instead
+    - created asset for video Fashion Cities: London - Season 3 Part 6 with asset ID: 17-asset-5530973 for Publisher: 25131
+       - Warning: Genres Fashion cities,Fashionbox not found in this package, attaching the asset to category Pakiet FashionBox instead
+    - created asset for video Fashion Cities: London - Season 4 Part 1 with asset ID: 17-asset-5530974 for Publisher: 25131
+       - Warning: Genres Fashion cities,Fashionbox not found in this package, attaching the asset to category Pakiet FashionBox instead
+    - created asset for video Fashion Cities: Miami - Season 1 Part 1 with asset ID: 17-asset-5530975 for Publisher: 25131
+       - Warning: Genres Fashion cities,Fashionbox not found in this package, attaching the asset to category Pakiet FashionBox instead
+    - created asset for video Fashion Cities: Miami - Season 1 Part 2 with asset ID: 17-asset-5530976 for Publisher: 25131
+       - Warning: Genres Fashion cities,Fashionbox not found in this package, attaching the asset to category Pakiet FashionBox instead
+    - created asset for video Fashion Cities: Miami - Season 3 Part 1 with asset ID: 17-asset-5530977 for Publisher: 25131
+       - Warning: Genres Fashion cities,Fashionbox not found in this package, attaching the asset to category Pakiet FashionBox instead
+    - created asset for video Fashion Cities: Miami - Season 3 Part 2 with asset ID: 17-asset-5530978 for Publisher: 25131
+       - Warning: Genres Fashion cities,Fashionbox not found in this package, attaching the asset to category Pakiet FashionBox instead
+    - created asset for video Fashion Cities: Miami - Season 3 Part 3 with asset ID: 17-asset-5530979 for Publisher: 25131
+       - Warning: Genres Fashion cities,Fashionbox not found in this package, attaching the asset to category Pakiet FashionBox instead
+    - created asset for video Fashion Cities: Miami - Season 3 Part 4 with asset ID: 17-asset-5530980 for Publisher: 25131
+       - Warning: Genres Fashion cities,Fashionbox not found in this package, attaching the asset to category Pakiet FashionBox instead
+    - created asset for video Fashion Cities: Miami - Season 3 Part 5 with asset ID: 17-asset-5530981 for Publisher: 25131
+       - Warning: Genres Fashion cities,Fashionbox not found in this package, attaching the asset to category Pakiet FashionBox instead
+    - created asset for video Fashion Cities: Miami - Season 4 Part 1 with asset ID: 17-asset-5530982 for Publisher: 25131
+       - Warning: Genres Fashion cities,Fashionbox not found in this package, attaching the asset to category Pakiet FashionBox instead
+    - created asset for video Fashion Cities: Milan - Season 1 Part 1 with asset ID: 17-asset-5530983 for Publisher: 25131
+       - Warning: Genres Fashion cities,Fashionbox not found in this package, attaching the asset to category Pakiet FashionBox instead
+    - created asset for video Fashion Cities: Milan - Season 1 Part 2 with asset ID: 17-asset-5530984 for Publisher: 25131
+       - Warning: Genres Fashion cities,Fashionbox not found in this package, attaching the asset to category Pakiet FashionBox instead
+    - created asset for video Fashion Cities: Milan - Season 1 Part 3 with asset ID: 17-asset-5530985 for Publisher: 25131
+       - Warning: Genres Fashion cities,Fashionbox not found in this package, attaching the asset to category Pakiet FashionBox instead
+    - created asset for video Fashion Cities: Milan - Season 1 Part 4 with asset ID: 17-asset-5530986 for Publisher: 25131
+       - Warning: Genres Fashion cities,Fashionbox not found in this package, attaching the asset to category Pakiet FashionBox instead
+    - created asset for video Fashion Cities: Milan - Season 1 Part 5 with asset ID: 17-asset-5530987 for Publisher: 25131
+       - Warning: Genres Fashion cities,Fashionbox not found in this package, attaching the asset to category Pakiet FashionBox instead
+    - created asset for video Fashion Cities: Milan - Season 1 Part 6 with asset ID: 17-asset-5530988 for Publisher: 25131
+       - Warning: Genres Fashion cities,Fashionbox not found in this package, attaching the asset to category Pakiet FashionBox instead
+    - created asset for video Fashion Cities: Milan - Season 3 Part 1 with asset ID: 17-asset-5530989 for Publisher: 25131
+       - Warning: Genres Fashion cities,Fashionbox not found in this package, attaching the asset to category Pakiet FashionBox instead
+    - created asset for video Fashion Cities: Milan - Season 3 Part 2 with asset ID: 17-asset-5530990 for Publisher: 25131
+       - Warning: Genres Fashion cities,Fashionbox not found in this package, attaching the asset to category Pakiet FashionBox instead
+    - created asset for video Fashion Cities: Milan - Season 3 Part 3 with asset ID: 17-asset-5530991 for Publisher: 25131
+       - Warning: Genres Fashion cities,Fashionbox not found in this package, attaching the asset to category Pakiet FashionBox instead
+    - created asset for video Fashion Cities: Milan - Season 3 Part 4 with asset ID: 17-asset-5530992 for Publisher: 25131
+       - Warning: Genres Fashion cities,Fashionbox not found in this package, attaching the asset to category Pakiet FashionBox instead
+    - created asset for video Fashion Cities: Milan - Season 3 Part 5 with asset ID: 17-asset-5530993 for Publisher: 25131
+       - Warning: Genres Fashion cities,Fashionbox not found in this package, attaching the asset to category Pakiet FashionBox instead
+    - created asset for video Fashion Cities: Milan - Season 3 Part 6 with asset ID: 17-asset-5530994 for Publisher: 25131
+       - Warning: Genres Fashion cities,Fashionbox not found in this package, attaching the asset to category Pakiet FashionBox instead
+    - created asset for video Fashion Cities: Milan - Season 3 Part 7 with asset ID: 17-asset-5530995 for Publisher: 25131
+       - Warning: Genres Fashion cities,Fashionbox not found in this package, attaching the asset to category Pakiet FashionBox instead
+    - created asset for video Fashion Cities: NYC - Season 1 Part 1 with asset ID: 17-asset-5530996 for Publisher: 25131
+       - Warning: Genres Fashion cities,Fashionbox not found in this package, attaching the asset to category Pakiet FashionBox instead
+    - created asset for video Fashion Cities: NYC - Season 1 Part 2 with asset ID: 17-asset-5530997 for Publisher: 25131
+       - Warning: Genres Fashion cities,Fashionbox not found in this package, attaching the asset to category Pakiet FashionBox instead
+    - created asset for video Fashion Cities: NYC - Season 1 Part 3 with asset ID: 17-asset-5530998 for Publisher: 25131
+       - Warning: Genres Fashion cities,Fashionbox not found in this package, attaching the asset to category Pakiet FashionBox instead
+    - created asset for video Fashion Cities: NYC - Season 1 Part 4 with asset ID: 17-asset-5530999 for Publisher: 25131
+       - Warning: Genres Fashion cities,Fashionbox not found in this package, attaching the asset to category Pakiet FashionBox instead
+    - created asset for video Fashion Cities: NYC - Season 1 Part 5 with asset ID: 17-asset-5531000 for Publisher: 25131
+       - Warning: Genres Fashion cities,Fashionbox not found in this package, attaching the asset to category Pakiet FashionBox instead
+    - created asset for video Fashion Cities: NYC - Season 1 Part 6 with asset ID: 17-asset-5531001 for Publisher: 25131
+       - Warning: Genres Fashion cities,Fashionbox not found in this package, attaching the asset to category Pakiet FashionBox instead
+    - created asset for video Fashion Cities: NYC - Season 1 Part 7 with asset ID: 17-asset-5531002 for Publisher: 25131
+       - Warning: Genres Fashion cities,Fashionbox not found in this package, attaching the asset to category Pakiet FashionBox instead
+    - created asset for video Fashion Cities: NYC - Season 1 Part 8 with asset ID: 17-asset-5531003 for Publisher: 25131
+       - Warning: Genres Fashion cities,Fashionbox not found in this package, attaching the asset to category Pakiet FashionBox instead
+    - created asset for video Fashion Cities: NYC - Season 3 Part 1 with asset ID: 17-asset-5531004 for Publisher: 25131
+       - Warning: Genres Fashion cities,Fashionbox not found in this package, attaching the asset to category Pakiet FashionBox instead
+    - created asset for video Fashion Cities: NYC - Season 3 Part 10 with asset ID: 17-asset-5531005 for Publisher: 25131
+       - Warning: Genres Fashion cities,Fashionbox not found in this package, attaching the asset to category Pakiet FashionBox instead
+    - created asset for video Fashion Cities: NYC - Season 3 Part 11 with asset ID: 17-asset-5531006 for Publisher: 25131
+       - Warning: Genres Fashion cities,Fashionbox not found in this package, attaching the asset to category Pakiet FashionBox instead
+    - created asset for video Fashion Cities: NYC - Season 3 Part 12 with asset ID: 17-asset-5531007 for Publisher: 25131
+       - Warning: Genres Fashion cities,Fashionbox not found in this package, attaching the asset to category Pakiet FashionBox instead
+    - created asset for video Fashion Cities: NYC - Season 3 Part 13 with asset ID: 17-asset-5531008 for Publisher: 25131
+       - Warning: Genres Fashion cities,Fashionbox not found in this package, attaching the asset to category Pakiet FashionBox instead
+    - created asset for video Fashion Cities: NYC - Season 3 Part 14 with asset ID: 17-asset-5531009 for Publisher: 25131
+       - Warning: Genres Fashion cities,Fashionbox not found in this package, attaching the asset to category Pakiet FashionBox instead
+    - created asset for video Fashion Cities: NYC - Season 3 Part 15 with asset ID: 17-asset-5531010 for Publisher: 25131
+       - Warning: Genres Fashion cities,Fashionbox not found in this package, attaching the asset to category Pakiet FashionBox instead
+    - created asset for video Fashion Cities: NYC - Season 3 Part 16 with asset ID: 17-asset-5531011 for Publisher: 25131
+       - Warning: Genres Fashion cities,Fashionbox not found in this package, attaching the asset to category Pakiet FashionBox instead
+    - created asset for video Fashion Cities: NYC - Season 3 Part 17 with asset ID: 17-asset-5531012 for Publisher: 25131
+       - Warning: Genres Fashion cities,Fashionbox not found in this package, attaching the asset to category Pakiet FashionBox instead
+    - created asset for video Fashion Cities: NYC - Season 3 Part 18 with asset ID: 17-asset-5531013 for Publisher: 25131
+       - Warning: Genres Fashion cities,Fashionbox not found in this package, attaching the asset to category Pakiet FashionBox instead
+    - created asset for video Fashion Cities: NYC - Season 3 Part 19 with asset ID: 17-asset-5531014 for Publisher: 25131
+       - Warning: Genres Fashion cities,Fashionbox not found in this package, attaching the asset to category Pakiet FashionBox instead
+    - created asset for video Fashion Cities: NYC - Season 3 Part 2 with asset ID: 17-asset-5531015 for Publisher: 25131
+       - Warning: Genres Fashion cities,Fashionbox not found in this package, attaching the asset to category Pakiet FashionBox instead
+    - created asset for video Fashion Cities: NYC - Season 3 Part 20 with asset ID: 17-asset-5531016 for Publisher: 25131
+       - Warning: Genres Fashion cities,Fashionbox not found in this package, attaching the asset to category Pakiet FashionBox instead
+    - created asset for video Fashion Cities: NYC - Season 3 Part 21 with asset ID: 17-asset-5531017 for Publisher: 25131
+       - Warning: Genres Fashion cities,Fashionbox not found in this package, attaching the asset to category Pakiet FashionBox instead
+    - created asset for video Fashion Cities: NYC - Season 3 Part 22 with asset ID: 17-asset-5531018 for Publisher: 25131
+       - Warning: Genres Fashion cities,Fashionbox not found in this package, attaching the asset to category Pakiet FashionBox instead
+    - created asset for video Fashion Cities: NYC - Season 3 Part 23 with asset ID: 17-asset-5531019 for Publisher: 25131
+       - Warning: Genres Fashion cities,Fashionbox not found in this package, attaching the asset to category Pakiet FashionBox instead
+    - created asset for video Fashion Cities: NYC - Season 3 Part 3 with asset ID: 17-asset-5531020 for Publisher: 25131
+       - Warning: Genres Fashion cities,Fashionbox not found in this package, attaching the asset to category Pakiet FashionBox instead
+    - created asset for video Fashion Cities: NYC - Season 3 Part 4 with asset ID: 17-asset-5531021 for Publisher: 25131
+       - Warning: Genres Fashion cities,Fashionbox not found in this package, attaching the asset to category Pakiet FashionBox instead
+    - created asset for video Fashion Cities: NYC - Season 3 Part 5 with asset ID: 17-asset-5531022 for Publisher: 25131
+       - Warning: Genres Fashion cities,Fashionbox not found in this package, attaching the asset to category Pakiet FashionBox instead
+    - created asset for video Fashion Cities: NYC - Season 3 Part 6 with asset ID: 17-asset-5531023 for Publisher: 25131
+       - Warning: Genres Fashion cities,Fashionbox not found in this package, attaching the asset to category Pakiet FashionBox instead
+    - created asset for video Fashion Cities: NYC - Season 3 Part 7 with asset ID: 17-asset-5531024 for Publisher: 25131
+       - Warning: Genres Fashion cities,Fashionbox not found in this package, attaching the asset to category Pakiet FashionBox instead
+    - created asset for video Fashion Cities: NYC - Season 3 Part 8 with asset ID: 17-asset-5531025 for Publisher: 25131
+       - Warning: Genres Fashion cities,Fashionbox not found in this package, attaching the asset to category Pakiet FashionBox instead
+    - created asset for video Fashion Cities: NYC - Season 3 Part 9 with asset ID: 17-asset-5531026 for Publisher: 25131
+       - Warning: Genres Fashion cities,Fashionbox not found in this package, attaching the asset to category Pakiet FashionBox instead
+    - created asset for video Fashion Cities: NYC - Season 4 Part 1 with asset ID: 17-asset-5531027 for Publisher: 25131
+       - Warning: Genres Fashion cities,Fashionbox not found in this package, attaching the asset to category Pakiet FashionBox instead
+    - created asset for video Fashion Cities: NYC - Season 4 Part 10 with asset ID: 17-asset-5531028 for Publisher: 25131
+       - Warning: Genres Fashion cities,Fashionbox not found in this package, attaching the asset to category Pakiet FashionBox instead
+    - created asset for video Fashion Cities: NYC - Season 4 Part 2 with asset ID: 17-asset-5531029 for Publisher: 25131
+       - Warning: Genres Fashion cities,Fashionbox not found in this package, attaching the asset to category Pakiet FashionBox instead
+    - created asset for video Fashion Cities: NYC - Season 4 Part 3 with asset ID: 17-asset-5531030 for Publisher: 25131
+       - Warning: Genres Fashion cities,Fashionbox not found in this package, attaching the asset to category Pakiet FashionBox instead
+    - created asset for video Fashion Cities: NYC - Season 4 Part 4 with asset ID: 17-asset-5531031 for Publisher: 25131
+       - Warning: Genres Fashion cities,Fashionbox not found in this package, attaching the asset to category Pakiet FashionBox instead
+    - created asset for video Fashion Cities: NYC - Season 4 Part 5 with asset ID: 17-asset-5531032 for Publisher: 25131
+       - Warning: Genres Fashion cities,Fashionbox not found in this package, attaching the asset to category Pakiet FashionBox instead
+    - created asset for video Fashion Cities: NYC - Season 4 Part 6 with asset ID: 17-asset-5531033 for Publisher: 25131
+       - Warning: Genres Fashion cities,Fashionbox not found in this package, attaching the asset to category Pakiet FashionBox instead
+    - created asset for video Fashion Cities: NYC - Season 4 Part 7 with asset ID: 17-asset-5531034 for Publisher: 25131
+       - Warning: Genres Fashion cities,Fashionbox not found in this package, attaching the asset to category Pakiet FashionBox instead
+    - created asset for video Fashion Cities: NYC - Season 4 Part 8 with asset ID: 17-asset-5531035 for Publisher: 25131
+       - Warning: Genres Fashion cities,Fashionbox not found in this package, attaching the asset to category Pakiet FashionBox instead
+    - created asset for video Fashion Cities: NYC - Season 4 Part 9 with asset ID: 17-asset-5531036 for Publisher: 25131
+       - Warning: Genres Fashion cities,Fashionbox not found in this package, attaching the asset to category Pakiet FashionBox instead
+    - created asset for video Fashion Cities: Paris - Season 1 Part 1 with asset ID: 17-asset-5531037 for Publisher: 25131
+       - Warning: Genres Fashion cities,Fashionbox not found in this package, attaching the asset to category Pakiet FashionBox instead
+    - created asset for video Fashion Cities: Paris - Season 1 Part 2 with asset ID: 17-asset-5531038 for Publisher: 25131
+       - Warning: Genres Fashion cities,Fashionbox not found in this package, attaching the asset to category Pakiet FashionBox instead
+    - created asset for video Fashion Cities: Paris - Season 1 Part 3 with asset ID: 17-asset-5531039 for Publisher: 25131
+       - Warning: Genres Fashion cities,Fashionbox not found in this package, attaching the asset to category Pakiet FashionBox instead
+    - created asset for video Fashion Cities: Paris - Season 1 Part 4 with asset ID: 17-asset-5531040 for Publisher: 25131
+       - Warning: Genres Fashion cities,Fashionbox not found in this package, attaching the asset to category Pakiet FashionBox instead
+    - created asset for video Fashion Cities: Paris - Season 1 Part 5 with asset ID: 17-asset-5531041 for Publisher: 25131
+       - Warning: Genres Fashion cities,Fashionbox not found in this package, attaching the asset to category Pakiet FashionBox instead
+    - created asset for video Fashion Cities: Paris - Season 3 Part 1 with asset ID: 17-asset-5531042 for Publisher: 25131
+       - Warning: Genres Fashion cities,Fashionbox not found in this package, attaching the asset to category Pakiet FashionBox instead
+    - created asset for video Fashion Cities: Paris - Season 3 Part 2 with asset ID: 17-asset-5531043 for Publisher: 25131
+       - Warning: Genres Fashion cities,Fashionbox not found in this package, attaching the asset to category Pakiet FashionBox instead
+    - created asset for video Fashion Cities: Paris - Season 3 Part 3 with asset ID: 17-asset-5531044 for Publisher: 25131
+       - Warning: Genres Fashion cities,Fashionbox not found in this package, attaching the asset to category Pakiet FashionBox instead
+    - created asset for video Fashion Cities: Paris - Season 3 Part 4 with asset ID: 17-asset-5531045 for Publisher: 25131
+       - Warning: Genres Fashion cities,Fashionbox not found in this package, attaching the asset to category Pakiet FashionBox instead
+    - created asset for video Fashion Cities: Paris - Season 3 Part 5 with asset ID: 17-asset-5531046 for Publisher: 25131
+       - Warning: Genres Fashion cities,Fashionbox not found in this package, attaching the asset to category Pakiet FashionBox instead
+    - created asset for video Fashion Cities: Paris - Season 3 Part 6 with asset ID: 17-asset-5531047 for Publisher: 25131
+       - Warning: Genres Fashion cities,Fashionbox not found in this package, attaching the asset to category Pakiet FashionBox instead
+    - created asset for video Fashion Cities: Paris - Season 3 Part 7 with asset ID: 17-asset-5531048 for Publisher: 25131
+       - Warning: Genres Fashion cities,Fashionbox not found in this package, attaching the asset to category Pakiet FashionBox instead
+    - created asset for video Fashion Cities: Paris - Season 3 Part 8 with asset ID: 17-asset-5531049 for Publisher: 25131
+       - Warning: Genres Fashion cities,Fashionbox not found in this package, attaching the asset to category Pakiet FashionBox instead
+    - created asset for video Fashion Cities: Paris - Season 4 Part 1 with asset ID: 17-asset-5531050 for Publisher: 25131
+       - Warning: Genres Fashion cities,Fashionbox not found in this package, attaching the asset to category Pakiet FashionBox instead
+    - created asset for video Fashion Cities: Paris - Season 4 Part 2 with asset ID: 17-asset-5531051 for Publisher: 25131
+       - Warning: Genres Fashion cities,Fashionbox not found in this package, attaching the asset to category Pakiet FashionBox instead
+    - created asset for video Femme: Season 1 Part 1 with asset ID: 17-asset-5531052 for Publisher: 25131
+       - Warning: Genres Femme,Fashionbox not found in this package, attaching the asset to category Pakiet FashionBox instead
+    - created asset for video Femme: Season 1 Part 10 with asset ID: 17-asset-5531053 for Publisher: 25131
+       - Warning: Genres Femme,Fashionbox not found in this package, attaching the asset to category Pakiet FashionBox instead
+    - created asset for video Femme: Season 1 Part 11 with asset ID: 17-asset-5531054 for Publisher: 25131
+       - Warning: Genres Femme,Fashionbox not found in this package, attaching the asset to category Pakiet FashionBox instead
+    - created asset for video Femme: Season 1 Part 12 with asset ID: 17-asset-5531055 for Publisher: 25131
+       - Warning: Genres Femme,Fashionbox not found in this package, attaching the asset to category Pakiet FashionBox instead
+    - created asset for video Femme: Season 1 Part 2 with asset ID: 17-asset-5531056 for Publisher: 25131
+       - Warning: Genres Femme,Fashionbox not found in this package, attaching the asset to category Pakiet FashionBox instead
+    - created asset for video Femme: Season 1 Part 3 with asset ID: 17-asset-5531057 for Publisher: 25131
+       - Warning: Genres Femme,Fashionbox not found in this package, attaching the asset to category Pakiet FashionBox instead
+    - created asset for video Femme: Season 1 Part 4 with asset ID: 17-asset-5531058 for Publisher: 25131
+       - Warning: Genres Femme,Fashionbox not found in this package, attaching the asset to category Pakiet FashionBox instead
+    - created asset for video Femme: Season 1 Part 5 with asset ID: 17-asset-5531059 for Publisher: 25131
+       - Warning: Genres Femme,Fashionbox not found in this package, attaching the asset to category Pakiet FashionBox instead
+    - created asset for video Femme: Season 1 Part 6 with asset ID: 17-asset-5531060 for Publisher: 25131
+       - Warning: Genres Femme,Fashionbox not found in this package, attaching the asset to category Pakiet FashionBox instead
+    - created asset for video Femme: Season 1 Part 7 with asset ID: 17-asset-5531061 for Publisher: 25131
+       - Warning: Genres Femme,Fashionbox not found in this package, attaching the asset to category Pakiet FashionBox instead
+    - created asset for video Femme: Season 1 Part 8 with asset ID: 17-asset-5531062 for Publisher: 25131
+       - Warning: Genres Femme,Fashionbox not found in this package, attaching the asset to category Pakiet FashionBox instead
+    - created asset for video Femme: Season 1 Part 9 with asset ID: 17-asset-5531063 for Publisher: 25131
+       - Warning: Genres Femme,Fashionbox not found in this package, attaching the asset to category Pakiet FashionBox instead
+    - created asset for video Femme: Season 2 Part 1 with asset ID: 17-asset-5531064 for Publisher: 25131
+       - Warning: Genres Femme,Fashionbox not found in this package, attaching the asset to category Pakiet FashionBox instead
+    - created asset for video Femme: Season 2 Part 2 with asset ID: 17-asset-5531065 for Publisher: 25131
+       - Warning: Genres Femme,Fashionbox not found in this package, attaching the asset to category Pakiet FashionBox instead
+    - created asset for video Homme: Season 2 Part 7 with asset ID: 17-asset-5531066 for Publisher: 25131
+       - Warning: Genres Homme,Fashionbox not found in this package, attaching the asset to category Pakiet FashionBox instead
+    - created asset for video Lookbook: Baby Phat with asset ID: 17-asset-5531071 for Publisher: 25131
+       - Warning: Genres Lookbook,Fashionbox not found in this package, attaching the asset to category Pakiet FashionBox instead
+    - created asset for video Lookbook: Calvin Klein Part 5 with asset ID: 17-asset-5531072 for Publisher: 25131
+       - Warning: Genres Lookbook,Fashionbox not found in this package, attaching the asset to category Pakiet FashionBox instead
+    - created asset for video Lookbook: Giorgo Armani Part 2 with asset ID: 17-asset-5531073 for Publisher: 25131
+       - Warning: Genres Lookbook,Fashionbox not found in this package, attaching the asset to category Pakiet FashionBox instead
+    - created asset for video Lookbook: Jil Sander with asset ID: 17-asset-5531074 for Publisher: 25131
+       - Warning: Genres Lookbook,Fashionbox not found in this package, attaching the asset to category Pakiet FashionBox instead
+    - created asset for video Lookbook: John Galliano Part 3 with asset ID: 17-asset-5531075 for Publisher: 25131
+       - Warning: Genres Lookbook,Fashionbox not found in this package, attaching the asset to category Pakiet FashionBox instead
+    - created asset for video Lookbook: Marni with asset ID: 17-asset-5531076 for Publisher: 25131
+       - Warning: Genres Lookbook,Fashionbox not found in this package, attaching the asset to category Pakiet FashionBox instead
+    - created asset for video Lookbook: Maxmara with asset ID: 17-asset-5531077 for Publisher: 25131
+       - Warning: Genres Lookbook,Fashionbox not found in this package, attaching the asset to category Pakiet FashionBox instead
+    - created asset for video Lookbook: Oscar De La Renta Part 1 with asset ID: 17-asset-5531078 for Publisher: 25131
+       - Warning: Genres Lookbook,Fashionbox not found in this package, attaching the asset to category Pakiet FashionBox instead
+    - created asset for video Lookbook: Proenza Schouler Part 1 with asset ID: 17-asset-5531079 for Publisher: 25131
+       - Warning: Genres Lookbook,Fashionbox not found in this package, attaching the asset to category Pakiet FashionBox instead
+    - created asset for video Lookbook: Stella McCartney with asset ID: 17-asset-5531080 for Publisher: 25131
+       - Warning: Genres Lookbook,Fashionbox not found in this package, attaching the asset to category Pakiet FashionBox instead
+    - created asset for video Lookbook: Versace Part 3 with asset ID: 17-asset-5531081 for Publisher: 25131
+       - Warning: Genres Lookbook,Fashionbox not found in this package, attaching the asset to category Pakiet FashionBox instead
+    - created asset for video Vintage: 1980 Fashion with asset ID: 17-asset-5531085 for Publisher: 25131
+       - Warning: Genres Vintage,Fashionbox not found in this package, attaching the asset to category Pakiet FashionBox instead
+    - created asset for video Vintage: DKNY Part 1 with asset ID: 17-asset-5531086 for Publisher: 25131
+       - Warning: Genres Vintage not found in this package, attaching the asset to category Pakiet FashionBox instead
+Processing package... DocuBoxPackage Publisher... 25131

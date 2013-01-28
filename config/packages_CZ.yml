@@ -32,11 +32,11 @@ FashionBox:
   homme:
     identifiers: homme
     icon_name: hdfashion_icon_pl.png
-    description: "mu"
+    description: "mu"
   femme:
     identifiers: femme
     icon_name: hdfashion_icon_pl.png
-    description: "ena"
+    description: "ena"
   fashion_candies:
     identifiers: "fashion candies"
     icon_name: hdfashion_icon_pl.png
@@ -96,7 +96,7 @@ FilmPackage:
   animated:
     identifiers: animated, animation, animowany
     icon_name: animation_pl.png
-    description: "ivý"
+    description: "ivý"
   recommended:
     identifiers: recommended, poleca
     icon_name: recommended_pl.png
@@ -142,7 +142,7 @@ UltimatePackage:
   animated:
     identifiers: animated, animation, animowany
     icon_name: animation_pl.png
-    description: "ivý"
+    description: "ivý"
   recommended:
     identifiers: recommended, poleca
     icon_name: recommended_pl.png
@@ -178,11 +178,11 @@ UltimatePackage:
   homme:
     identifiers: homme
     icon_name: hdfashion_icon_pl.png
-    description: "mu"
+    description: "mu"
   femme:
     identifiers: femme
     icon_name: hdfashion_icon_pl.png
-    description: "ena"
+    description: "ena"
   fashion_candies:
     identifiers: "fashion candies"
     icon_name: hdfashion_icon_pl.png

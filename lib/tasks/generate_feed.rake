@@ -20,11 +20,11 @@ namespace :feed do
 
       # Generate publishers
 
-      PUBLISHERS = [{:id => 5842, :cc => "PL"}, 
-                    {:id => 25131, :cc => "HU"}, 
-                    {:id => 25132, :cc => "TR"}, 
-                    {:id => 25136, :cc => "CZ"}, 
-                    {:id => 25137, :cc => "RO"}]
+      PUBLISHERS = [{:publisher_id => 5842, :cc => "PL"}, 
+                    {:publisher_id => 25131, :cc => "HU"}, 
+                    {:publisher_id => 25132, :cc => "TR"}, 
+                    {:publisher_id => 25136, :cc => "CZ"}, 
+                    {:publisher_id => 25137, :cc => "RO"}]
 
       PUBLISHERS.each do |publisher|
         Publisher.create!(
@@ -37,124 +37,125 @@ namespace :feed do
         # Load the package config
         packages_config = YAML.load_file("config/packages_#{publisher.country_code}.yml")
         # Load hls_videos
-        hls_videos = Video.where(publisher_id: Publisher.publisher_id, live: '1')
-      end
+        hls_videos = Video.where(:publisher_id => publisher.publisher_id, :live => '1')
 
-      # Iterate through packages from the config
-      packages_config.each do |package_id, value|
-        # Print some info
-        print "Processing package... #{package_id}"
-        package = Package.find_by_external_id(package_id)
-        puts " (#{package.videos.count} videos, #{packages_config[package_id].length} categories)"
+          # Iterate through packages from the config
+          packages_config.each do |package_id, value|
+            # Print some info
+            print "Processing package... #{package_id}"
+            print "Package Publisher... #{publisher.publisher_id} / #{publisher.country_code}"
+            package = Package.find_by_external_id(package_id)
+            puts "(#{package.videos.count} videos, #{packages_config[package_id].length} categories)"
 
-        # Create category for this package
-        print " - creating category #{package.name}..."
-        category = create_category(package, channel)
-        puts "done"
+            # Create category for this package
+            print " - creating category #{package.name}..."
+            category = create_category(package, channel)
+            puts "done"
 
-        # Create the subcategories
-        packages_config[package_id].each do |category_id, category_data|
-          print "   - creating subcategory #{category_id.humanize}..."
-          subcategory = Category.create!(
-            title: category_id.humanize,
-            description: "Insert genre description here",
-            style: "tile",
-            icon: generate_icon_path(category_id, category_data),
-            parent: category,
-            channel: channel
-          )
-          puts "done"
-        end
-
-        # Iterate through videos, create assets and attach them to category
-        package.videos.each_with_index do |video, index|
-          # Create the asset
-          asset = create_asset_from_video(video, package)
-          puts "    - created asset for video #{video.title} with asset ID: #{asset.content_id}" 
-          
-          # Categorize it
-          genres = video.genres.split(",")
-          categorization_count = 0
-          genres.each do |genre|
+            # Create the subcategories
             packages_config[package_id].each do |category_id, category_data|
-              if category_data["identifiers"].include? genre
-                subcategory = category.children.where(title: category_id.humanize).first
-                AssetCategorization.create!(:asset_id => asset.id, :category_id => subcategory.id)
-                puts "       - attaching the asset to subcategory #{subcategory.title}"
-                categorization_count = categorization_count + 1
+              print "   - creating subcategory #{category_id.humanize}..."
+              subcategory = Category.create!(
+                title: category_id.humanize,
+                description: "Insert genre description here",
+                style: "tile",
+                icon: generate_icon_path(category_id, category_data),
+                parent: category,
+                channel: channel
+              )
+              puts "done"
+            end
+
+            # Iterate through videos, create assets and attach them to category
+            package.videos.each_with_index do |video, index|
+              # Create the asset
+              asset = create_asset_from_video(video, package)
+              puts "    - created asset for video #{video.title} with asset ID: #{asset.content_id} for Publisher: #{publisher.publisher_id}" 
+
+              # Categorize it
+              genres = video.genres.split(",")
+              categorization_count = 0
+              genres.each do |genre|
+                packages_config[package_id].each do |category_id, category_data|
+                  if category_data["identifiers"].include? genre
+                    subcategory = category.children.where(title: category_id.humanize).first
+                    AssetCategorization.create!(:asset_id => asset.id, :category_id => subcategory.id)
+                    puts "       - attaching the asset to subcategory #{subcategory.title}"
+                    categorization_count = categorization_count + 1
+                  end
+                end
               end
+
+              if categorization_count == 0
+                AssetCategorization.create!(:asset_id => asset.id, :category_id => category.id)
+                puts "       - Warning: Genres #{video.genres} not found in this package, attaching the asset to category #{category.title} instead"
+              end
+              categorization_count = 0
             end
           end
+          desc "Generate feeds for HLS"
+          task :hls => :environment do
+            # Delete the hls feed
+            old_leaf = Feed.find_by_title("2m_leaf1_2")
+            if old_leaf
+              old_leaf.destroy 
+              puts "Deleted the feed leaf: 2m_leaf1_2"
+            end
 
-          if categorization_count == 0
-            AssetCategorization.create!(:asset_id => asset.id, :category_id => category.id)
-            puts "       - Warning: Genres #{video.genres} not found in this package, attaching the asset to category #{category.title} instead"
+            channel = Channel.first
+            feed_leaf2 = Feed.create!(:channel => channel, :title => "2m_leaf1_2")
+            puts "- created feed: #{feed_leaf2.title}"
+
+            #puts "Generating manual feeds for HLS"
+            #hls_assets = []
+            #base_uri = APP_SETTINGS[Rails.env]['base_logo_uri']
+            
+            # # Define all the hls assets
+            # kinopolska_asset = HlsAsset.new("01", "Pakiet Kino Polska", "KinoPolska Live Package", "#{asset_description}", "#{base_uri}kinopolska.png", "http://spiinternational-i.akamaihd.net/hls/live/204304/KINOPOLSKA_PL_HLS/once1200.m3u8")
+            # hls_assets << kinopolska_asset
+
+            # docubox_asset = HlsAsset.new("02", "Pakiet DocuBox", "DocuBox Live Package", "#{asset_description}", "#{base_uri}docubox.png", "http://spiinternational-i.akamaihd.net/hls/live/204306/DOCUBOXHD_MT_HLS/once1200.m3u8")
+            # hls_assets << docubox_asset
+
+            # fashionbox_asset = HlsAsset.new("03", "Pakiet FashionBox", "FashionBox Live Package", "#{asset_description}", "#{base_uri}fashionbox.png", "http://spiinternational-i.akamaihd.net/hls/live/204307/FASHIONBOXHD_MT_HLS/once1200.m3u8")
+            # hls_assets << fashionbox_asset
+
+            # filmbox_asset = HlsAsset.new("04", "Pakiet Film", "FilmBox", "#{asset_description}", "#{base_uri}filmbox.png", "http://spiinternational-i.akamaihd.net/hls/live/204302/FILMBOXBASIC_PL_HLS/once1200.m3u8")
+            # hls_assets << filmbox_asset
+
+            # filmbox_prem_asset = HlsAsset.new("05", "Pakiet Full", "FilmBox Premiere", "#{asset_description}", "#{base_uri}filmbox_prem.png", "http://spiinternational-i.akamaihd.net/hls/live/204303/FILMBOXEXTRA_PL_HLS/once1200.m3u8")
+            # hls_assets << filmbox_prem_asset
+
+            # fightbox_asset = HlsAsset.new("06", "Pakiet FightBox", "FightBox Live Package", "#{asset_description}", "#{base_uri}fightbox.png", "http://spiinternational-i.akamaihd.net/hls/live/204308/FIGHTBOXHD_MT_HLS/once1200.m3u8")
+            # hls_assets << fightbox_asset
+
+            # hls_assets.each do |hls_asset|
+            #   category = Category.find_by_title(hls_asset.category_title)
+
+            #   asset = Asset.create!(
+            #     :title => hls_asset.asset_title,
+            #     :feed => feed_leaf2,
+            #     :content_id => "hls-asset-#{hls_asset.id}",
+            #     :pay_content => "true",
+            #     :asset_type => "video",
+            #     :duration => 0,
+            #     :asset_description => hls_asset.asset_description,
+            #     :thumbnail_url => hls_asset.thumbnail_url,
+            #     :live => true,
+            #     :source_url => hls_asset.source_url,
+            #     :rating => "15" 
+            #   )
+            #   puts "- created asset for HLS link for #{asset.title} with asset ID: #{asset.content_id}"
+
+            #   AssetCategorization.create!(:asset_id => asset.id, :category_id => category.id)
+            # end
+
           end
-          categorization_count = 0
-        end
+
       end
     end
-
-    desc "Generate feeds for HLS"
-    task :hls => :environment do
-      # Delete the hls feed
-      old_leaf = Feed.find_by_title("2m_leaf1_2")
-      if old_leaf
-        old_leaf.destroy 
-        puts "Deleted the feed leaf: 2m_leaf1_2"
-      end
-
-      channel = Channel.first
-      feed_leaf2 = Feed.create!(:channel => channel, :title => "2m_leaf1_2")
-      puts "- created feed: #{feed_leaf2.title}"
-
-      #puts "Generating manual feeds for HLS"
-      #hls_assets = []
-      #base_uri = APP_SETTINGS[Rails.env]['base_logo_uri']
-      
-      # # Define all the hls assets
-      # kinopolska_asset = HlsAsset.new("01", "Pakiet Kino Polska", "KinoPolska Live Package", "#{asset_description}", "#{base_uri}kinopolska.png", "http://spiinternational-i.akamaihd.net/hls/live/204304/KINOPOLSKA_PL_HLS/once1200.m3u8")
-      # hls_assets << kinopolska_asset
-
-      # docubox_asset = HlsAsset.new("02", "Pakiet DocuBox", "DocuBox Live Package", "#{asset_description}", "#{base_uri}docubox.png", "http://spiinternational-i.akamaihd.net/hls/live/204306/DOCUBOXHD_MT_HLS/once1200.m3u8")
-      # hls_assets << docubox_asset
-
-      # fashionbox_asset = HlsAsset.new("03", "Pakiet FashionBox", "FashionBox Live Package", "#{asset_description}", "#{base_uri}fashionbox.png", "http://spiinternational-i.akamaihd.net/hls/live/204307/FASHIONBOXHD_MT_HLS/once1200.m3u8")
-      # hls_assets << fashionbox_asset
-
-      # filmbox_asset = HlsAsset.new("04", "Pakiet Film", "FilmBox", "#{asset_description}", "#{base_uri}filmbox.png", "http://spiinternational-i.akamaihd.net/hls/live/204302/FILMBOXBASIC_PL_HLS/once1200.m3u8")
-      # hls_assets << filmbox_asset
-
-      # filmbox_prem_asset = HlsAsset.new("05", "Pakiet Full", "FilmBox Premiere", "#{asset_description}", "#{base_uri}filmbox_prem.png", "http://spiinternational-i.akamaihd.net/hls/live/204303/FILMBOXEXTRA_PL_HLS/once1200.m3u8")
-      # hls_assets << filmbox_prem_asset
-
-      # fightbox_asset = HlsAsset.new("06", "Pakiet FightBox", "FightBox Live Package", "#{asset_description}", "#{base_uri}fightbox.png", "http://spiinternational-i.akamaihd.net/hls/live/204308/FIGHTBOXHD_MT_HLS/once1200.m3u8")
-      # hls_assets << fightbox_asset
-
-      # hls_assets.each do |hls_asset|
-      #   category = Category.find_by_title(hls_asset.category_title)
-
-      #   asset = Asset.create!(
-      #     :title => hls_asset.asset_title,
-      #     :feed => feed_leaf2,
-      #     :content_id => "hls-asset-#{hls_asset.id}",
-      #     :pay_content => "true",
-      #     :asset_type => "video",
-      #     :duration => 0,
-      #     :asset_description => hls_asset.asset_description,
-      #     :thumbnail_url => hls_asset.thumbnail_url,
-      #     :live => true,
-      #     :source_url => hls_asset.source_url,
-      #     :rating => "15" 
-      #   )
-      #   puts "- created asset for HLS link for #{asset.title} with asset ID: #{asset.content_id}"
-
-      #   AssetCategorization.create!(:asset_id => asset.id, :category_id => category.id)
-      # end
-
-    end
-
   end
+      
 end
 
 class HlsAsset

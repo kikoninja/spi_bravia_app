@@ -12,7 +12,6 @@ xml.regions do
     xml.country("CZ")
     xml.country("HU")
     xml.country("PL")
-    xml.country("SK")
     xml.country("RO")
     xml.country("TR")
   end
@@ -26,12 +25,9 @@ xml.regions do
     xml.country("PL", :fallback_language => "pl")
   end
   xml.region(:id => 5) do
-    xml.country("SK", :fallback_language => "sk")
-  end
-  xml.region(:id => 6) do
     xml.country("RO", :fallback_language => "ro")
   end
-  xml.region(:id => 7) do
+  xml.region(:id => 6) do
     xml.country("TR", :fallback_language => "tr")
   end
 end

@@ -1,0 +1,162 @@
+Deleted old categories...
+Deleted old feeds...
+Deleted old assets...
+Deleted old categorizations...
+- created feed: branch
+- created feed: 2m_leaf1_1
+- created feed: 2m_leaf1_3
+Processing package... FightBoxPackage Publisher... 5842(74 videos, 4 categories)
+ - creating category Pakiet FightBox...done
+   - creating subcategory Kickbox...done
+   - creating subcategory Sumo...done
+   - creating subcategory Wrestling...done
+   - creating subcategory Karate...done
+    - created asset for video FightBox HD with asset ID: 15-asset-4367668 for Publisher: 5842
+       - Warning: Genres  not found in this package, attaching the asset to category Pakiet FightBox instead
+    - created asset for video AGORA with asset ID: 15-asset-5526324 for Publisher: 5842
+       - Warning: Genres Drama,History,recommended not found in this package, attaching the asset to category Pakiet FightBox instead
+    - created asset for video Art Of Fighting IX Part 1 with asset ID: 15-asset-5526364 for Publisher: 5842
+       - Warning: Genres Martial Mixed Arts,Fightbox not found in this package, attaching the asset to category Pakiet FightBox instead
+    - created asset for video Art Of Fighting IX Part 2 with asset ID: 15-asset-5526365 for Publisher: 5842
+       - Warning: Genres Martial Mixed Arts,Fightbox not found in this package, attaching the asset to category Pakiet FightBox instead
+    - created asset for video Art Of Fighting IX Part 3 with asset ID: 15-asset-5526366 for Publisher: 5842
+       - Warning: Genres Martial Mixed Arts,Fightbox not found in this package, attaching the asset to category Pakiet FightBox instead
+    - created asset for video Art Of Fighting VII Part 1 with asset ID: 15-asset-5526367 for Publisher: 5842
+       - Warning: Genres Martial Mixed Arts,Fightbox not found in this package, attaching the asset to category Pakiet FightBox instead
+    - created asset for video Art Of Fighting VII Part 2 with asset ID: 15-asset-5526368 for Publisher: 5842
+       - Warning: Genres Martial Mixed Arts,Fightbox not found in this package, attaching the asset to category Pakiet FightBox instead
+    - created asset for video Art Of Fighting VII Part 3 with asset ID: 15-asset-5526369 for Publisher: 5842
+       - Warning: Genres Martial Mixed Arts,Fightbox not found in this package, attaching the asset to category Pakiet FightBox instead
+    - created asset for video Art Of Fighting VIII Part 1 with asset ID: 15-asset-5526370 for Publisher: 5842
+       - Warning: Genres Martial Mixed Arts,Fightbox not found in this package, attaching the asset to category Pakiet FightBox instead
+    - created asset for video Art Of Fighting VIII Part 2 with asset ID: 15-asset-5526371 for Publisher: 5842
+       - Warning: Genres Martial Mixed Arts,Fightbox not found in this package, attaching the asset to category Pakiet FightBox instead
+    - created asset for video Art Of Fighting X Part 1 with asset ID: 15-asset-5526372 for Publisher: 5842
+       - Warning: Genres Martial Mixed Arts,Fightbox not found in this package, attaching the asset to category Pakiet FightBox instead
+    - created asset for video Art Of Fighting X Part 2 with asset ID: 15-asset-5526373 for Publisher: 5842
+       - Warning: Genres Martial Mixed Arts,Fightbox not found in this package, attaching the asset to category Pakiet FightBox instead
+    - created asset for video Beyond MMA: Anderson's Martial Arts Academy - MMA with asset ID: 15-asset-5526376 for Publisher: 5842
+       - Warning: Genres Martial Mixed Arts,Fightbox not found in this package, attaching the asset to category Pakiet FightBox instead
+    - created asset for video Beyond MMA: Nadine's Capoeira - Brazilian JuJitsu with asset ID: 15-asset-5526377 for Publisher: 5842
+       - Warning: Genres Capoeira,Fightbox not found in this package, attaching the asset to category Pakiet FightBox instead
+    - created asset for video Beyond MMA: Sambo with asset ID: 15-asset-5526378 for Publisher: 5842
+       - Warning: Genres Sambo,Fightbox not found in this package, attaching the asset to category Pakiet FightBox instead
+    - created asset for video Beyond MMA: The Art Of Muay Thai / Five Points Academy - New York with asset ID: 15-asset-5526379 for Publisher: 5842
+       - Warning: Genres Muay Thai,Fightbox not found in this package, attaching the asset to category Pakiet FightBox instead
+    - created asset for video Grand Sumo Tournament Nagoya Day 10: Aichi Prefectural Gymnasium with asset ID: 15-asset-5526392 for Publisher: 5842
+       - Warning: Genres Sumo,Fightbox not found in this package, attaching the asset to category Pakiet FightBox instead
+    - created asset for video Grand Sumo Tournament Nagoya Day 11: Aichi Prefectural Gymnasium with asset ID: 15-asset-5526393 for Publisher: 5842
+       - Warning: Genres Sumo,Fightbox not found in this package, attaching the asset to category Pakiet FightBox instead
+    - created asset for video Grand Sumo Tournament Nagoya Day 12: Aichi Prefectural Gymnasium with asset ID: 15-asset-5526394 for Publisher: 5842
+       - Warning: Genres Sumo,Fightbox not found in this package, attaching the asset to category Pakiet FightBox instead
+    - created asset for video Grand Sumo Tournament Nagoya Day 13: Aichi Prefectural Gymnasium with asset ID: 15-asset-5526395 for Publisher: 5842
+       - Warning: Genres Sumo,Fightbox not found in this package, attaching the asset to category Pakiet FightBox instead
+    - created asset for video Grand Sumo Tournament Nagoya Day 14: Aichi Prefectural Gymnasium with asset ID: 15-asset-5526396 for Publisher: 5842
+       - Warning: Genres Sumo,Fightbox not found in this package, attaching the asset to category Pakiet FightBox instead
+    - created asset for video Grand Sumo Tournament Nagoya Day 15: Aichi Prefectural Gymnasium with asset ID: 15-asset-5526397 for Publisher: 5842
+       - Warning: Genres Sumo,Fightbox not found in this package, attaching the asset to category Pakiet FightBox instead
+    - created asset for video Grand Sumo Tournament Nagoya Day 1: Aichi Prefectural Gymnasium with asset ID: 15-asset-5526398 for Publisher: 5842
+       - Warning: Genres Sumo,Fightbox not found in this package, attaching the asset to category Pakiet FightBox instead
+    - created asset for video Grand Sumo Tournament Nagoya Day 2: Aichi Prefectural Gymnasium with asset ID: 15-asset-5526399 for Publisher: 5842
+       - Warning: Genres Sumo,Fightbox not found in this package, attaching the asset to category Pakiet FightBox instead
+    - created asset for video Grand Sumo Tournament Nagoya Day 3: Aichi Prefectural Gymnasium with asset ID: 15-asset-5526400 for Publisher: 5842
+       - Warning: Genres Sumo,Kickbox not found in this package, attaching the asset to category Pakiet FightBox instead
+    - created asset for video Grand Sumo Tournament Nagoya Day 4: Aichi Prefectural Gymnasium with asset ID: 15-asset-5526401 for Publisher: 5842
+       - Warning: Genres Sumo,Fightbox not found in this package, attaching the asset to category Pakiet FightBox instead
+    - created asset for video Grand Sumo Tournament Nagoya Day 6: Aichi Prefectural Gymnasium with asset ID: 15-asset-5526402 for Publisher: 5842
+       - Warning: Genres Sumo,Fightbox not found in this package, attaching the asset to category Pakiet FightBox instead
+    - created asset for video Grand Sumo Tournament Nagoya Day 7: Aichi Prefectural Gymnasium with asset ID: 15-asset-5526403 for Publisher: 5842
+       - Warning: Genres Sumo,Fightbox not found in this package, attaching the asset to category Pakiet FightBox instead
+    - created asset for video Grand Sumo Tournament Nagoya Day 8: Aichi Prefectural Gymnasium with asset ID: 15-asset-5526404 for Publisher: 5842
+       - Warning: Genres Sumo,Fightbox not found in this package, attaching the asset to category Pakiet FightBox instead
+    - created asset for video Grand Sumo Tournament Nagoya Day 9: Aichi Prefectural Gymnasium with asset ID: 15-asset-5526405 for Publisher: 5842
+       - Warning: Genres Sumo,Fightbox not found in this package, attaching the asset to category Pakiet FightBox instead
+    - created asset for video Krush Part 1 with asset ID: 15-asset-5526425 for Publisher: 5842
+       - Warning: Genres Kickbox,Fightbox not found in this package, attaching the asset to category Pakiet FightBox instead
+    - created asset for video Krush Part 10 with asset ID: 15-asset-5526426 for Publisher: 5842
+       - Warning: Genres Kickbox,Fightbox not found in this package, attaching the asset to category Pakiet FightBox instead
+    - created asset for video Krush Part 12 with asset ID: 15-asset-5526427 for Publisher: 5842
+       - Warning: Genres Kickbox,Fightbox not found in this package, attaching the asset to category Pakiet FightBox instead
+    - created asset for video Krush Part 13 with asset ID: 15-asset-5526428 for Publisher: 5842
+       - Warning: Genres Kickbox,Fightbox not found in this package, attaching the asset to category Pakiet FightBox instead
+    - created asset for video Krush Part 14 with asset ID: 15-asset-5526429 for Publisher: 5842
+       - Warning: Genres Kickbox,Fightbox not found in this package, attaching the asset to category Pakiet FightBox instead
+    - created asset for video Krush Part 15 with asset ID: 15-asset-5526430 for Publisher: 5842
+       - Warning: Genres Kickbox,Fightbox not found in this package, attaching the asset to category Pakiet FightBox instead
+    - created asset for video Krush Part 16 with asset ID: 15-asset-5526431 for Publisher: 5842
+       - Warning: Genres Kickbox,Fightbox not found in this package, attaching the asset to category Pakiet FightBox instead
+    - created asset for video Krush Part 3 with asset ID: 15-asset-5526432 for Publisher: 5842
+       - Warning: Genres Kickbox,Fightbox not found in this package, attaching the asset to category Pakiet FightBox instead
+    - created asset for video Krush Part 4 with asset ID: 15-asset-5526433 for Publisher: 5842
+       - Warning: Genres Kickbox,Fightbox not found in this package, attaching the asset to category Pakiet FightBox instead
+    - created asset for video Krush Part 5 with asset ID: 15-asset-5526434 for Publisher: 5842
+       - Warning: Genres Kickbox,Fightbox not found in this package, attaching the asset to category Pakiet FightBox instead
+    - created asset for video Krush Part 6 with asset ID: 15-asset-5526435 for Publisher: 5842
+       - Warning: Genres Kickbox,Fightbox not found in this package, attaching the asset to category Pakiet FightBox instead
+    - created asset for video Krush Part 7 with asset ID: 15-asset-5526436 for Publisher: 5842
+       - Warning: Genres Kickbox,Fightbox not found in this package, attaching the asset to category Pakiet FightBox instead
+    - created asset for video Krush Part 8 with asset ID: 15-asset-5526437 for Publisher: 5842
+       - Warning: Genres Kickbox,Fightbox not found in this package, attaching the asset to category Pakiet FightBox instead
+    - created asset for video Krush Part 9 with asset ID: 15-asset-5526438 for Publisher: 5842
+       - Warning: Genres Kickbox,Fightbox not found in this package, attaching the asset to category Pakiet FightBox instead
+    - created asset for video Muay Thai Part 1 with asset ID: 15-asset-5526464 for Publisher: 5842
+       - Warning: Genres Muay Thai,Fightbox not found in this package, attaching the asset to category Pakiet FightBox instead
+    - created asset for video Muay Thai Part 2 with asset ID: 15-asset-5526465 for Publisher: 5842
+       - Warning: Genres Muay Thai,Fightbox not found in this package, attaching the asset to category Pakiet FightBox instead
+    - created asset for video Muay Thai Part 3 with asset ID: 15-asset-5526466 for Publisher: 5842
+       - Warning: Genres Muay Thai,Fightbox not found in this package, attaching the asset to category Pakiet FightBox instead
+    - created asset for video Muay Thai Part 4 with asset ID: 15-asset-5526467 for Publisher: 5842
+       - Warning: Genres Muay Thai,Fightbox not found in this package, attaching the asset to category Pakiet FightBox instead
+    - created asset for video Muay Thai Part 5 with asset ID: 15-asset-5526468 for Publisher: 5842
+       - Warning: Genres Muay Thai,Fightbox not found in this package, attaching the asset to category Pakiet FightBox instead
+    - created asset for video Muay Thai Trophy Part 1 with asset ID: 15-asset-5526469 for Publisher: 5842
+       - Warning: Genres Muay Thai,Fightbox not found in this package, attaching the asset to category Pakiet FightBox instead
+    - created asset for video Muay Thai Trophy Part 2 with asset ID: 15-asset-5526470 for Publisher: 5842
+       - Warning: Genres Muay Thai,Fightbox not found in this package, attaching the asset to category Pakiet FightBox instead
+    - created asset for video Muay Thai Trophy Part 3 with asset ID: 15-asset-5526471 for Publisher: 5842
+       - Warning: Genres Muay Thai,Fightbox not found in this package, attaching the asset to category Pakiet FightBox instead
+    - created asset for video Muay Thai Trophy Part 4 with asset ID: 15-asset-5526472 for Publisher: 5842
+       - Warning: Genres Muay Thai,Fightbox not found in this package, attaching the asset to category Pakiet FightBox instead
+    - created asset for video Muay Thai Trophy Part 5 with asset ID: 15-asset-5526473 for Publisher: 5842
+       - Warning: Genres Muay Thai,Fightbox not found in this package, attaching the asset to category Pakiet FightBox instead
+    - created asset for video Mythical Roads: The Road Of Blues (2) with asset ID: 15-asset-5526481 for Publisher: 5842
+       - Warning: Genres Travel,Docubox not found in this package, attaching the asset to category Pakiet FightBox instead
+    - created asset for video New Japan Pro-Wrestling 2009: Alive Part 1 with asset ID: 15-asset-5526490 for Publisher: 5842
+       - Warning: Genres Japan Wrestling,Fightbox not found in this package, attaching the asset to category Pakiet FightBox instead
+    - created asset for video New Japan Pro-Wrestling 2009: Alive Part 2 with asset ID: 15-asset-5526491 for Publisher: 5842
+       - Warning: Genres Japan Wrestling,Fightbox not found in this package, attaching the asset to category Pakiet FightBox instead
+    - created asset for video New Japan Pro-Wrestling 2009: Alive Part 3 with asset ID: 15-asset-5526492 for Publisher: 5842
+       - Warning: Genres Japan Wrestling,Fightbox not found in this package, attaching the asset to category Pakiet FightBox instead
+    - created asset for video New Japan Pro-Wrestling 2009: Destruction Part 1 with asset ID: 15-asset-5526493 for Publisher: 5842
+       - Warning: Genres Japan Wrestling,Fightbox not found in this package, attaching the asset to category Pakiet FightBox instead
+    - created asset for video New Japan Pro-Wrestling 2009: Destruction Part 2 with asset ID: 15-asset-5526494 for Publisher: 5842
+       - Warning: Genres Japan Wrestling,Fightbox not found in this package, attaching the asset to category Pakiet FightBox instead
+    - created asset for video New Japan Pro-Wrestling 2009: Destruction Part 3 with asset ID: 15-asset-5526495 for Publisher: 5842
+       - Warning: Genres Japan Wrestling,Fightbox not found in this package, attaching the asset to category Pakiet FightBox instead
+    - created asset for video New Japan Pro-Wrestling 2009: Destruction Part 4 with asset ID: 15-asset-5526496 for Publisher: 5842
+       - Warning: Genres Japan Wrestling,Fightbox not found in this package, attaching the asset to category Pakiet FightBox instead
+    - created asset for video New Japan Pro-Wrestling 2009: Destruction Part 5 with asset ID: 15-asset-5526497 for Publisher: 5842
+       - Warning: Genres Japan Wrestling,Fightbox not found in this package, attaching the asset to category Pakiet FightBox instead
+    - created asset for video New Japan Pro-Wrestling 2009: Destruction Part 6 with asset ID: 15-asset-5526498 for Publisher: 5842
+       - Warning: Genres Japan Wrestling,Fightbox not found in this package, attaching the asset to category Pakiet FightBox instead
+    - created asset for video New Japan Pro-Wrestling 2009: Destruction Part 7 with asset ID: 15-asset-5526499 for Publisher: 5842
+       - Warning: Genres Japan Wrestling,Fightbox not found in this package, attaching the asset to category Pakiet FightBox instead
+    - created asset for video New Japan Pro-Wrestling 2009: Destruction Part 8 with asset ID: 15-asset-5526500 for Publisher: 5842
+       - Warning: Genres Japan Wrestling,Fightbox not found in this package, attaching the asset to category Pakiet FightBox instead
+    - created asset for video New Japan Pro-Wrestling 2009: Destruction Part 9 with asset ID: 15-asset-5526501 for Publisher: 5842
+       - Warning: Genres Japan Wrestling,Fightbox not found in this package, attaching the asset to category Pakiet FightBox instead
+    - created asset for video ROH / NYWC Part 1 with asset ID: 15-asset-5526507 for Publisher: 5842
+       - Warning: Genres American Wrestling,Fightbox not found in this package, attaching the asset to category Pakiet FightBox instead
+    - created asset for video ROH / NYWC Part 2 with asset ID: 15-asset-5526508 for Publisher: 5842
+       - Warning: Genres American Wrestling,Fightbox not found in this package, attaching the asset to category Pakiet FightBox instead
+    - created asset for video ROH / NYWC Part 3 with asset ID: 15-asset-5526509 for Publisher: 5842
+       - Warning: Genres American Wrestling,Fightbox not found in this package, attaching the asset to category Pakiet FightBox instead
+    - created asset for video ROH / NYWC Part 4 with asset ID: 15-asset-5526510 for Publisher: 5842
+       - Warning: Genres American Wrestling,Fightbox not found in this package, attaching the asset to category Pakiet FightBox instead
+    - created asset for video World Karate Federation 20th Karate Championships : Belgrade 2010 Part.1 with asset ID: 15-asset-5526533 for Publisher: 5842
+       - Warning: Genres Karate,Fightbox not found in this package, attaching the asset to category Pakiet FightBox instead
+    - created asset for video World Karate Federation 20th Karate Championships : Belgrade 2010 Part.2 with asset ID: 15-asset-5526534 for Publisher: 5842
+       - Warning: Genres Karate,Fightbox not found in this package, attaching the asset to category Pakiet FightBox instead
+    - created asset for video Chasing Wild Horses with asset ID: 15-asset-5542074 for Publisher: 5842
+       - Warning: Genres Culture,Docubox not found in this package, attaching the asset to category Pakiet FightBox instead
+Processing package... FashionBoxPackage Publisher... 25131
