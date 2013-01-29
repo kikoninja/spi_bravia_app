@@ -66,7 +66,8 @@ namespace :feed do
                 style: "tile",
                 icon: generate_icon_path(category_id, category_data),
                 parent: category,
-                channel: channel
+                channel: channel,
+                region_ref: category.region_ref
               )
               puts "done"
             end
@@ -163,7 +164,8 @@ def create_category(package, channel)
     :description => package.description,
     :style => "tile",
     :icon => package.image_url,
-    :channel => channel
+    :channel => channel,
+    :region_ref => category.region_ref
   ) 
 end
 
