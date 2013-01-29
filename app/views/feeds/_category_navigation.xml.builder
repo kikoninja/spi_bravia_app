@@ -1,5 +1,6 @@
 categories.map do |category, subcategories|
   xml.category(:id => category.id, :style => category.style) do
+    xml.region_ref(:id => publisher.region)
     xml.default_icons do
       xml.icon_std "#{APP_SETTINGS[Rails.env]['affiliation_url']}#{category.icon.url(:small)}"
     end
