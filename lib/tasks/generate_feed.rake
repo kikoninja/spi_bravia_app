@@ -180,7 +180,7 @@ def create_asset_from_video(video, package)
     :thumbnail_url => thumbnail(video),
     :live => check_live(video),
     :source_url => source_url(video),
-    :rating => rating(video)
+    :rating => video.rating
   )
 end
 
@@ -213,11 +213,11 @@ def source_url(video)
   url = "http://once.unicornmedia.com/now/stitched/mp4/9a48dc3b-f49b-4d69-88e2-8bff2784d44b/ff3177e5-169a-495e-a8c6-47b145470cdd/3a41c6e4-93a3-4108-8995-64ffca7b9106/#{guid}/content.mp4"
 end
 
-def rating(video)
-  rating = video.video_custom_attributes.where('attribute_name =?', 'rating_pl').first
-  if rating
-    rating.attribute_value
-  else
-    "15"
-  end
-end
+# def rating(video)
+#   rating = video.video_custom_attributes.where('attribute_name =?', 'rating_pl').first
+#   if rating
+#     rating.attribute_value
+#   else
+#     "15"
+#   end
+# end
