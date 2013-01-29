@@ -10,7 +10,7 @@ end
 xml.regions do
   Publisher.all.each do |publisher|
     xml.region(:id => publisher.id) do
-      xml.country(:country => publisher.country_code)
+      xml.country publisher.country_code
     end
   end
 end
