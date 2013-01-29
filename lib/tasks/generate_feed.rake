@@ -4,7 +4,7 @@ namespace :feed do
     desc "Generate all feeds (both video and hls)"
     task :all => :environment do
       Rake::Task["feed:generate:videos"].execute 
-      Rake::Task["feed:generate:hls"].execute 
+      # Rake::Task["feed:generate:hls"].execute 
     end
 
     desc "Generate feeds from the videos in the database"
@@ -30,7 +30,7 @@ namespace :feed do
 
       PUBLISHERS.each do |publisher|
         Publisher.create!(
-          :publisher_id => publisher[:id], 
+          :publisher_id => publisher[:publisher_id], 
           :country_code => publisher[:cc],
           :region_id => publisher[:region_id]
           )
