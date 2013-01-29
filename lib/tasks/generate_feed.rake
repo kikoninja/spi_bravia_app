@@ -165,7 +165,7 @@ def create_category(package, channel)
     :style => "tile",
     :icon => package.image_url,
     :channel => channel,
-    :region_ref => category.region_ref
+    :region_ref => packade.id
   ) 
 end
 
