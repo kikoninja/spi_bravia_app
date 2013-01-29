@@ -72,7 +72,7 @@ namespace :feed do
             end
 
             # Iterate through videos, create assets and attach them to category
-            package.videos.each_with_index do |video, index|
+            package.videos.includes(:video_custom_attributes).each_with_index do |video, index|
               # Create the asset
               asset = create_asset_from_video(video, package)
               puts "    - created asset for video #{video.title} with asset ID: #{asset.content_id} for Publisher: #{publisher.publisher_id}" 
