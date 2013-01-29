@@ -177,9 +177,9 @@ def create_asset_from_video(video, package)
     :asset_type => "video",
     :video_id => video.id,
     :duration => video.duration,
-    :thumbnail_url => thumbnail(video),
+    :thumbnail_url => video.thumbnail,
     :live => check_live(video),
-    :source_url => source_url(video),
+    :source_url => video.source_url,
     :rating => video.rating
   )
 end
@@ -194,24 +194,24 @@ rescue
   return ""
 end
 
-def thumbnail(video)
-  image_url = video.video_custom_attributes.where('attribute_name =?', 'thumbnail').first.try(:attribute_value)
-  if image_url.blank?
-    return "http://bivlspidev.invideous.com/images/missing-icon.png"
-  else
-    return image_url
-  end
-end
+# def thumbnail(video)
+#   image_url = video.video_custom_attributes.where('attribute_name =?', 'thumbnail').first.try(:attribute_value)
+#   if image_url.blank?
+#     return "http://bivlspidev.invideous.com/images/missing-icon.png"
+#   else
+#     return image_url
+#   end
+# end
 
 def check_live(video)
   return true if video.live == "1"
 end
 
-def source_url(video)
-  #VideoCustomAttribute.where('video_id =? && attribute_name =?', video_id, 'sony_source_url').first.attribute_value
-  guid = video.video_custom_attributes.where('attribute_name =?', 'guid').first.try(:attribute_value)
-  url = "http://once.unicornmedia.com/now/stitched/mp4/9a48dc3b-f49b-4d69-88e2-8bff2784d44b/ff3177e5-169a-495e-a8c6-47b145470cdd/3a41c6e4-93a3-4108-8995-64ffca7b9106/#{guid}/content.mp4"
-end
+# def source_url(video)
+#   #VideoCustomAttribute.where('video_id =? && attribute_name =?', video_id, 'sony_source_url').first.attribute_value
+#   guid = video.video_custom_attributes.where('attribute_name =?', 'guid').first.try(:attribute_value)
+#   url = "http://once.unicornmedia.com/now/stitched/mp4/9a48dc3b-f49b-4d69-88e2-8bff2784d44b/ff3177e5-169a-495e-a8c6-47b145470cdd/3a41c6e4-93a3-4108-8995-64ffca7b9106/#{guid}/content.mp4"
+# end
 
 # def rating(video)
 #   rating = video.video_custom_attributes.where('attribute_name =?', 'rating_pl').first

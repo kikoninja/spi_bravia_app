@@ -28,6 +28,20 @@ class Video < ActiveRecord::Base
     end
   end
 
+  def thumbnail
+    image_url = fetch_attribute("thumbnail")
+    if image_url.blank?
+      "http://bivlspidev.invideous.com/images/missing-icon.png"
+    else
+      image_url
+    end
+  end
+
+  def source_url
+    guid = fetch_attribute("guid")
+    url = "http://once.unicornmedia.com/now/stitched/mp4/9a48dc3b-f49b-4d69-88e2-8bff2784d44b/ff3177e5-169a-495e-a8c6-47b145470cdd/3a41c6e4-93a3-4108-8995-64ffca7b9106/#{guid}/content.mp4"
+  end
+
   def rating
     rating = fetch_attribute("rating_pl")
     if rating
