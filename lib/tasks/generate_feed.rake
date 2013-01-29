@@ -54,7 +54,7 @@ namespace :feed do
 
             # Create category for this package
             print " - creating category #{package.name}..."
-            category = create_category(package, channel)
+            category = create_category(package, channel, publisher)
             puts "done"
 
             # Create the subcategories
@@ -67,7 +67,7 @@ namespace :feed do
                 icon: generate_icon_path(category_id, category_data),
                 parent: category,
                 channel: channel,
-                region_ref: category.region_ref
+                region_ref: publisher.id
               )
               puts "done"
             end
@@ -158,14 +158,14 @@ def generate_feeds(channel)
   puts "- created feed: #{@feed_leaf3.title}"
 end
 
-def create_category(package, channel)
+def create_category(package, channel, publisher)
   category = Category.create!(
     :title => package.name,
     :description => package.description,
     :style => "tile",
     :icon => package.image_url,
     :channel => channel,
-    :region_ref => category.region_ref
+    :region_ref => publisher.id
   ) 
 end
 
