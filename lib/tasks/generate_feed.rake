@@ -50,7 +50,7 @@ namespace :feed do
             print "Processing package... #{package_id}"
             print "Package Publisher... #{publisher.publisher_id} / #{publisher.country_code}"
             # package = Package.find_by_external_id(package_id, :include => [ :videos => :video_custom_attributes ])
-            package = Package.where(external_id: package_id, publisher_id: publisher.id).includes(:videos => :video_custom_attributes)
+            package = Package.where(external_id: package_id, publisher_id: publisher.publisher_id).includes(:videos => :video_custom_attributes).first
             puts "(#{package.videos.count} videos, #{packages_config[package_id].length} categories)"
 
             # Create category for this package
