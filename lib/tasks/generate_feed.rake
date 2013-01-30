@@ -20,11 +20,11 @@ namespace :feed do
 
       # Generate publishers
 
-      PUBLISHERS = [{:publisher_id => 5842, :cc => "PL", :region_id => 1}, 
-                    {:publisher_id => 25131, :cc => "HU", :region_id => 2}, 
-                    {:publisher_id => 25132, :cc => "TR", :region_id => 3}, 
-                    {:publisher_id => 25136, :cc => "CZ", :region_id => 4}, 
-                    {:publisher_id => 25137, :cc => "RO", :region_id => 5}]
+      PUBLISHERS = [{:publisher_id => 5842, :cc => "PL", :region_id => 1, :leaf_title => "2m_leaf1_1"}, 
+                    {:publisher_id => 25131, :cc => "HU", :region_id => 2, :leaf_title => "2m_leaf1_2"}, 
+                    {:publisher_id => 25132, :cc => "TR", :region_id => 3, :leaf_title => "2m_leaf1_3"}, 
+                    {:publisher_id => 25136, :cc => "CZ", :region_id => 4, :leaf_title => "2m_leaf1_4"}, 
+                    {:publisher_id => 25137, :cc => "RO", :region_id => 5, :leaf_title => "2m_leaf1_5"}]
 
       puts "Publishers: " + PUBLISHERS.size.to_s
 
@@ -32,7 +32,8 @@ namespace :feed do
         Publisher.create!(
           :publisher_id => publisher[:publisher_id], 
           :country_code => publisher[:cc],
-          :region_id => publisher[:region_id]
+          :region_id => publisher[:region_id],
+          :leaf_title => publisher[:leaf_title]
           )
       end
 
@@ -43,6 +44,7 @@ namespace :feed do
         packages_config = YAML.load_file("config/packages_#{publisher.country_code}.yml")
         # Load hls_videos
         hls_videos = Video.where(:publisher_id => publisher.publisher_id, :live => '1')
+        feed_leaf = Feed.where(:title => publisher.leaf_title).first
 
           # Iterate through packages from the config
           packages_config.each do |package_id, value|
@@ -76,7 +78,7 @@ namespace :feed do
             # Iterate through videos, create assets and attach them to category
             package.videos.each_with_index do |video, index|
               # Create the asset
-              asset = create_asset_from_video(video, package)
+              asset = create_asset_from_video(video, package, feed)
               puts "    - created asset for video #{video.title} with asset ID: #{asset.content_id} for Publisher: #{publisher.publisher_id}" 
 
               # Categorize it
@@ -155,8 +157,16 @@ def generate_feeds(channel)
   puts "- created feed: #{@feed_branch.title}"
   @feed_leaf1 = Feed.create!(:channel => channel, :title => "2m_leaf1_1")
   puts "- created feed: #{@feed_leaf1.title}"
+  @feed_leaf2 = Feed.create!(:channel => channel, :title => "2m_leaf1_2")
+  puts "- created feed: #{@feed_leaf2.title}"
   @feed_leaf3 = Feed.create!(:channel => channel, :title => "2m_leaf1_3")
   puts "- created feed: #{@feed_leaf3.title}"
+  @feed_leaf4 = Feed.create!(:channel => channel, :title => "2m_leaf1_4")
+  puts "- created feed: #{@feed_leaf4.title}"
+  @feed_leaf5 = Feed.create!(:channel => channel, :title => "2m_leaf1_5")
+  puts "- created feed: #{@feed_leaf5.title}"
+  @feed_leaf6 = Feed.create!(:channel => channel, :title => "2m_leaf1_6") # Will be using this for HLS
+  puts "- created feed: #{@feed_leaf6.title}"
 end
 
 def create_category(package, channel, publisher)
@@ -170,11 +180,11 @@ def create_category(package, channel, publisher)
   ) 
 end
 
-def create_asset_from_video(video, package)
+def create_asset_from_video(video, package, feed)
   asset = Asset.create!(
     :title => video.title,
     :description => video.description,
-    :feed => @feed_leaf1,
+    :feed_leaf => feed,
     :content_id => "#{package.id}-asset-#{video.id}",
     :pay_content => true,
     :asset_type => "video",
