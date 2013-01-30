@@ -6,7 +6,7 @@ xml.assets do
           xml.in_category(:id => category.id)
         else
           subcategories.map do |subcategory|
-            xml.region_ref category.region_ref
+            xml.region_ref(:id => category.region_ref)
             xml.in_category(:id => subcategory.first.id)
           end
         end
