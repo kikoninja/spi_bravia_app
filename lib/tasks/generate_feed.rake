@@ -49,7 +49,7 @@ namespace :feed do
             # Print some info
             print "Processing package... #{package_id}"
             print "Package Publisher... #{publisher.publisher_id} / #{publisher.country_code}"
-            package = Package.find_by_external_id(package_id)
+            package = Package.find_by_external_id(package_id, :include => :videos)
             puts "(#{package.videos.count} videos, #{packages_config[package_id].length} categories)"
 
             # Create category for this package
