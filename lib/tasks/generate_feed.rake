@@ -49,7 +49,8 @@ namespace :feed do
             # Print some info
             print "Processing package... #{package_id}"
             print "Package Publisher... #{publisher.publisher_id} / #{publisher.country_code}"
-            package = Package.find_by_external_id(package_id, :include => :videos)
+            # package = Package.find_by_external_id(package_id, :include => [ :videos => :video_custom_attributes ])
+            package = Package.where(external_id: package_id, publisher_id: publisher.id).includes(:videos => :video_custom_attributes)
             puts "(#{package.videos.count} videos, #{packages_config[package_id].length} categories)"
 
             # Create category for this package
@@ -73,7 +74,7 @@ namespace :feed do
             end
 
             # Iterate through videos, create assets and attach them to category
-            package.videos.includes(:video_custom_attributes).each_with_index do |video, index|
+            package.videos.each_with_index do |video, index|
               # Create the asset
               asset = create_asset_from_video(video, package)
               puts "    - created asset for video #{video.title} with asset ID: #{asset.content_id} for Publisher: #{publisher.publisher_id}" 
