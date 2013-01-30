@@ -44,7 +44,7 @@ namespace :feed do
         packages_config = YAML.load_file("config/packages_#{publisher.country_code}.yml")
         # Load hls_videos
         hls_videos = Video.where(:publisher_id => publisher.publisher_id, :live => '1')
-        feed_leaf = Feed.where(:title => publisher.leaf_title).first
+        feed = Feed.where(:title => publisher.leaf_title).first
 
           # Iterate through packages from the config
           packages_config.each do |package_id, value|
@@ -184,7 +184,7 @@ def create_asset_from_video(video, package, feed)
   asset = Asset.create!(
     :title => video.title,
     :description => video.description,
-    :feed_leaf => feed,
+    :feed => feed,
     :content_id => "#{package.id}-asset-#{video.id}",
     :pay_content => true,
     :asset_type => "video",
