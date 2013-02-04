@@ -21,10 +21,10 @@ class Video < ActiveRecord::Base
   def duration
     duration_attribute = fetch_attribute("duration")
     # duration_attribute = video_custom_attributes.where(attribute_name: "duration").first
-    if duration_attribute
+    if duration_attribute.present?
       convert_time_to_seconds(duration_attribute) * 60
     else
-      0
+      "0"
     end
   end
 
