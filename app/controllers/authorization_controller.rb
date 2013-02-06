@@ -33,7 +33,11 @@ class AuthorizationController < ApplicationController
       user = AffiliatedUser.find_by_suit(params[:suit])
 
       # TODO: Bobo: Complete this! 
-      user.has_access_to_package(@asset.package_id)
+      if user.has_access_to_package(@asset.package_id) == true
+        @result = "subscription valid"
+      else
+        @result = "invalid subscription"
+      end
 
       if user
         @result = "success"
