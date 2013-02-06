@@ -193,7 +193,8 @@ def create_asset_from_video(video, package, feed)
     :thumbnail_url => video.thumbnail,
     :live => check_live(video),
     :source_url => video.source_url,
-    :rating => video.rating
+    :rating => video.rating,
+    :package_id => package.id
   )
 end
 

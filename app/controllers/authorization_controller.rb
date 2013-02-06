@@ -12,6 +12,7 @@ class AuthorizationController < ApplicationController
 
   def sts_get_authorization
     logger.info("Request params: #{request.fullpath}")
+    @asset = Asset.find(params[:id])
     @asset_id = params[:id]
     request_path = "https://#{request.host}#{request.fullpath}"
     sig_calculator = SignatureCalculator.new(request_path, "wa1Kev6guokaiduu4iec")
@@ -30,6 +31,10 @@ class AuthorizationController < ApplicationController
     
     if authorizer.error_code == Authorizer::SUCCESS
       user = AffiliatedUser.find_by_suit(params[:suit])
+
+      # TODO: Bobo: Complete this! 
+      user.has_access_to_package(@asset.package_id)
+
       if user
         @result = "success"
         @result_code = Authorizer::SUCCESS
