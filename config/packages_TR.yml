@@ -112,11 +112,11 @@ FilmPackage:
   recommended:
     identifiers: recommended, poleca
     icon_name: recommended_tu.png
-    description: "Önerilen"
+    description: "Ã–nerilen"
   award_winner:
     identifiers: award winner
     icon_name: awards_winner_TR.png
-    description: "Ödüllü"
+    description: "Ã–dÃ¼llÃ¼"
   series:
     identifiers: series
     icon_name: series_TR.png
@@ -124,7 +124,7 @@ FilmPackage:
   dubbed:
     identifiers: dubbed
     icon_name: dubbed_tr.png
-    description: "Türkçe Dublajl?"
+    description: "TÃ¼rkÃ§e Dublajl?"
   HD:
     identifiers: HD
     icon_name: HD.png
@@ -174,11 +174,11 @@ UltimatePackage:
   recommended:
     identifiers: recommended, poleca
     icon_name: recommended_tu.png
-    description: "Önerilen"
+    description: "Ã–nerilen"
   award_winner:
     identifiers: award winner
     icon_name: awards_winner_TR.png
-    description: "Ödüllü"
+    description: "Ã–dÃ¼llÃ¼"
   series:
     identifiers: series
     icon_name: series_TR.png
@@ -186,7 +186,7 @@ UltimatePackage:
   dubbed:
     identifiers: dubbed
     icon_name: dubbed_tr.png
-    description: "Türkçe Dublajl?"
+    description: "TÃ¼rkÃ§e Dublajl?"
   HD:
     identifiers: HD
     icon_name: HD.png
@@ -260,5 +260,5 @@ PolishPackage:
   recommended: 
     identifiers: recommended, poleca
     icon_name: recommended_tu.png
-    description: "Önerilen"
+    description: "Ã–nerilen"
 
