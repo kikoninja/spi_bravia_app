@@ -1,5 +1,3 @@
-# encoding: UTF-8
-
 FightBox:
   martial_mixed_arts:
     identifiers: martial mixed arts
@@ -15,7 +13,7 @@ FightBox:
     description: "sumo"
   karate:
     identifiers: karate
-    icon_name: hdfightbox_icon_tu.png	
+    icon_name: hdfightbox_icon_tu.png
     description: "karate"
   japan_wrestling:
     identifiers: japan wrestling
@@ -207,7 +205,7 @@ UltimatePackage:
     description: "sumo"
   karate:
     identifiers: karate
-    icon_name: hdfightbox_icon_tu.png	
+    icon_name: hdfightbox_icon_tu.png
     description: "karate"
   japan_wrestling:
     identifiers: japan wrestling
