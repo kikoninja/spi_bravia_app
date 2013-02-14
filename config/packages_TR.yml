@@ -1,7 +1,7 @@
 # encoding: UTF-8
 
 FightBox:
-  martial mixed arts:
+  martial_mixed_arts:
     identifiers: martial mixed arts
     icon_name: hdfightbox_icon_tu.png
     description: "martial mixed arts"
@@ -21,11 +21,11 @@ FightBox:
     identifiers: japan wrestling
     icon_name: hdfightbox_icon_tu.png
     description: "japan wrestling"
-  american wrestling:
+  american_wrestling:
     identifiers: american wrestling
     icon_name: hdfightbox_icon_tu.png
     description: "american wrestling"
-  muay thai:
+  muay_thai:
     identifiers: muay thai
     icon_name: hdfightbox_icon_tu.png
     description: "muay thai"
@@ -115,7 +115,7 @@ FilmPackage:
     identifiers: recommended, poleca
     icon_name: recommended_tu.png
     description: "Önerilen"
-  award winner:
+  award_winner:
     identifiers: award winner
     icon_name: awards_winner_TR.png
     description: "Ödüllü"
@@ -177,7 +177,7 @@ UltimatePackage:
     identifiers: recommended, poleca
     icon_name: recommended_tu.png
     description: "Önerilen"
-  award winner:
+  award_winner:
     identifiers: award winner
     icon_name: awards_winner_TR.png
     description: "Ödüllü"
@@ -193,7 +193,7 @@ UltimatePackage:
     identifiers: HD
     icon_name: HD.png
     description: "HD"
-  martial mixed arts:
+  martial_mixed_arts:
     identifiers: martial mixed arts
     icon_name: hdfightbox_icon_tu.png
     description: "martial mixed arts"
@@ -209,15 +209,15 @@ UltimatePackage:
     identifiers: karate
     icon_name: hdfightbox_icon_tu.png	
     description: "karate"
-  japan wrestling:
+  japan_wrestling:
     identifiers: japan wrestling
     icon_name: hdfightbox_icon_tu.png
     description: "japan wrestling"
-  american wrestling:
+  american_wrestling:
     identifiers: american wrestling
     icon_name: hdfightbox_icon_tu.png
     description: "american wrestling"
-  muay thai:
+  muay_thai:
     identifiers: muay thai
     icon_name: hdfightbox_icon_tu.png
     description: "muay thai"
