@@ -1,211 +1,264 @@
-ï»¿FightBox:
+FightBox:
+  martial mixed arts:
+    identifiers: martial mixed arts
+    icon_name: hdfightbox_icon_tu.png
+    description: "martial mixed arts"
   kickbox:
     identifiers: kickbox
-    icon_name: hdfightbox_icon_pl.png
+    icon_name: hdfightbox_icon_tu.png
     description: "kickbox"
   sumo:
     identifiers: sumo
-    icon_name: hdfightbox_icon_pl.png
+    icon_name: hdfightbox_icon_tu.png
     description: "sumo"
-  wrestling:
-    identifiers: wrestling
-    icon_name: hdfightbox_icon_pl.png
-    description: "gÃ¼re?"
   karate:
     identifiers: karate
-    icon_name: hdfightbox_icon_pl.png 
+    icon_name: hdfightbox_icon_tu.png	
     description: "karate"
+  japan wrestling:
+    identifiers: japan wrestling
+    icon_name: hdfightbox_icon_tu.png
+    description: "japan wrestling"
+  american wrestling:
+    identifiers: american wrestling
+    icon_name: hdfightbox_icon_tu.png
+    description: "american wrestling"
+  muay thai:
+    identifiers: muay thai
+    icon_name: hdfightbox_icon_tu.png
+    description: "muay thai"
 
 FashionBox:
   lookbook:
     identifiers: lookbook
-    icon_name: hdfashion_icon_pl.png
+    icon_name: hdfashion_icon_tu.png
     description: "lookbook"
   fashion_cities:
     identifiers: "fashion cities"
-    icon_name: hdfashion_icon_pl.png
-    description: "moda ?ehirleri"
+    icon_name: hdfashion_icon_tu.png
+    description: "fashion cities"
   vintage:
     identifiers: vintage
-    icon_name: hdfashion_icon_pl.png
-    description: "ba?bozumu"
+    icon_name: hdfashion_icon_tu.png
+    description: "vintage"
   homme:
     identifiers: homme
-    icon_name: hdfashion_icon_pl.png
-    description: "adam"
+    icon_name: hdfashion_icon_tu.png
+    description: "homme"
   femme:
     identifiers: femme
-    icon_name: hdfashion_icon_pl.png
-    description: "kad?n"
+    icon_name: hdfashion_icon_tu.png
+    description: "femme"
   fashion_candies:
     identifiers: "fashion candies"
-    icon_name: hdfashion_icon_pl.png
-    description: "moda ?ekerler"
+    icon_name: hdfashion_icon_tu.png
+    description: "fashion candies"
 
 DocuBox:
   historical: 
     identifiers: historical
-    icon_name: hddocubox_icon_pl.png
-    description: "hostorical"
+    icon_name: hddocubox_icon_tu.png
+    description: "historical"
   roads:
     identifiers: roads
-    icon_name: hddocubox_icon_pl.png
-    description: "yollar"
+    icon_name: hddocubox_icon_tu.png
+    description: "roads"
   documentary:
     identifiers: documentary
-    icon_name: hddocubox_icon_pl.png
-    description: "belgesel"
+    icon_name: hddocubox_icon_tu.png
+    description: "documentary"
 
 FilmPackage:
   scifi:
     identifiers: scifi
-    icon_name: sci-fi_pl.png
-    description: "bilimkurgu"
+    icon_name: sci-fi_tu.png
+    description: "bilim-Kurgu"
   comedy:
     identifiers: comedy, komedi
-    icon_name: comedy_pl.png
-    description: "komeda"
-  romance:
-    identifiers: romance, romans
-    icon_name: romance_pl.png
-    description: "romantizm"
-  action:
-    identifiers: action, akcja
-    icon_name: action_pl.png
-    description: "eylem"
-  drama:
-    identifiers: drama, dramat
-    icon_name: drama_pl.png
-    description: "drama"
-  thriller:
-    identifiers: thriller
-    icon_name: thriller_pl.png
-    description: "gerilim"
-  horror: 
-    identifiers: horror
-    icon_name: horror_pl.png
-    description: "korku"
-  family:
-    identifiers: family, familijny
-    icon_name: family_pl.png
-    description: "aile"
-  documentary:
-    identifiers: documentary, dokument
-    icon_name: documentary_pl.png
-    description: "belgesel"
-  animated:
-    identifiers: animated, animation, animowany
-    icon_name: animation_pl.png
-    description: "canland?r?lm??"
-  recommended:
-    identifiers: recommended, poleca
-    icon_name: recommended_pl.png
-    description: "tavsiye"
-    
-UltimatePackage:
-  scifi:
-    identifiers: scifi
-    icon_name: sci-fi_pl.png  
-    description: "bilimkurgu"
-  comedy:
-    identifiers: comedy, komedi
-    icon_name: comedy_pl.png
+    icon_name: comedy_tu.png
     description: "komedi"
   romance:
     identifiers: romance, romans
-    icon_name: romance_pl.png
-    description: "romantizm"
+    icon_name: romance_tu.png
+    description: "romantik"
   action:
     identifiers: action, akcja
-    icon_name: action_pl.png
-    description: "eylem"
+    icon_name: action_tu.png
+    description: "aksiyon"
   drama:
     identifiers: drama, dramat
-    icon_name: drama_pl.png
-    description: "dramat"
+    icon_name: drama_tu.png
+    description: "dram"
   thriller:
     identifiers: thriller
-    icon_name: thriller_pl.png
+    icon_name: thriller_tu.png
     description: "gerilim"
   horror: 
     identifiers: horror
-    icon_name: horror_pl.png
+    icon_name: horror_tu.png
     description: "korku"
   family:
     identifiers: family, familijny
-    icon_name: family_pl.png
+    icon_name: family_tu.png
     description: "aile"
   documentary:
     identifiers: documentary, dokument
-    icon_name: documentary_pl.png
+    icon_name: documentary_tu.png
     description: "belgesel"
   animated:
     identifiers: animated, animation, animowany
-    icon_name: animation_pl.png
-    description: "canland?r?lm??"
+    icon_name: animation_tu.png
+    description: "animasyon"
   recommended:
     identifiers: recommended, poleca
-    icon_name: recommended_pl.png
-    description: "tavsiye"
+    icon_name: recommended_tu.png
+    description: "Önerilen"
+  award winner:
+    identifiers: award winner
+    icon_name: awards_winner_TR.png
+    description: "Ödüllü"
+  series:
+    identifiers: series
+    icon_name: series_TR.png
+    description: "Mini Dizi"
+  dubbed:
+    identifiers: dubbed
+    icon_name: dubbed_tr.png
+    description: "Türkçe Dublajl?"
+  HD:
+    identifiers: HD
+    icon_name: HD.png
+    description: "HD"
+  
+UltimatePackage:
+  scifi:
+    identifiers: scifi
+    icon_name: sci-fi_tu.png
+    description: "bilim-Kurgu"
+  comedy:
+    identifiers: comedy, komedi
+    icon_name: comedy_tu.png
+    description: "komedi"
+  romance:
+    identifiers: romance, romans
+    icon_name: romance_tu.png
+    description: "romantik"
+  action:
+    identifiers: action, akcja
+    icon_name: action_tu.png
+    description: "aksiyon"
+  drama:
+    identifiers: drama, dramat
+    icon_name: drama_tu.png
+    description: "dram"
+  thriller:
+    identifiers: thriller
+    icon_name: thriller_tu.png
+    description: "gerilim"
+  horror: 
+    identifiers: horror
+    icon_name: horror_tu.png
+    description: "korku"
+  family:
+    identifiers: family, familijny
+    icon_name: family_tu.png
+    description: "aile"
+  documentary:
+    identifiers: documentary, dokument
+    icon_name: documentary_tu.png
+    description: "belgesel"
+  animated:
+    identifiers: animated, animation, animowany
+    icon_name: animation_tu.png
+    description: "animasyon"
+  recommended:
+    identifiers: recommended, poleca
+    icon_name: recommended_tu.png
+    description: "Önerilen"
+  award winner:
+    identifiers: award winner
+    icon_name: awards_winner_TR.png
+    description: "Ödüllü"
+  series:
+    identifiers: series
+    icon_name: series_TR.png
+    description: "Mini Dizi"
+  dubbed:
+    identifiers: dubbed
+    icon_name: dubbed_tr.png
+    description: "Türkçe Dublajl?"
+  HD:
+    identifiers: HD
+    icon_name: HD.png
+    description: "HD"
+  martial mixed arts:
+    identifiers: martial mixed arts
+    icon_name: hdfightbox_icon_tu.png
+    description: "martial mixed arts"
   kickbox:
     identifiers: kickbox
-    icon_name: hdfightbox_icon_pl.png
+    icon_name: hdfightbox_icon_tu.png
     description: "kickbox"
   sumo:
     identifiers: sumo
-    icon_name: hdfightbox_icon_pl.png
+    icon_name: hdfightbox_icon_tu.png
     description: "sumo"
-  wrestling:
-    identifiers: wrestling
-    icon_name: hdfightbox_icon_pl.png
-    description: "gÃ¼re?"
   karate:
     identifiers: karate
-    icon_name: hdfightbox_icon_pl.png
+    icon_name: hdfightbox_icon_tu.png	
     description: "karate"
+  japan wrestling:
+    identifiers: japan wrestling
+    icon_name: hdfightbox_icon_tu.png
+    description: "japan wrestling"
+  american wrestling:
+    identifiers: american wrestling
+    icon_name: hdfightbox_icon_tu.png
+    description: "american wrestling"
+  muay thai:
+    identifiers: muay thai
+    icon_name: hdfightbox_icon_tu.png
+    description: "muay thai"
   lookbook:
     identifiers: lookbook
-    icon_name: hdfashion_icon_pl.png
+    icon_name: hdfashion_icon_tu.png
     description: "lookbook"
   fashion_cities:
     identifiers: "fashion cities"
-    icon_name: hdfashion_icon_pl.png
-    description: "moda ?ehirleri"
+    icon_name: hdfashion_icon_tu.png
+    description: "fashion cities"
   vintage:
     identifiers: vintage
-    icon_name: hdfashion_icon_pl.png
-    description: "ba?bozumu"
+    icon_name: hdfashion_icon_tu.png
+    description: "vintage"
   homme:
     identifiers: homme
-    icon_name: hdfashion_icon_pl.png
-    description: "adam"
+    icon_name: hdfashion_icon_tu.png
+    description: "homme"
   femme:
     identifiers: femme
-    icon_name: hdfashion_icon_pl.png
-    description: "kad?n"
+    icon_name: hdfashion_icon_tu.png
+    description: "femme"
   fashion_candies:
     identifiers: "fashion candies"
-    icon_name: hdfashion_icon_pl.png
-    description: "moda ?ekerler"
+    icon_name: hdfashion_icon_tu.png
+    description: "fashion candies"
   historical: 
     identifiers: historical
-    icon_name: hddocubox_icon_pl.png
-    description: "tarihsel"
+    icon_name: hddocubox_icon_tu.png
+    description: "historical"
   roads:
     identifiers: roads
-    icon_name: hddocubox_icon_pl.png
-    description: "yollar"
+    icon_name: hddocubox_icon_tu.png
+    description: "roads"
   documentary:
     identifiers: documentary
-    icon_name: hddocubox_icon_pl.png
-    description: "belgesel"
+    icon_name: hddocubox_icon_tu.png
+    description: "documentary"
 
 PolishPackage:
   recommended: 
     identifiers: recommended, poleca
-    icon_name: recommended_pl.png
-    description: "tavsiye"
-  top_movies:
-    identifiers: movie, movies
-    icon_name: top_movies_pl.png
-    description: "en iyi filmleri"
+    icon_name: recommended_tu.png
+    description: "Önerilen"
+
