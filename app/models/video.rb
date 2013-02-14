@@ -24,7 +24,7 @@ class Video < ActiveRecord::Base
     if duration_attribute.present?
       convert_time_to_seconds(duration_attribute) * 60
     else
-      "0"
+      0
     end
   end
 
