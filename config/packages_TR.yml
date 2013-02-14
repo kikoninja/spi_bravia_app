@@ -17,7 +17,7 @@ FightBox:
     identifiers: karate
     icon_name: hdfightbox_icon_tu.png	
     description: "karate"
-  japan wrestling:
+  japan_wrestling:
     identifiers: japan wrestling
     icon_name: hdfightbox_icon_tu.png
     description: "japan wrestling"
