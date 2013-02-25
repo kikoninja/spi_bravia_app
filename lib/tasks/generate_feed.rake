@@ -65,7 +65,7 @@ namespace :feed do
               print "   - creating subcategory #{category_id.humanize}..."
               subcategory = Category.create!(
                 title: category_id.humanize,
-                description: "",
+                description: "Browse this category",
                 style: "tile",
                 icon: generate_icon_path(category_id, category_data),
                 parent: category,
