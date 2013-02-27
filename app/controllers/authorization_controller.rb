@@ -32,20 +32,20 @@ class AuthorizationController < ApplicationController
     if authorizer.error_code == Authorizer::SUCCESS
       user = AffiliatedUser.find_by_suit(params[:suit])
 
-      # TODO: Bobo: Complete this! 
-      if user.has_access_to_package(@asset.package_id) == true
-        @result = "subscription valid"
-      else
-        @result = "invalid subscription"
-      end
-
       if user
         @result = "success"
         @result_code = Authorizer::SUCCESS
+
+        if user.has_access_to_package(@asset.package_id) == true
+          @result = "subscription valid"
+        else
+          @result = "invalid subscription"
+        end
       else
         @result = "fail"
         @result_code = Authorizer::ERROR_AUTH_UNKNOWN
       end
+
     else
       @result = "fail"
       @result_code = authorizer.error_code
