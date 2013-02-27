@@ -36,10 +36,8 @@ class AuthorizationController < ApplicationController
         @result = "success"
         @result_code = Authorizer::SUCCESS
 
-        if user.has_access_to_package(@asset.package_id) == true
-          @result = "subscription valid"
-        else
-          @result = "invalid subscription"
+        if user.has_access_to_package(@asset.package_id) == false
+          @result = "invalid_subscription"
         end
       else
         @result = "fail"
