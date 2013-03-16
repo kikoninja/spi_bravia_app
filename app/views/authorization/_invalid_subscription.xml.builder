@@ -1,5 +1,5 @@
-xml.authorization(result: "invalid_subscription") do
+xml.authorization(result: "fail") do
   xml.form(title: 'Important') do
-    xml.message "You do not have a valid subscrption."
+    xml.message @message
   end
 end

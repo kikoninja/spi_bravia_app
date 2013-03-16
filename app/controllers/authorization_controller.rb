@@ -36,8 +36,14 @@ class AuthorizationController < ApplicationController
         @result = "success"
         @result_code = Authorizer::SUCCESS
 
-        if user.has_access_to_package(@asset.package_id) == false
+        unless @asset.nil?
+          if user.has_access_to_package(@asset.package_id) == false
+            @result = "invalid_subscription"
+            @message = "You do not have a valid subscrption."
+          end
+        else
           @result = "invalid_subscription"
+          @message = "Invalid asset requested."
         end
       else
         @result = "fail"
