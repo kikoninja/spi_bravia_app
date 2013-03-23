@@ -39,7 +39,7 @@ class AuthorizationController < ApplicationController
         unless @asset.nil?
           if user.has_access_to_package(@asset.package_id) == false
             @result = "invalid_subscription"
-            @message = "You do not have a valid subscrption."
+            @message = "You do not have a valid subscription."
           end
         else
           @result = "invalid_subscription"
