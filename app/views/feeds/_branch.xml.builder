@@ -68,6 +68,6 @@ xml.root_category(:id => "ROOTCAT_ID") do
     # end
   end
 
-  xml << render( :partial => 'category_navigation', :locals => { :categories => channel.categories.arrange(:order => :title)})
+  xml << render( :partial => 'category_navigation', :locals => { :categories => channel.categories.arrange(:order => '`order`, region_ref, title')})
 
 end
